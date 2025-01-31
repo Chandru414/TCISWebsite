@@ -1,0 +1,824 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <title>TCIS - Alumni</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="author" content="ThemeZaa">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta name="description" content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 48+ ready demos.">
+        <!-- favicon icon -->
+        <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        <!-- google fonts preconnect -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- style sheets and font icons  -->
+        <link rel="stylesheet" href="css/vendors.min.css"/>
+        <link rel="stylesheet" href="css/icon.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/responsive.css"/>
+        <link rel="stylesheet" href="demos/travel-agency/travel-agency.css" />
+
+        <style>
+            .filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+        </style>
+    </head>
+    <body data-mobile-nav-style="classic">  
+        <!-- start header -->
+        <header class="header-with-topbar">
+            <!-- <div class="header-top-bar top-bar-light bg-white md-border-bottom border-color-transparent-dark-very-light disable-fixed">
+                <div class="container-fluid">
+                    <div class="row h-45px align-items-center m-0">
+                        <div class="col-xl-6 col-lg-8 justify-content-center justify-content-lg-start">
+                            <div class="fs-15 text-dark-gray">We have a selection of over 50 tour programs! <a href="demo-travel-agency-destinations.html" class="text-base-color fw-500 text-decoration-line-bottom">Popular Destinations</a></div>
+                        </div>
+                        <div class="col-xl-6 col-lg-4 text-end d-none d-lg-flex">
+                            <a href="tel:02228899900" class="widget fs-15 text-dark-gray text-dark-gray-hover"><i class="feather icon-feather-phone-call text-base-color"></i> 0222 8899900</a>
+                            <div class="widget fs-15 ms-30px text-dark-gray d-none d-xl-inline-block"><i class="feather icon-feather-map-pin text-base-color"></i> Broadway, 24th Floor, San Francisco</div> 
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- start navigation -->
+            <nav class="navbar navbar-expand-lg header-transparent bg-transparent  disable-fixed">
+                <div class="container-fluid">
+                    <div class="col-auto col-lg-2 me-auto">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/TCIS/TCISLogoLight.png" data-at2x="images/TCIS/TCISLogoLight.png" alt="" class="default-logo" style="    max-height: 75px;">
+                            <img src="images/TCIS/TCISLogoLight.png" data-at2x="images/TCIS/TCISLogoLight.png" alt="" class="alt-logo">
+                            <img src="images/TCIS/TCISLogoLight.png" data-at2x="images/TCIS/TCISLogoLight.png" alt="" class="mobile-logo"> 
+                        </a>
+                    </div>
+                    <div class="col-auto col-lg-8 menu-order position-static">
+                        <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                        </button>
+                        
+                    </div>
+                    <div class="col-auto col-lg-2 text-end">
+                        <div class="header-icon">
+                            <div class="header-search-icon icon" style="display: flex;flex-direction: column;align-items: end;">
+                                <div class="collapse navbar-collapse justify-content-center" id="navbarNav" style="flex-grow: 0.25;"> 
+                                    <ul class="navbar-nav alt-font text-uppercase"> 
+                                        <li class="nav-item"><a href="Career.html" class="nav-link">Career</a></li>
+                                        <li class="nav-item"><a href="alumni.html" class="nav-link">Alumini</a></li>
+                                        <!-- <li class="nav-item dropdown dropdown-with-icon">
+                                            <a href="demo-travel-agency-destinations.html" class="nav-link">Destinations</a>
+                                            <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://via.placeholder.com/600x600" alt="">
+                                                        <div class="submenu-icon-content">
+                                                            India
+                                                            <p>42 Destinations</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://via.placeholder.com/600x600" alt="">
+                                                        <div class="submenu-icon-content">
+                                                            Poland
+                                                            <p>36 Destinations</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://via.placeholder.com/600x600" alt="">
+                                                        <div class="submenu-icon-content">
+                                                            Mexico
+                                                            <p>22 Destinations</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="https://via.placeholder.com/600x600" alt="">
+                                                        <div class="submenu-icon-content">
+                                                            Maldives
+                                                            <p>28 Destinations</p>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="btn btn-dark-gray btn-round-edge btn-box-shadow align-self-center text-center text-white">tour packages</a>
+                                                </li>
+                                            </ul>
+                                        </li> -->
+                                        <li class="nav-item"><a href="FAQ.html" class="nav-link">FAQs</a></li>
+                                        <!-- <li class="nav-item"><a href="demo-travel-agency-reviews.html" class="nav-link">Reviews</a></li>
+                                        <li class="nav-item"><a href="demo-travel-agency-blog.html" class="nav-link">Blog</a></li>
+                                        <li class="nav-item"><a href="demo-travel-agency-contact.html" class="nav-link">Contact</a></li> -->
+                                    </ul>
+                                </div>
+                                <a href="https://admissions.tcis.in/?utm_source=organic&utm_medium=homepage" target="_blank" class=" header-search-form"
+                                style="    border: 1.5px solid #fff;
+                                padding: 12px 27px;
+                                border-radius: 15px;
+                                text-transform: uppercase;
+                                font-weight: 500;
+                                margin-right: 20px;"><!--search-form-icon-->
+                                    <!-- <i class="feather icon-feather-search"></i> -->
+                                    <!-- <div class="custom-header-icon">
+                                        <div class="custom-push-btn">
+                                            <span class="custom-menu-btn"></span>
+                                            <span class="custom-menu-btn"></span>
+                                            <span class="custom-menu-btn"></span>
+                                            <span class="custom-menu-btn"></span> 
+                                        </div>
+                                    </div> -->
+                                    Admissions
+                                </a> 
+                                <div class="search-form-wrapper">
+                                    <button title="Close" type="button" class="search-close alt-font">×</button>
+                                    <form id="search-form" role="search" method="get" class="search-form text-left" action="search-result.html">
+                                        <!-- <div class="search-form-box">
+                                            <h2 class="text-dark-gray text-center mb-5 ls-minus-2px fw-600">What are you looking for?</h2>
+                                            
+                                        </div> -->
+                                        <!-- <div class="row">
+                                            <div class="col">
+                                                <div class="fs-24"></div>
+                                                <ul class="menu-sec">
+                                                    <li>
+                                                        <a target="_blank" href="https://youtu.be/SpbRY1IRUko" data-text="Home">Home</a>
+                                                        <div class="fs-18">
+                                                            sample
+                                                        </div>
+                                                        <div class="fs-18">
+                                                            sample
+                                                        </div>
+                                                        <div class="fs-18">
+                                                            sample
+                                                        </div>
+                                                    </li>
+                                                    <li><a target="_blank" href="https://youtu.be/SpbRY1IRUko" data-text="Blogs">Blogs</a></li>
+                                                    <li><a target="_blank" href="https://youtu.be/SpbRY1IRUko" data-text="Coding">Coding</a></li>
+                                                    <li><a target="_blank" href="https://youtu.be/SpbRY1IRUko" data-text="Skills">Skills</a></li>
+                                                    <li><a target="_blank" href="https://youtu.be/SpbRY1IRUko" data-text="Extras">Extras</a></li>
+                                                    <li><a target="_blank" href="https://youtu.be/SpbRY1IRUko" data-text="Contact">Contact</a></li>
+                                                </ul>
+                                            </div>
+                                            
+                                        </div> -->
+                                        <div class="text-center push-menu-wrapper text-dark-gray"><!-- data-scroll-options='{ "theme": "dark" }'
+                                        style="height: 25rem;display: flex;"-->
+                                        <div class="d-flex">
+                                            <div class="" style="padding-top: 9rem;
+                                            padding-right: 0rem;
+                                            width: 30%;">
+                                                <img src="images/TCIS/home/logoDarkGIF.gif" style="height: auto;width:30rem;" data-at2x="images/TCIS/logo.png" class="mb-5" alt="" />
+                                                <!-- <div class="d-inline-block align-middle bg-very-light-gray fw-600 text-dark-gray text-uppercase border-radius-22px ps-25px pe-25px fs-13 mb-15px">Explore the world</div> -->
+                                                <!-- <h3 class="fw-600 mb-0 alt-font ls-minus-1px lh-38">Explore TCIS</h3> -->
+                                            </div>
+                                            <div style="width: 70%;max-height: 30rem!important;" data-scroll-options='{ "theme": "dark" }'
+                                            style="">
+                                                <div class="row align-items-start justify-content-center row-cols-3 row-cols-md-3 gutter-very-small row-cols-sm-3 instagram-follow-api position-relative"
+                                                style="height: 27rem;margin-top: 2rem;">
+                                                    <div class="col main-menu-item">
+                                                        <div class="border-radius-0px main-menu-sub-item" style="line-height: 1.5;">
+                                                            <a class="main-menu-headers menu-headers" href="about.html" target="_blank">About Us</a>
+                                                            <div class="d-flex flex-column menu-sub-item">
+                                                                <a href="about.html#story" class="menu-item">
+                                                                    <li href="about.html#story" class="menu-item-name">Our Story</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="about.html#philosophy" class="menu-item">
+                                                                    <li href="about.html#philosophy" class="menu-item-name">Our Philosophy</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="about.html#people" class="menu-item">
+                                                                    <li href="about.html#people" class="menu-item-name">Our People</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="about.html#media" class="menu-item">
+                                                                    <li href="about.html#media" class="menu-item-name">In Media</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <!-- <a href="about.html" class="menu-item">
+                                                                    <li href="about.html" class="menu-item-name">CBSE Updates</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a> -->
+                                                                <!-- <a href="about.html" class="menu-item-name">About TCIS</a>
+                                                                <a href="about.html" class="menu-item-name">Our Curriculum</a>
+                                                                <a href="about.html" class="menu-item-name">TCIS Infrastructure</a>
+                                                                <a href="about.html" class="menu-item-name">TCIS Blogs</a>
+                                                                <a href="about.html" class="menu-item-name">CBSE Updates</a> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col main-menu-item">
+                                                        <div class="border-radius-0px main-menu-sub-item" style="line-height: 1.5;">
+                                                            <a class="main-menu-headers menu-headers" href="" target="_blank">TCIS Advantage</a>
+                                                            <div class="d-flex flex-column menu-sub-item">
+                                                                <a href="USP.html#childCentricDifferentiatedLearning" class="menu-item">
+                                                                    <li href="USP.html#childCentricDifferentiatedLearning" class="menu-item-name">Child-centric Differentiated Learning</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="USP.html#futureOrientedSkilling" class="menu-item">
+                                                                    <li href="USP.html#futureOrientedSkilling" class="menu-item-name">Future Oriented Skilling</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="USP.html#strategicGlobalAlliances" class="menu-item">
+                                                                    <li href="USP.html" class="menu-item-name">Strategic Global Alliances & Cross-Cultural Diversity</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="USP.html#uniqueBlendedCurriculum" class="menu-item">
+                                                                    <li href="USP.html#uniqueBlendedCurriculum" class="menu-item-name">Unique Blended Curriculum & Academic Audit</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="USP.html#wholesomeChildDevelopment" class="menu-item">
+                                                                    <li href="USP.html" class="menu-item-name">Multidimensional Development</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="USP.html#academicAndCoScholastic" class="menu-item">
+                                                                    <li href="USP.html#academicAndCoScholastic" class="menu-item-name">Academics & Co-scholastic Accomplishments</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                
+                                                                
+                                                                <!-- <a href="" class="menu-item-name">Unique Blended Curriculum</a>
+                                                                <a href="lifeAtTCIS.html" class="menu-item-name">Child-centric Differentiated Learning</a>
+                                                                <a href="USP.html" class="menu-item-name">Academic & Co-scholastic Accomplishments</a>
+                                                                <a href="USP.html" class="menu-item-name">Future Oriented Skilling</a>
+                                                                <a href="USP.html" class="menu-item-name">Wholesome Child Development</a>
+                                                                <a href="USP.html" class="menu-item-name">Strategic Global Alliances & Cross-Cultural Diversity</a> -->
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="col main-menu-item">
+                                                        <div class="border-radius-0px main-menu-sub-item" style="line-height: 1.5;">
+                                                            <a class="main-menu-headers menu-headers" href="academics.html" target="_blank">Academics</a>
+                                                            <div class="d-flex flex-column menu-sub-item">
+                                                                <a href="academics.html#foundationalYearsProgram" class="menu-item">
+                                                                    <li href="academics.html#foundationalYearsProgram" class="menu-item-name">Foundational Years Programme</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="academics.html#primaryYearsProgram" class="menu-item">
+                                                                    <li href="academics.html#primaryYearsProgram" class="menu-item-name">Primary Years Programme</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="academics.html#middleYearsProgram" class="menu-item">
+                                                                    <li href="academics.html#middleYearsProgram" class="menu-item-name">Middle Years Programme</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="academics.html#foundationalYearsProgram" class="menu-item">
+                                                                    <li href="academics.html#foundationalYearsProgram" class="menu-item-name">Senior Years Programme</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="academics.html#learnerYearsProgram" class="menu-item">
+                                                                    <li href="academics.html#learnerYearsProgram" class="menu-item-name">Learner Support System</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <!-- <a href="academics.html" class="menu-item-name"> Foundational Years Programme
+                                                                </a>
+                                                                <a href="academics.html" class="menu-item-name">Learner Support System</a>
+                                                                <a href="academics.html" class="menu-item-name">Primary Years Programme</a>
+                                                                <a href="academics.html" class="menu-item-name">Middle Years Programme</a>
+                                                                <a href="academics.html" class="menu-item-name">Senior Years Programme</a> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                     
+                                                </div>
+                                                <div class="row align-items-center justify-content-center mb-5 row-cols-3 row-cols-md-3 gutter-very-small row-cols-sm-3 instagram-follow-api position-relative"
+                                                style="height: 17rem;">
+                                                    <div class="col main-menu-item">
+                                                        <div class="border-radius-0px main-menu-sub-item" style="line-height: 1.5;">
+                                                            <a class="main-menu-headers menu-headers" href="" target="_blank">Co-Scholastic</a>
+                                                            <div class="d-flex flex-column menu-sub-item">
+                                                                <!-- <a href="co-scholastic.html#coscholastic" class="menu-item">
+                                                                    <li href="co-scholastic.html#coscholastic" class="menu-item-name">Co-Scholastic</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a> -->
+                                                                <a href="co-scholastic.html#STEM" class="menu-item">
+                                                                    <li href="co-scholastic.html#STEM" class="menu-item-name">STEM @ TCIS</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="co-scholastic.html#fostering" class="menu-item">
+                                                                    <li href="co-scholastic.html#fostering" class="menu-item-name">Fostering Entrepreneurship</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="co-scholastic.html#sports" class="menu-item">
+                                                                    <li href="co-scholastic.html#sports" class="menu-item-name">Sports Program</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="co-scholastic.html#music" class="menu-item">
+                                                                    <li href="co-scholastic.html#music" class="menu-item-name">Love For Music</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="co-scholastic.html#arts" class="menu-item">
+                                                                    <li href="co-scholastic.html#arts" class="menu-item-name">Visual & Performing Arts</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <!-- <a href="" class="menu-item-name">Co-Scholastic</a>
+                                                                <a href="lifeAtTCIS.html" class="menu-item-name">Life @ TCIS</a>
+                                                                <a href="USP.html" class="menu-item-name">TCIS Advantage</a> -->
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="col main-menu-item">
+                                                        <div class="border-radius-0px main-menu-sub-item" style="line-height: 1.5;">
+                                                            <a class="main-menu-headers menu-headers" href="Career.html" target="_blank">Infrastructure</a>
+                                                            <div class="d-flex flex-column menu-sub-item">
+                                                                <a href="Infrastructure.html#learning" class="menu-item">
+                                                                    <li href="Infrastructure.html#learning" class="menu-item-name">Learning Space</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="Infrastructure.html#research" class="menu-item">
+                                                                    <li href="Infrastructure.html#research" class="menu-item-name">Research & Development Space</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="Infrastructure.html#sports" class="menu-item">
+                                                                    <li href="Infrastructure.html#sports" class="menu-item-name">Sports Infra</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="Infrastructure.html#general" class="menu-item">
+                                                                    <li href="Infrastructure.html#general" class="menu-item-name">General Facilities</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <!-- <a  href="Career.html" class="menu-item-name">Infrastructure</a> -->
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="col main-menu-item">
+                                                        <div class="border-radius-0px main-menu-sub-item" style="line-height: 1.5;">
+                                                            <a class="main-menu-headers menu-headers" href="Career.html" target="_blank">Life @ TCIS</a>
+                                                            <div class="d-flex flex-column menu-sub-item">
+                                                                <a href="lifeAtTCIS.html#aurora" class="menu-item">
+                                                                    <li href="lifeAtTCIS.html#aurora" class="menu-item-name">Aurora</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="lifeAtTCIS.html#technothon" class="menu-item">
+                                                                    <li href="lifeAtTCIS.html#technothon" class="menu-item-name">Technothon</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="lifeAtTCIS.html#reflection" class="menu-item">
+                                                                    <li href="lifeAtTCIS.html#reflection" class="menu-item-name">Reflection</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="lifeAtTCIS.html#udaan" class="menu-item">
+                                                                    <li href="lifeAtTCIS.html#udaan" class="menu-item-name">Udaan</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="lifeAtTCIS.html#ziel" class="menu-item">
+                                                                    <li href="lifeAtTCIS.html#ziel" class="menu-item-name">Ziel</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                
+                                                                
+                                                                <!-- <a  href="Career.html" class="menu-item-name">Life @ TCIS</a> -->
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                                <div class="row align-items-center justify-content-center mb-5 row-cols-3 row-cols-md-3 gutter-very-small row-cols-sm-3 instagram-follow-api position-relative"
+                                                style="height: 29rem;">
+                                                    <div class="col main-menu-item">
+                                                        <div class="border-radius-0px main-menu-sub-item" style="line-height: 1.5;">
+                                                            <a class="main-menu-headers menu-headers" href="admissionsDetails.html" target="_blank">Admissions</a>
+                                                            <div class="d-flex flex-column menu-sub-item">
+                                                                <a href="admissionsDetails.html" class="menu-item">
+                                                                    <li href="admissionsDetails.html" class="menu-item-name">Admission Process</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <!-- <a href="admissionsDetails.html" class="menu-item-name">Admission Process</a> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col main-menu-item">
+                                                        <div class="border-radius-0px main-menu-sub-item" style="line-height: 1.5;">
+                                                            <a class="main-menu-headers menu-headers" href="Career.html" target="_blank">School Based Info</a>
+                                                            <div class="d-flex flex-column menu-sub-item">
+                                                                <a href="FAQ.html" class="menu-item">
+                                                                    <li href="FAQ.html" class="menu-item-name">FAQs</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="blogs.html" class="menu-item">
+                                                                    <li href="blogs.html" class="menu-item-name">Blogs</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="about.html" class="menu-item">
+                                                                    <li href="about.html" class="menu-item-name">CBSE Info</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <!-- <a  href="Career.html" class="menu-item-name">FAQs</a>
+                                                                <a  href="Career.html" class="menu-item-name">Blogs</a>
+                                                                <a  href="Career.html" class="menu-item-name">Cbse Info</a> -->
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="col main-menu-item">
+                                                        <div class="border-radius-0px main-menu-sub-item" style="line-height: 1.5;">
+                                                            <a class="main-menu-headers menu-headers" href="" target="_blank">Contact Us</a>
+                                                            <div class="d-flex flex-column menu-sub-item">
+                                                                <a href="https://admissions.tcis.in/?utm_source=organic&utm_medium=homepage" class="menu-item">
+                                                                    <li href="https://admissions.tcis.in/?utm_source=organic&utm_medium=homepage" class="menu-item-name">Enquire Now</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <a href="contact.html" class="menu-item">
+                                                                    <li href="contact.html" class="menu-item-name">Contact Us</li>
+                                                                    <div><i class="fa fa-long-arrow-right"></i></div>
+                                                                </a>
+                                                                <!-- <a href="" class="menu-item-name">Enquire Now</a>
+                                                                <a href="" class="menu-item-name">Contact Us</a> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>  
+                                                </div>
+                                                <!-- <div class="col-12 text-center newsletter-style-02 position-relative mb-20"> 
+                                                    <span class="fs-18 w-80 mx-auto text-extra-dark-gray lh-26 d-inline-block mb-25px">Get latest update for our trusted applications</span>
+                                                    <form action="email-templates/subscribe-newsletter.php" method="post" class="position-relative w-100">
+                                                        <input class="border-radius-5px bg-white w-100 form-control required" type="email" name="email" placeholder="Enter your email">
+                                                        <input type="hidden" name="redirect" value="">
+                                                        <button class="btn submit" aria-label="submit"><i class="icon feather icon-feather-mail icon-small"></i></button>
+                                                        <div class="form-results border-radius-4px pt-10px pb-10px ps-15px pe-15px fs-14 w-100 text-center position-absolute lh-24 d-none"></div>
+                                                    </form>
+                                                </div>
+                                                <div class="col-12 text-center elements-social social-icon-style-01">
+                                                    <ul class="small-icon dark mb-0">
+                                                        <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                                        <li><a class="dribbble" href="http://www.dribbble.com" target="_blank"><i class="fa-brands fa-dribbble"></i></a></li>
+                                                        <li><a class="twitter" href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                                                        <li><a class="instagram" href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                                        <li><a class="linkedin" href="http://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                                    </ul>
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                            
+                                            
+                                        </div>
+                                    </form>
+                                    
+                                </div>
+                            </div>
+                            <div class="header-push-button icon">
+                                <div class="push-button search-form-icon header-search-form">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span> 
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </nav>
+            <!-- <div class="push-menu push-menu-style-1 p-35px bg-white">
+                <span class="close-menu text-white bg-dark-gray"><i class="fa-solid fa-xmark"></i></span>
+                <div class="text-center push-menu-wrapper text-dark-gray" data-scroll-options='{ "theme": "dark" }'>
+                    <div class="w-100">
+                        <img src="images/TCIS/logo.png" data-at2x="images/TCIS/logo.png" class="mb-5" alt="" />
+                    </div>
+                    <div class="row align-items-center justify-content-center mb-5 row-cols-3 row-cols-md-3 gutter-very-small row-cols-sm-3 instagram-follow-api position-relative">
+                        <div class="col instafeed-grid mb-10px">
+                            <figure class="border-radius-0px"><a href="https://www.instagram.com" target="_blank"><img src="images/TCIS/usp1.jpeg" class="insta-image" alt="">About Us</a></figure>
+                        </div>  
+                        <div class="col instafeed-grid mb-10px">
+                            <figure class="border-radius-0px"><a href="https://www.instagram.com" target="_blank"><img src="images/TCIS/usp2.jpeg" class="insta-image" alt="">Academics</a></figure>
+                        </div>
+                        <div class="col instafeed-grid mb-10px">
+                            <figure class="border-radius-0px"><a href="https://www.instagram.com" target="_blank"><img src="images/TCIS/usp3.jpeg" class="insta-image" alt="">Co-Curricular</a></figure>
+                        </div>
+                        <div class="col instafeed-grid">
+                            <figure class="border-radius-0px"><a href="https://www.instagram.com" target="_blank"><img src="images/TCIS/usp4.jpeg" class="insta-image" alt="">School Life</a></figure>
+                        </div>
+                        <div class="col instafeed-grid">
+                            <figure class="border-radius-0px"><a href="https://www.instagram.com" target="_blank"><img src="images/TCIS/usp1.jpeg" class="insta-image" alt="">Admissions</a></figure>
+                        </div>
+                        <div class="col instafeed-grid">
+                            <figure class="border-radius-0px"><a href="https://www.instagram.com" target="_blank"><img src="images/TCIS/usp2.jpeg" class="insta-image" alt="">Careers</a></figure>
+                        </div>  
+                    </div>
+                    <div class="col-12 text-center newsletter-style-02 position-relative mb-20"> 
+                        <span class="fs-18 w-80 mx-auto text-extra-dark-gray lh-26 d-inline-block mb-25px">Get latest update for our trusted applications</span>
+                        <form action="email-templates/subscribe-newsletter.php" method="post" class="position-relative w-100">
+                            <input class="border-radius-5px bg-white w-100 form-control required" type="email" name="email" placeholder="Enter your email">
+                            <input type="hidden" name="redirect" value="">
+                            <button class="btn submit" aria-label="submit"><i class="icon feather icon-feather-mail icon-small"></i></button>
+                            <div class="form-results border-radius-4px pt-10px pb-10px ps-15px pe-15px fs-14 w-100 text-center position-absolute lh-24 d-none"></div>
+                        </form>
+                    </div>
+                    <div class="col-12 text-center elements-social social-icon-style-01">
+                        <ul class="small-icon dark mb-0">
+                            <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a class="dribbble" href="http://www.dribbble.com" target="_blank"><i class="fa-brands fa-dribbble"></i></a></li>
+                            <li><a class="twitter" href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a class="instagram" href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a class="linkedin" href="http://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+            <!-- <header> -->
+                <div class="main-hero-video video-container">
+                    <video src="images/TCIS/home/TCIS  v1 1349×633.mp4" autoplay muted loop></video>
+                    <div class="main-hero-text-parent">
+                      <h3 class="mb-5px">Welcome to TCIS</h3>
+                      <p style="margin-bottom: 15px;">A visionary school dedicated to nurturing responsible global citizens with academic brilliance and co-scholastic excellence. TCIS is reimagining education to equip children with lifelong global skills—both academic and co-scholastic—helping them navigate an ever-changing world. While the TCIS approach has garnered numerous accolades, its effectiveness is most evident in the accomplishments of its students and alumni.</p>
+                      <!-- <a href="#" class="btn">Learn More</a> -->
+                    </div>
+                </div>
+                
+              <!-- </header> -->
+        </header>
+        <!-- end header -->
+        <!-- start page title -->
+        <section class="page-title-button-style cover-background position-relative ipad-top-space-margin top-space-padding md-pt-20px" style="background-image: url('images/TCIS/admission/faq.jpg')">
+            <div class="opacity-light bg-bay-of-many-blue"></div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center extra-small-screen">
+                    <div class="col-lg-6 col-md-8 position-relative text-center page-title-extra-large" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                        <!-- <h2 class="text-uppercase mb-10px alt-font text-white fw-500 bg-dark-gray border-radius-4px">TCIS</h2> -->
+                        <h1 class="mb-0 text-white alt-font ls-minus-2px text-uppercase fw-600 text-shadow-double-large">Alumni</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end page title -->
+        <!-- start section -->
+        <section class="position-relative">
+            <div class="h-110px position-absolute w-100 h-100 left-0px right-0px top-minus-70px"><!-- style="background-image:url('images/demo-travel-agency-about-bg-02.png')"-->
+
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 md-mb-50px sm-mb-35px filterDiv seniorYearsProgram">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <h5 class="alt-font text-dark-gray fw-600 sm-mb-15px">Coming Soon</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->
+        <!-- start footer -->
+        <footer class="bg-light-gray pb-40px  section-bg-custom-color"  style="background-image: url('images/TCIS/home/footer.jpg');">
+            <div class="container">
+                <!-- <div class="row mb-2 md-mb-4 overlap-section" data-anime='{ "el": "childs", "translateY": [-15, 0], "scale": [0.5, 1], "opacity": [0,1], "duration": 800, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <div class="col-12 text-center">
+                        <img class="rounded-circle" src="images/TCIS/home/footer.jpg" alt="" />
+                    </div>
+                </div>  -->
+                <!-- start subscribe item -->
+                <div class="row justify-content-center mb-6 md-mb-8 xs-mb-40px">
+                    <div class="col-xl-6 col-lg-8 col-md-10 text-center last-paragraph-no-margin">
+                        <h2 class="text-white alt-font fw-600 mb-40px mx-auto w-90 ls-minus-2px">Shape Your Future With TCIS</h2>
+                        <div class="d-inline-block w-100 newsletter-style-03 position-relative mb-30px">
+                            <form action="email-templates/subscribe-newsletter.php" method="post" class="position-relative w-100">
+                                <!-- <input class="input-large bg-white border-color-transparent w-100 border-radius-100px box-shadow-extra-large form-control required" type="email" name="email" placeholder="" /> -->
+                                <!-- <input type="hidden" name="redirect" value=""> -->
+                                <button  class="btn btn-large text-white ls-0px left-icon submit fw-600" style="padding: 0rem 35%;" aria-label="submit"><i class="icon feather icon-feather-mail icon-small text-base-color"></i><span>Enroll Now</span></button>
+                                <div class="form-results border-radius-100px pt-10px pb-10px ps-15px pe-15px fs-16 mt-10px w-100 z-index-1 text-center position-absolute d-none"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- end subscribe item -->
+                <!-- start instagram -->
+                <div class="row align-items-center justify-content-center mb-40px g-0 row-cols-3 row-cols-md-6 row-cols-sm-3 instagram-follow-api position-relative d-none">
+                    <div class="col instafeed-grid">
+                        <figure class="border-radius-0px" style="background-color: black;
+                        opacity: 0.7;
+                        border-radius: 10px !important;
+                        color: #fff !important;height: 185px;width:185px;"><a href="https://www.instagram.com" target="_blank"><span class="insta-icon"><i class="fa-brands fa-instagram"></i></span></a></figure>
+                    </div>  
+                    <div class="col instafeed-grid">
+                        <figure class="border-radius-0px"  style="background-color: black;
+                        opacity: 0.7;
+                        border-radius: 10px !important;
+                        color: #fff !important;height: 185px;width:185px;"><a href="https://www.instagram.com" target="_blank"><span class="insta-icon"><i class="fa-brands fa-facebook"></i></span></a></figure>
+                    </div>
+                    <div class="col instafeed-grid">
+                        <figure class="border-radius-0px"  style="background-color: black;
+                        opacity: 0.7;
+                        border-radius: 10px !important;
+                        color: #fff !important;height: 185px;width:185px;"><a href="https://www.instagram.com" target="_blank"><span class="insta-icon"><i class="fa-brands fa-instagram"></i></span></a></figure>
+                    </div>
+                    <!-- <div class="col instafeed-grid">
+                        <figure class="border-radius-0px"><a href="https://www.instagram.com" target="_blank"><img src="images/TCIS/usp4.jpeg" class="insta-image" alt=""><span class="insta-icon"><i class="fa-brands fa-instagram"></i></span></a></figure>
+                    </div>
+                    <div class="col instafeed-grid">
+                        <figure class="border-radius-0px"><a href="https://www.instagram.com" target="_blank"><img src="images/TCIS/usp1.jpeg" class="insta-image" alt=""><span class="insta-icon"><i class="fa-brands fa-instagram"></i></span></a></figure>
+                    </div>
+                    <div class="col instafeed-grid">
+                        <figure class="border-radius-0px"><a href="https://www.instagram.com" target="_blank"><img src="images/TCIS/usp2.jpeg" class="insta-image" alt=""><span class="insta-icon"><i class="fa-brands fa-instagram"></i></span></a></figure>
+                    </div>  -->
+                    <!-- <div class="absolute-middle-center z-index-1 w-auto">
+                        <a href="https://www.instagram.com" target="_blank" class="btn btn-medium btn-switch-text btn-white btn-round-edge fw-600 ls-0px left-icon btn-box-shadow instagram-button">
+                            <span>
+                                <span><i class="fa-brands fa-instagram text-base-color fs-20"></i></span>
+                                <span class="btn-double-text" data-text="crafto instagram">Quick Links</span> 
+                            </span>
+                        </a>
+                    </div> -->
+                </div>
+                <!-- end instagram -->
+                <div class="row align-items-center"  style="display:none;background-color: black;
+                opacity: 0.7;
+                border-radius: 10px;
+                color: #fff !important;
+                padding: 11px;"   >
+                    <div class="col-xl-4 col-sm-6 text-center text-sm-start last-paragraph-no-margin fs-15 text-white order-3 order-md-1"> 
+                        
+                        <img src="images/TCIS/home/logoLightGIF.gif" data-at2x="images/TCIS/logo.png" class="mb-5" alt="" style="line-height: 1.5;"/>
+                        <p style="line-height: 1.2;">TCIS is a forward-thinking school and follows a child-at-the-centre approach. Our strategy is to achieve academic excellence and holistic development, re-imagined with an objective to equip children to navigate the future world. We call it ‘Future Readying’.
+                            <!-- <a href="index.html" target="_blank" class="text-dark-gray text-dark-gray-hover text-decoration-line-bottom fw-600">Demo</a> -->
+                        </p>
+                    </div>
+                    <!-- <div class="col-xl-5 text-center lg-mt-10px sm-mt-0 sm-mb-15px order-1 order-xl-2 order-md-3"> 
+                        <ul class="footer-navbar"> 
+                            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                            <li class="nav-item"><a href="USP.html" class="nav-link">Why TCIS</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link">Awards</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link">Testimonials</a></li>
+
+                            <ul class="small-icon dark">
+                                <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a class="dribbble" href="http://www.dribbble.com" target="_blank"><i class="fa-brands fa-dribbble"></i></a></li>
+                                <li><a class="twitter" href="http://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>  
+                                <li><a class="instagram" href="http://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li> 
+                            </ul>  
+                        </ul>
+                    </div> -->
+                    <!-- <div class="d-flex">
+                        <div><figure class="border-radius-0px mb-0"><a href="https://www.instagram.com" target="_blank"><span class="insta-icon"><i class="fa-brands fa-instagram"></i></span></a></figure></div>
+                        <div><figure class="border-radius-0px mb-0"><a href="https://www.instagram.com" target="_blank"><span class="insta-icon"><i class="fa-brands fa-facebook-f"></i></span></a></figure></div>
+                        <div><figure class="border-radius-0px mb-0"><a href="https://www.instagram.com" target="_blank"><span class="insta-icon"><i class="fa-brands fa-twitter"></i></span></a></figure></div>
+                    </div> -->
+                    <div class="col-xl-8 col-sm-6 position-relative text-center text-sm-end elements-social social-text-style-08 order-2 order-xl-3 xs-mb-10px d-flex align-items-center"> 
+                        <!-- <div style="font-size: 1rem;color: var(--dark-gray);">Address</div> -->
+                        <div style="padding: 0 0.5rem;text-align: left;">
+                            <div style="font-size: 1.5rem;color:#fff;font-weight: 600;">TCIS Sarjapur</div>
+                            
+                            <p style="font-size: 0.9rem;color:#fff;font-weight: 400;margin-bottom: 0;line-height: 1.7;">Silver Country Rd, Harlur,<br> Off Sarjapur Rd, Bengaluru - 560068</p>
+                            <p  style="font-size: 0.9rem;color: #fff;font-weight: 400;margin-bottom: 0;line-height: 1.7;">+91 7760844377</p>
+                            <p style="font-size: 0.9rem;color:#fff;font-weight: 200;margin-bottom: 0;line-height: 1.7;">CBSE Affliation - 831233</p>
+                            <p style="font-size: 0.9rem;color:#fff;font-weight: 200;margin-bottom: 0;line-height: 1.7;">IB Candidate School</p>
+                            
+                        </div>
+                        <div style="padding: 0 0.5rem;text-align: left;">
+                            <div style="font-size: 1.5rem;color:#fff;font-weight: 600;">TCIS Whitefield</div>
+                            
+                            <p style="font-size: 0.9rem;color:#fff;font-weight: 400;margin-bottom: 0;line-height: 1.7;">Opp Prestige Lakeside Habitat,<br> Whitefield - Sarjapur Rd, Bengaluru - 560087</p>
+                            <p  style="font-size: 0.9rem;color: #fff;font-weight: 400;margin-bottom: 0;line-height: 1.7;">+91 9972757859</p>
+                            <p style="font-size: 0.9rem;color:#fff;font-weight: 200;margin-bottom: 0;line-height: 1.7;">CBSE Affliation - 830916</p>
+                            <p style="font-size: 0.9rem;color:#fff;font-weight: 200;margin-bottom: 0;line-height: 1.7;">IB Affliation - 061622</p>
+                            
+                        </div>
+                        <!-- <div style="padding: 0 2.5rem;text-align: left;">    
+                            <div style="font-size: 1.5rem;color: #fff;font-weight: 600;">TCIS Whitefield</div>
+                        <p  style="font-size: 0.9rem;color: #fff;font-weight: 400;margin-bottom: 0;line-height: 1.5;">+91 9972757859</p>
+                            <p style="font-size: 0.9rem;color: #fff;font-weight: 400;">Opp Prestige Lakeside Habitat, Varthur, Bengaluru - 560068</p>
+                            <p style="font-size: 0.9rem;color:#fff;font-weight: 400;">CBSE Affliation - 831233</p>
+                     </div> -->
+                    </div>
+                    
+                    <!-- <div>
+                        <p class="fs-16 lh-normal text-white">We are committed to protecting your <a href="#" class="text-decoration-line-bottom text-white text-dark-gray-hover">privacy policy.</a></p>
+                    
+                    </div> -->
+                </div>
+                <div id="footer" style="background-image: linear-gradient(105deg, #000000, #000000);
+                opacity: 0.7;
+                border-radius: 10px;
+                color: #fff !important;
+                padding: 30px;" class="footer">
+                    <div class="container">     
+                        <div class="row">                       
+                            <div class="col-lg-4 col-sm-4 col-xs-12">
+                                <div class="single_footer">
+                                    <h4>TCIS Sarjapur</h4>
+                                    <ul>
+                                        <li><a href="#">Silver Country Rd, Harlur,<br> Off Sarjapur Rd, Bengaluru - 560068</a></li>
+                                        <li><a href="#">+91 9972757859</a></li>
+                                        <li><a href="#">CBSE Affliation - 831233 </a></li>
+                                        <li><a href="#">IB Candidate School</a></li>
+                                        <!-- <li><a href="#">Type specimen book</a></li> -->
+                                    </ul>
+                                </div>
+                            </div><!--- END COL --> 
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="single_footer single_footer_address">
+                                    <h4>TCIS Whitefield</h4>
+                                    <ul>
+                                        <li><a href="#">Opp Prestige Lakeside Habitat,<br> Whitefield - Sarjapur Rd, Bengaluru - 560087</a></li>
+                                        <li><a href="#">+91 9972757859</a></li>
+                                        <li><a href="#">CBSE Affliation - 830916 </a></li>
+                                        <li><a href="#">IB Affliation - 061622</a></li>
+                                        <!-- <li><a href="#">Type specimen book</a></li> -->
+                                    </ul>
+                                </div>
+                            </div><!--- END COL -->
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="single_footer single_footer_address">
+                                    <h4>Enquire now!</h4>
+                                    <!-- <div class="signup_form">                           
+                                        <form action="#" class="subscribe">
+                                            <input type="text" class="subscribe__input" placeholder="Enter Email Address">
+                                            <button type="button" class="subscribe__btn"><i class="fas fa-paper-plane"></i></button>
+                                        </form>
+                                    </div> -->
+                                </div>
+                                <div class="social_profile">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>  <br>  
+                                <div class="social_profile">
+                                    <ul>
+                                        <li style="margin:0 10px;"><img class="" height="100" width="100"  src="images/TCIS/home/12.png" alt="" /></li>
+                                        <li style="margin:0 10px;"><img class="" height="100" width="100" src="images/TCIS/home/13.png" alt="" /></li>
+                                        <!-- <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li> -->
+                                    </ul>
+                                </div>                       
+                            </div><!--- END COL -->         
+                        </div><!--- END ROW --> 
+                        <div class="row">
+                            <div class="col-lg-12 col-sm-12 col-xs-12">
+                                <p class="copyright">Learners today,<a href="index.html">Leaders tomorrow</a></p>
+                            </div><!--- END COL -->                 
+                        </div><!--- END ROW -->                 
+                    </div><!--- END CONTAINER -->
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        <!-- start scroll progress -->
+        <div class="scroll-progress d-none d-xxl-block">
+            <a href="#" class="scroll-top" aria-label="scroll">
+                <span class="scroll-text">Scroll</span><span class="scroll-line"><span class="scroll-point"></span></span>
+            </a>
+        </div>
+        <!-- end scroll progress -->
+        <!-- javascript libraries -->
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/vendors.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script>
+            filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "seniorYearsProgram";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+        </script>
+    </body>
+</html>
