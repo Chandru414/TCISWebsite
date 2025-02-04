@@ -1909,3 +1909,78 @@ right connector from last child */
   border: 0;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/*color picker*/
+
+:root{
+  --backcol:linear-gradient(to right, #adadad, #b0adb5, #e3dfde, #cfbcb6, #cfbab2); 
+}
+
+
+.section-bg-custom-color {
+  /* background-image: var(--bg-color-combo); */
+  /* background-image: linear-gradient(to right, #7c8993, #8c8a8f, #a08d89, #ae8f84, #b08f83); */
+  /* background-image: linear-gradient(to right, #adadad, #b0adb5, #e3dfde, #cfbcb6, #cfbab2); */
+  background-color:var(--backcol);
+}
+
+.color-picker{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding:0px;
+  border-radius: 25px;
+
+}
+
+.picktext{
+  font-size: 25px;
+  color: black;
+  font-weight: 700;
+  padding: 0px 10px;
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+
+}
+
+.picker{
+  /* width: 90px;
+  height: 90px; */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.inputcolor{
+  /* width: 150px;
+  height: 150px; */
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
+
+.color-code{
+  width: 100px;
+  padding: 10px;
+  font-family: 'Montserrat' ,sans-serif;
+  color: #000000;
+}

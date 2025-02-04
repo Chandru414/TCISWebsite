@@ -29,8 +29,54 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    </head>
+<style>
+    :root{
+  /* --backcol:linear-gradient(to right, #adadad, #b0adb5, #e3dfde, #cfbcb6, #cfbab2);  */
+  --backcol:#e5f0f8; 
+}
+
+
+.section-bg-custom-color {
+  /* background-image: var(--bg-color-combo); */
+  /* background-image: linear-gradient(to right, #7c8993, #8c8a8f, #a08d89, #ae8f84, #b08f83); */
+  /* background-image: linear-gradient(to right, #adadad, #b0adb5, #e3dfde, #cfbcb6, #cfbab2); */
+  background-image:var(--backcol)!important;
+}
+
+#myBtn {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  /* background-color: red; */
+  color: white;
+  cursor: pointer;
+  /* padding: 5px; */
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  /* background-color: #555; */
+}
+</style>    
+</head>
     <body data-mobile-nav-style="classic">  
+        <!--color picker-->
+        <div  id="myBtn" title="Go to top">
+            
+            <div class="color-picker section-bg-custom-color">
+                <!-- <div class="picktxt">PICK<br>A<br>COLOR</div> -->
+                    <div class="picker">
+                      <input type="color" id="favcolor" class="inputcolor" style="padding: 0;" value="#e5f0f8">
+                    </div>
+                    <div class="color-code" id="c-code">#e5f0f8</div>
+                </div>
+        </div>
+        <!--/color picker-->
         <!-- start header -->
         <header class="header-with-topbar">
             <!-- <div class="header-top-bar top-bar-light bg-white md-border-bottom border-color-transparent-dark-very-light disable-fixed">
@@ -1018,8 +1064,8 @@
         </section>
         
         <!--testimonials section-->
-        <section style="background-color: #bcd4eb59;" class="bg-very-light-gray background-position-center-bottom background-size-contain background-no-repeat pt-2 pb-6
-        section-bg-custom-color" style="background-image:url('images/demo-travel-agency-home-bg-05.png');">
+        <section class="bg-very-light-gray background-position-center-bottom background-size-contain background-no-repeat pt-2 pb-6
+        section-bg-custom-color">
             <div class="container"> 
                 <div class="row justify-content-center mb-3">
                     <div class="col-lg-6 text-center" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
@@ -1365,7 +1411,7 @@
         </section>
         <!-- end section -->
         <!--testimonials section-->
-        <section style="background-color: #bcd4eb59;" class="bg-very-light-gray background-position-center-bottom background-size-contain background-no-repeat pt-2 pb-6
+        <section class="bg-very-light-gray background-position-center-bottom background-size-contain background-no-repeat pt-2 pb-6
         section-bg-custom-color" style="background-image:url('images/demo-travel-agency-home-bg-05.png');">
             <div class="container"> 
                 <div class="row justify-content-center mb-3">
@@ -1628,7 +1674,7 @@
         </div>
         <!-- start section -->
          <!-- start footer -->
-        <div class="bg-light-gray pb-10px pt-40px  section-bg-custom-color"  style="background-image: url('images/TCIS/home/footer (2).jpg');">
+        <div class="bg-light-gray pb-10px pt-40px"  style="background-image: url('images/TCIS/home/footer (2).jpg');">
             <div class="container">
                 <!-- <div class="row mb-2 md-mb-4 overlap-section" data-anime='{ "el": "childs", "translateY": [-15, 0], "scale": [0.5, 1], "opacity": [0,1], "duration": 800, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
                     <div class="col-12 text-center">
@@ -1993,6 +2039,17 @@ function horizontalScroll(){
     }
 }
 
+        </script>
+
+        <script>
+            var inputcolor = document.getElementById("favcolor");
+var root = document.documentElement;
+// var root = document.getElementsByClassName("section-bg-custom-color");
+
+inputcolor.addEventListener("input",(e) => {
+    document.getElementById("c-code").innerHTML = e.target.value;
+    root.style.setProperty("--backcol",e.target.value);
+});
         </script>
 
         <script type="text/javascript" src="js/main.js"></script>
