@@ -2007,3 +2007,28 @@ right connector from last child */
   font-family: 'Montserrat' ,sans-serif;
   color: #000000;
 }
+
+
+
+/*USP page sticky image*/
+@media (min-width: 1200px) {
+  .sticky-image {
+    position: sticky !important;
+    bottom: 20%;
+    margin-top: 10%;
+   }
+}
+/*USP page sticky image end*/
+
+
+
+
+
+
+
+
+
+
+/*flowchart*/
+
+/* flowchart */
