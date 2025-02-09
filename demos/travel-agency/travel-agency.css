@@ -2023,7 +2023,129 @@ right connector from last child */
 
 
 
+/* 
+when .item:hover, show overlay.
+overwrite .item-overlay."position"
+*/
+.item-content:hover .item-content-overlay.top {
+  top: 0;
+}
+.item-content:hover .item-content-overlay.right {
+  right: 0;
+  left: 0;
+}
+.item-content:hover .item-content-overlay.bottom {
+  bottom: 0;
+}
+.item-content:hover .item-content-overlay.left {
+  left: 0;
+}
 
+/* 
+by default, overlay is visible… 
+*/
+.item-content-overlay {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  /* fix text transition issue for .left and .right but need to overwrite left and right properties in .right */
+  width: 100%; 
+  
+  -moz-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+  -webkit-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+  transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+}
+/*
+…but this hide it
+*/
+.item-content-overlay.top {
+  top: 100%;
+}
+.item-content-overlay.right {
+  right: 200%;
+  left: -100%;
+}
+.item-content-overlay.bottom {
+  bottom: 100%;
+}
+.item-content-overlay.left {
+  left: 100%;
+}
+
+
+/* misc. CSS */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.item-content {
+  position: relative;
+  /* border: 1px solid #333; */
+  float: left;
+  /* margin: 2%; */
+  overflow: hidden;
+}
+.item-content img {
+  max-width: 100%;
+}
+
+.custom-height-item1{
+    height: 11rem;
+    margin-top: 17.5rem;
+    font-size: 14px;
+    line-height: 1.3rem;
+    padding: 10px;
+    text-align: start;
+}
+.custom-height-item2{
+  height: 11rem;
+  margin-top: 27rem;
+  font-size: 14px;
+  line-height: 1.3rem;
+  padding: 10px;
+  text-align: start;
+}
+.custom-height-item3{
+  height: 11rem;
+  margin-top: 7rem;
+  font-size: 14px;
+  line-height: 1.3rem;
+  padding: 10px;
+  text-align: start;
+}
+.custom-height-item4{
+  height: 11rem;
+  margin-top: 17.5rem;
+  font-size: 14px;
+  line-height: 1.3rem;
+  padding: 10px;
+  text-align: start;
+}
+.custom-height-item5{
+  height: 11rem;
+  margin-top: 31rem;
+  font-size: 14px;
+  line-height: 1.3rem;
+  padding: 10px;
+  text-align: start;
+}
+.custom-height-item6{
+  height: 11rem;
+  margin-top: 13.5rem;
+  font-size: 14px;
+  line-height: 1.3rem;
+  padding: 10px;
+  text-align: start;
+}
+/* end of misc. CSS */
 
 
 
