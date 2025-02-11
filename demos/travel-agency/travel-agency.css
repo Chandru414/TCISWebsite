@@ -907,7 +907,7 @@ footer .elements-social ul li {
   flex: 1;
 }
 
-.containerr>div:nth-child(5) {
+.containerr>div:nth-child(3) {
   flex: 3;
 }
 
@@ -1234,7 +1234,9 @@ footer .elements-social ul li {
     height: 2px;
     width: 40px;
     background: #fff;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin-top: 0px;
+    margin-bottom: 32px;
   }
 
   .single_footer p {
