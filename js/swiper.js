@@ -1756,7 +1756,7 @@
             slideToClickedSlide: !1,
             preloadImages: !0,
             updateOnImagesReady: !0,
-            loop: !0,
+            loop: !1,
             loopAdditionalSlides: 0,
             loopedSlides: null,
             loopFillGroupWithBlank: !1,
@@ -3765,7 +3765,6 @@
                         T = l ? n.stretch * g : 0;
                     Math.abs(T) < 0.001 && (T = 0), Math.abs(x) < 0.001 && (x = 0), Math.abs(y) < 0.001 && (y = 0), Math.abs(b) < 0.001 && (b = 0), Math.abs(w) < 0.001 && (w = 0);
                     var E = "translate3d(" + T + "px," + x + "px," + y + "px)  rotateX(" + w + "deg) rotateY(" + b + "deg)";
-                    console.log(E);
                     if ((f.transform(E), (f[0].style.zIndex = 1 - Math.abs(Math.round(g))), n.slideShadows)) {
                         var C = l ? f.find(".swiper-slide-shadow-left") : f.find(".swiper-slide-shadow-top"),
                             S = l ? f.find(".swiper-slide-shadow-right") : f.find(".swiper-slide-shadow-bottom");
