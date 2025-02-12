@@ -2181,3 +2181,11 @@ by default, overlay is visible…
 .enroll-btn:hover{
   color:#ffffff!important;
 }
+
+
+
+@media(max-width:767px) {
+  .mobile-compatible-video {
+      width: 100%;
+  }
+}
