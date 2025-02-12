@@ -1962,7 +1962,7 @@ right connector from last child */
 /*color picker*/
 
 :root{
-  --backcol:linear-gradient(to right, #adadad, #b0adb5, #e3dfde, #cfbcb6, #cfbab2); 
+  /* --backcol:linear-gradient(to right, #adadad, #b0adb5, #e3dfde, #cfbcb6, #cfbab2);  */
 }
 
 
