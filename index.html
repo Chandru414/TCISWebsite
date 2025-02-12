@@ -33,18 +33,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <style>
-    :root{
-  /* --backcol:linear-gradient(to right, #adadad, #b0adb5, #e3dfde, #cfbcb6, #cfbab2);  */
-  --backcol:#ffffff; 
-}
-
-
-.section-bg-custom-color {
-  /* background-image: var(--bg-color-combo); */
-  /* background-image: linear-gradient(to right, #7c8993, #8c8a8f, #a08d89, #ae8f84, #b08f83); */
-  /* background-image: linear-gradient(to right, #adadad, #b0adb5, #e3dfde, #cfbcb6, #cfbab2); */
-  background-image:var(--backcol)!important;
-}
+  
 
 #myBtn {
   display: block;
@@ -74,9 +63,9 @@
             <div class="color-picker section-bg-custom-color">
                 <!-- <div class="picktxt">PICK<br>A<br>COLOR</div> -->
                     <div class="picker">
-                      <input type="color" id="favcolor" class="inputcolor" style="padding: 0;" value="#ffffff">
+                      <input type="color" id="favcolor" class="inputcolor" style="padding: 0;" value="#eee7e7">
                     </div>
-                    <div class="color-code" id="c-code">#ffffff</div>
+                    <div class="color-code" id="c-code">#eee7e7</div>
                 </div>
         </div>
         <!--/color picker-->
@@ -383,11 +372,11 @@
                                                             <a class="main-menu-headers menu-headers" href="Infrastructure.html" target="_blank">Infrastructure</a>
                                                             <div class="d-flex flex-column menu-sub-item">
                                                                 <a href="Infrastructure.html#learning" class="menu-item">
-                                                                    <li href="Infrastructure.html#learning" class="menu-item-name">Learning Space</li>
+                                                                    <li href="Infrastructure.html#learning" class="menu-item-name">Academic Infra</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <a href="Infrastructure.html#research" class="menu-item">
-                                                                    <li href="Infrastructure.html#research" class="menu-item-name">Research & Development Space</li>
+                                                                    <li href="Infrastructure.html#research" class="menu-item-name">Research & Exploration center</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <a href="Infrastructure.html#sports" class="menu-item">
@@ -1090,7 +1079,7 @@
                 <div class="row row-cols-1 justify-content-center mb-10 md-mb-5 xs-mb-10">
                     <!-- start content carousal item -->
                     <div class="col position-relative" data-anime='{ "opacity": [0,1], "duration": 800, "delay": 50, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <div class="swiper slider-four-slide magic-cursor swiper-number-navigation-style" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "autoplay": { "delay": 4000, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-four-slide-next", "prevEl": ".slider-four-slide-prev" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1400": { "slidesPerView": 3 }, "1200": { "slidesPerView": 3 }, "992": { "slidesPerView": 3 }, "576": { "slidesPerView": 2 } }, "effect": "slide" }' data-swiper-number-navigation="true" data-swiper-show-progress="true">
+                        <div class="swiper slider-four-slide swiper-number-navigation-style" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "autoplay": { "delay": 4000, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-four-slide-next", "prevEl": ".slider-four-slide-prev" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1400": { "slidesPerView": 3 }, "1200": { "slidesPerView": 3 }, "992": { "slidesPerView": 3 }, "576": { "slidesPerView": 2 } }, "effect": "slide" }' data-swiper-number-navigation="true" data-swiper-show-progress="true">
                             <div class="swiper-wrapper pb-5 md-pb-6">
                                 
                                  <!-- start content carousal item -->
@@ -1282,7 +1271,7 @@
                         </div>
                     </div>
                     <div class="col-xl-8 col-lg-9">
-                        <div class="swiper position-relative magic-cursor" data-slider-options='{ "autoHeight": true, "loop": true, "allowTouchMove": true, "autoplay": { "delay": 3000, "disableOnInteraction": false }, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }, "effect": "slide" }'>
+                        <div class="swiper position-relative" data-slider-options='{ "autoHeight": true, "loop": true, "allowTouchMove": true, "autoplay": { "delay": 3000, "disableOnInteraction": false }, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }, "effect": "slide" }'>
                             <div class="swiper-wrapper">
                                 <!-- start text slider item -->
                                 <div class="swiper-slide review-style-11">
@@ -1437,20 +1426,25 @@
                 <div class="row row-cols-1 justify-content-center mb-10 md-mb-5 xs-mb-10">
                     <!-- start content carousal item -->
                     <div class="col position-relative" data-anime='{ "opacity": [0,1], "duration": 800, "delay": 50, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <div class="swiper slider-four-slide magic-cursor swiper-number-navigation-style" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "autoplay": { "delay": 4000, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-four-slide-next", "prevEl": ".slider-four-slide-prev" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1400": { "slidesPerView": 3 }, "1200": { "slidesPerView": 3 }, "992": { "slidesPerView": 3 }, "576": { "slidesPerView": 2 } }, "effect": "slide" }' data-swiper-number-navigation="true" data-swiper-show-progress="true">
+                        <div class="swiper slider-four-slide  swiper-number-navigation-style" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "autoplay": { "delay": 4000, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-four-slide-next", "prevEl": ".slider-four-slide-prev" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1400": { "slidesPerView": 3 }, "1200": { "slidesPerView": 3 }, "992": { "slidesPerView": 3 }, "576": { "slidesPerView": 2 } }, "effect": "slide" }' data-swiper-number-navigation="true" data-swiper-show-progress="true">
                             <div class="swiper-wrapper pb-5 md-pb-6">
                                 <!-- start content carousal item -->
                                 <div class="swiper-slide">
                                     <div class="overflow-hidden border-radius-6px box-shadow-large">
                                         <div class="image">
-                                            <a href="testimonials.html">
-                                                <img class="w-100" src="images/TCIS/home/testimonial1.jpg" alt="">
-                                            </a>
+                                            <video width="350" height="285" id="myvideo1" poster="images/TCIS/home/testimonial1.jpg" >
+                                                <source src="images/TCIS/home/4.mp4" type="video/mp4">
+                                                <source src="images/TCIS/home/4.mp4" type="video/ogg">
+                                                <source src="images/TCIS/home/4.mp4" type="video/webm">
+                                                <object data="images/TCIS/home/4.mp4" width="470" height="255">
+                                                <embed src="images/TCIS/home/4.mp4" width="470" height="255">
+                                                </object>
+                                            </video>
                                         </div> 
                                         <div class="bg-white p-10px position-relative" style="background-color: #1f2257!important;">
                                             <!-- <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">10 days</div> -->
                                             <!-- <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1299<span class="ms-5px position-relative text-red fs-19 fw-500">$1500<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div> -->
-                                            <a href="" class="mt-05px fs-18 text-white fw-500 lh-26 d-block text-center">Padma Bushan Pankaj Advani <br>World Snooker Champion</a>
+                                            <a href="" class="mt-05px fs-14 text-white fw-500 lh-26 d-block text-center">Padma Bushan Pankaj Advani <br>World Snooker Champion</a>
                                             <!-- <div class="d-flex align-items-center pt-15px mt-20px border-top border-color-extra-medium-gray">
                                                 <span class="fw-500 fs-14 d-inline-block text-uppercase">18 Reviews</span>
                                                 <div class="review-star-icon ms-auto">
@@ -1466,13 +1460,21 @@
                                     <div class="overflow-hidden border-radius-6px box-shadow-large">
                                         <div class="image">
                                             <a href="testimonials.html">
-                                                <img class="w-100" src="images/TCIS/home/testimonial2.jpg" alt="">
+                                                <!-- <img class="w-100" src="images/TCIS/home/testimonial2.jpg" alt=""> -->
+                                                <video width="350" height="285" id="myvideo2" poster="images/TCIS/home/testimonial2.jpg" >
+                                                    <source src="images/TCIS/home/5.mp4" type="video/mp4">
+                                                    <source src="images/TCIS/home/5.mp4" type="video/ogg">
+                                                    <source src="images/TCIS/home/5.mp4" type="video/webm">
+                                                    <object data="images/TCIS/home/5.mp4" width="470" height="255">
+                                                    <embed src="images/TCIS/home/5.mp4" width="470" height="255">
+                                                    </object>
+                                                </video>
                                             </a>
                                         </div> 
                                         <div class="bg-white p-10px position-relative"  style="background-color: #1f2257!important;">
                                             <!-- <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">08 days</div> -->
                                             <!-- <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1099<span class="ms-5px position-relative text-red fs-19 fw-500">$1200<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div> -->
-                                            <a href="" class="mt-05px fs-18 text-white fw-500 lh-26 d-block  text-center">Parent 1</a>
+                                            <a href="" class="mt-05px fs-14 text-white fw-500 lh-26 d-block  text-center">Parent 1</a>
                                             <!-- <div class="d-flex align-items-center pt-15px mt-20px border-top border-color-extra-medium-gray">
                                                 <span class="fw-500 fs-14 d-inline-block text-uppercase">12 Reviews</span>
                                                 <div class="review-star-icon ms-auto">
@@ -1487,15 +1489,22 @@
                                 <div class="swiper-slide">
                                     <div class="overflow-hidden border-radius-6px box-shadow-large">
                                         <div class="image">
-                                            <a href="testimonials.html">
-                                                <img class="w-100" src="images/TCIS/home/testimonial3.jpg" alt="">
-                                            </a>
+                                            <video width="350" height="285" id="myvideo3" poster="images/TCIS/home/testimonial3.jpg" >
+                                                <source src="images/TCIS/home/5.mp4" type="video/mp4">
+                                                <source src="images/TCIS/home/5.mp4" type="video/ogg">
+                                                <source src="images/TCIS/home/5.mp4" type="video/webm">
+                                                <object data="images/TCIS/home/5.mp4" width="470" height="255">
+                                                <embed src="images/TCIS/home/5.mp4" width="470" height="255">
+                                                </object>
+                                            </video>
                                         </div> 
                                         <div class="bg-white p-10px position-relative"  style="background-color: #1f2257!important;">
                                             <!-- <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">05 days</div> -->
                                             <!-- <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1349<span class="ms-5px position-relative text-red fs-19 fw-500">$1700<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div> -->
-                                            <a href="" class="mt-05px fs-18 text-white fw-500 lh-26 d-block  text-center">Dr. Saravan, CEO EduBrisk
-                                                Ex. DRDO Scientist & IITian</a>
+                                            <a href="" class="mt-05px fs-14 text-white fw-500 lh-26 d-block  text-center">
+                                                Mr. Dileep VT<br>
+Parent of TCIS Whitefield
+                                            </a>
                                             <!-- <div class="d-flex align-items-center pt-15px mt-20px border-top border-color-extra-medium-gray">
                                                 <span class="fw-500 fs-14 d-inline-block text-uppercase">10 Reviews</span>
                                                 <div class="review-star-icon ms-auto">
@@ -1510,15 +1519,20 @@
                                 <div class="swiper-slide">
                                     <div class="overflow-hidden border-radius-6px box-shadow-large">
                                         <div class="image">
-                                            <a href="testimonials.html">
-                                                <img class="w-100" src="images/TCIS/home/testimonial5.jpeg" alt="">
-                                            </a>
+                                            <video width="350" height="285" id="myvideo4" poster="images/TCIS/home/testimonial5.jpeg" >
+                                                <source src="images/TCIS/home/1.mp4" type="video/mp4">
+                                                <source src="images/TCIS/home/1.mp4" type="video/ogg">
+                                                <source src="images/TCIS/home/1.mp4" type="video/webm">
+                                                <object data="images/TCIS/home/1.mp4" width="470" height="255">
+                                                <embed src="images/TCIS/home/1.mp4" width="470" height="255">
+                                                </object>
+                                            </video>
                                         </div> 
                                         <div class="bg-white p-10px position-relative"  style="background-color: #1f2257!important;">
                                             <!-- <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">05 days</div> -->
                                             <!-- <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1349<span class="ms-5px position-relative text-red fs-19 fw-500">$1700<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div> -->
-                                            <a href="" class="mt-05px fs-18 text-white fw-500 lh-26 d-block  text-center">Cmde. Prajwal Aravind, CEO EduBrisk
-                                                Ex. DRDO Scientist & IITian</a>
+                                            <a href="" class="mt-05px fs-14 text-white fw-500 lh-26 d-block  text-center">Mr. Sergey Ustimenkov<br>
+                                                Parent of TCIS Whitefield</a>
                                             <!-- <div class="d-flex align-items-center pt-15px mt-20px border-top border-color-extra-medium-gray">
                                                 <span class="fw-500 fs-14 d-inline-block text-uppercase">10 Reviews</span>
                                                 <div class="review-star-icon ms-auto">
@@ -1533,14 +1547,19 @@
                                 <div class="swiper-slide">
                                     <div class="overflow-hidden border-radius-6px box-shadow-large">
                                         <div class="image">
-                                            <a href="testimonials.html">
-                                                <img class="w-100" src="images/TCIS/home/testimonial6.jpeg" alt="">
-                                            </a>
+                                            <video width="350" height="285" id="myvideo5" poster="images/TCIS/home/testimonial6.jpeg" >
+                                                <source src="images/TCIS/home/3.mp4" type="video/mp4">
+                                                <source src="images/TCIS/home/3.mp4" type="video/ogg">
+                                                <source src="images/TCIS/home/3.mp4" type="video/webm">
+                                                <object data="images/TCIS/home/3.mp4" width="470" height="255">
+                                                <embed src="images/TCIS/home/3.mp4" width="470" height="255">
+                                                </object>
+                                            </video>
                                         </div> 
                                         <div class="bg-white p-10px position-relative"  style="background-color: #1f2257!important;">
                                             <!-- <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">05 days</div> -->
                                             <!-- <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1349<span class="ms-5px position-relative text-red fs-19 fw-500">$1700<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div> -->
-                                            <a href="" class="mt-05px fs-18 text-white fw-500 lh-26 d-block  text-center">Cmde. Saiju Aravind, CEO EduBrisk<br>
+                                            <a href="" class="mt-05px fs-14 text-white fw-500 lh-26 d-block  text-center">Cmde. Saiju Aravind, CEO EduBrisk<br>
                                                 Ex. DRDO Scientist & IITian</a>
                                             <!-- <div class="d-flex align-items-center pt-15px mt-20px border-top border-color-extra-medium-gray">
                                                 <span class="fw-500 fs-14 d-inline-block text-uppercase">10 Reviews</span>
@@ -1552,30 +1571,33 @@
                                     </div>
                                 </div>
                                 <!-- end content carousal item -->
-                                
-                                 
-                                <!-- start content carousal item -->
+                                   <!-- start content carousal item -->
                                 <div class="swiper-slide">
                                     <div class="overflow-hidden border-radius-6px box-shadow-large">
                                         <div class="image">
-                                            <a href="testimonials.html">
-                                                <img class="w-100" src="images/TCIS/home/testimonial4.jpg" alt="">
-                                            </a>
+                                            <video width="350" height="285" id="myvideo6" poster="images/TCIS/home/testimonial4.jpg" >
+                                                <source src="images/TCIS/home/2.mp4" type="video/mp4">
+                                                <source src="images/TCIS/home/2.mp4" type="video/ogg">
+                                                <source src="images/TCIS/home/2.mp4" type="video/webm">
+                                                <object data="images/TCIS/home/2.mp4" width="470" height="255">
+                                                <embed src="images/TCIS/home/2.mp4" width="470" height="255">
+                                                </object>
+                                            </video>
                                         </div> 
                                         <div class="bg-white p-10px position-relative"  style="background-color: #1f2257!important;">
-                                            <!-- <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">10 days</div>
-                                            <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1699<span class="ms-5px position-relative text-red fs-19 fw-500">$1800<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div> -->
-                                            <a href="" class="mt-05px fs-18 text-white fw-500 lh-26 d-block  text-center">Charu Sharma - ACE Commentator & Director, Pro Kabaddi League</a>
+                                            <!-- <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">05 days</div> -->
+                                            <!-- <div class="fs-24 fw-700 text-dark-gray"><span class="text-uppercase d-block fs-14 lh-18 fw-500 text-medium-gray">Just</span>$1349<span class="ms-5px position-relative text-red fs-19 fw-500">$1700<span class="w-100 h-1px position-absolute left-0px top-50 bg-red"></span></span></div> -->
+                                            <a href="" class="mt-05px fs-14 text-white fw-500 lh-26 d-block  text-center">Charu Sharma - ACE Commentator & Director,<br> Pro Kabaddi League</a>
                                             <!-- <div class="d-flex align-items-center pt-15px mt-20px border-top border-color-extra-medium-gray">
-                                                <span class="fw-500 fs-14 d-inline-block text-uppercase">16 Reviews</span>
+                                                <span class="fw-500 fs-14 d-inline-block text-uppercase">10 Reviews</span>
                                                 <div class="review-star-icon ms-auto">
                                                     <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                                                </div> 
+                                                </div>
                                             </div> -->
                                         </div>
                                     </div>
                                 </div>
-                                <!-- end content carousal item --> 
+                                <!-- end content carousal item -->
                             </div>
                             <!-- start slider pagination -->
                             <div class="swiper-navigation-wrapper d-flex align-items-center justify-content-center">
@@ -1590,6 +1612,25 @@
             </div>
         </section>
         <!-- end testimonials section-->
+        <!-- <section class="half-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 position-relative" data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                        <img src="images/TCIS/home/testimonial4.jpg" alt="">
+                        <a href="https://www.youtube.com/watch?v=fregObNcHC8&list=RDfregObNcHC8&start_radio=1" class="text-center bg-base-color rounded-circle video-icon-box video-icon-large popup-vimeo slide-up-animation absolute-middle-center">
+                            <span>
+                                <span class="video-icon bg-base-color">
+                                    <i class="fa-solid fa-play text-white"></i>
+                                    <span class="video-icon-sonar">
+                                        <span class="video-icon-sonar-bfr bg-base-color"></span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
         
         <!-- end section -->
 
@@ -2117,6 +2158,51 @@ inputcolor.addEventListener("input",(e) => {
     document.getElementById("c-code").innerHTML = e.target.value;
     root.style.setProperty("--backcol",e.target.value);
 });
+        </script>
+
+        <script>
+            $('#myvideo1').hover(function toggleControls() {
+    if (this.hasAttribute("controls")) {
+        this.removeAttribute("controls")
+    } else {
+        this.setAttribute("controls", "controls")
+    }
+})
+$('#myvideo2').hover(function toggleControls() {
+    if (this.hasAttribute("controls")) {
+        this.removeAttribute("controls")
+    } else {
+        this.setAttribute("controls", "controls")
+    }
+})
+$('#myvideo3').hover(function toggleControls() {
+    if (this.hasAttribute("controls")) {
+        this.removeAttribute("controls")
+    } else {
+        this.setAttribute("controls", "controls")
+    }
+})
+$('#myvideo4').hover(function toggleControls() {
+    if (this.hasAttribute("controls")) {
+        this.removeAttribute("controls")
+    } else {
+        this.setAttribute("controls", "controls")
+    }
+})
+$('#myvideo5').hover(function toggleControls() {
+    if (this.hasAttribute("controls")) {
+        this.removeAttribute("controls")
+    } else {
+        this.setAttribute("controls", "controls")
+    }
+})
+$('#myvideo6').hover(function toggleControls() {
+    if (this.hasAttribute("controls")) {
+        this.removeAttribute("controls")
+    } else {
+        this.setAttribute("controls", "controls")
+    }
+})
         </script>
 
         <script type="text/javascript" src="js/main.js"></script>
