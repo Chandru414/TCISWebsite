@@ -9,9 +9,11 @@
 /* variable */
 :root {
   --base-color: #90062e;
-  --light-gray: #E7E4DF;
+  /* --light-gray: #E7E4DF; */
+  --light-gray: #FFFFFF;
   --red: #d03c3c;
-  --very-light-gray: #F2EFEB;
+  /* --very-light-gray: #F2EFEB; */
+  --very-light-gray: #FFFFFF;
   --alt-font: 'Be Vietnam Pro', serif;
   --primary-font: 'Be Vietnam Pro', serif;
 }
@@ -2174,7 +2176,7 @@ by default, overlay is visible…
 
 
 .enroll-btn{
-  color:#d9cf53;
+  color:var(--base-color);
 }
 .enroll-btn:hover{
   color:#ffffff!important;
