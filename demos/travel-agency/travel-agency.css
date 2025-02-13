@@ -2406,3 +2406,13 @@ by default, overlay is visible…
     display: block;
   }
 }
+
+
+.hide-in-mobile-view{
+  display: block;
+}
+@media(max-width:767px){
+  .hide-in-mobile-view{
+    display: none;
+  }
+}
