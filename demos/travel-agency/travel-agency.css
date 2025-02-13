@@ -2182,10 +2182,179 @@ by default, overlay is visible…
   color:#ffffff!important;
 }
 
+.mobile-compatible-video {
+  max-width: 100%;
+  height: auto;
+}
 
+.mobile-compatible-video-para{
+  margin-bottom: 15px;
+}
 
+/*Home page hero video section*/
 @media(max-width:767px) {
   .mobile-compatible-video {
       width: 100%;
+      /* margin-top: 7rem; */
+  }
+  .main-hero-text-parent{
+    font-size: 8px;
+    margin: 0 5px 5px 5px;
+    padding: 5px;
+  }
+  .mobile-compatible-video-header{
+    font-size: 1rem;
+    line-height: 1;
+  }
+  .underline .mobile-compatible-video-header::after {
+    margin-bottom: 0px;
+  }
+  .mobile-compatible-video-para{
+    font-size: 8px;
+    margin-bottom: 0px!important;
+  }
+  /* .main-hero-video{
+    margin-top: 2rem;
+  } */
+}
+
+/*Home page USP section*/
+
+.USPChildCentric{
+  background-image: url('../../images/TCIS/home/childCentricUSP.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media(max-width:767px){
+  .image-container{
+    margin-right: 22px;
+  }
+  
+  .custom-height-item1{
+    display: none;
+  }
+  .custom-height-item2{
+    display: none;
+  }
+  .custom-height-item3{
+    display: none;
+  }
+  .custom-height-item4{
+    display: none;
+  }
+  .custom-height-item5{
+    display: none;
+  }
+  .custom-height-item6{
+    display: none;
+  }
+  .masonry{
+    gap: 12px;
+  }
+  .homeUspHeaders{
+    margin: 0 10px 0 0;
+  }
+}
+
+@media(max-width:767px){
+  .mobile-compatible-campusTour{
+    margin-left: 0px;
+  }
+}
+
+/*academic year*/
+.show-in-mobile-view{
+  display: none;
+}
+.show-in-desktop-view{
+  display: block;
+}
+@media(max-width:767px){
+  .show-in-mobile-view{
+    display: block;
+  }
+  .show-in-desktop-view{
+    display: none;
+  }
+}
+
+
+/*menu*/
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #000000;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+.menu-parent{
+  padding: 0 2.813rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative ;
+  top: 0;
+    right: 0;
+    left: 0;
+    background-color: transparent;
+}
+
+.mobile-menu-view{
+  display: none;
+}
+.desktop-menu-view{
+  display: block;
+}
+@media(max-width:767px){
+  .mobile-menu-view{
+    display: block;
+  }
+  .desktop-menu-view{
+    display: none;
   }
 }
