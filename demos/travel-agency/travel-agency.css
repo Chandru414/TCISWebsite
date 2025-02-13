@@ -2358,3 +2358,51 @@ by default, overlay is visible…
     display: none;
   }
 }
+
+
+
+.desktop-view-startegic-heading{
+  margin-left:5.5rem;
+  white-space: no-wrap;
+}
+@media(max-width:767px){
+  .mobile-view-USP-childCentric{
+    margin: 0;
+    width: 100%;
+  }
+  .mobile-view-USP-future{
+    margin: 0;
+    width: 100%;
+  }
+  .desktop-view-startegic-heading{
+    margin: 0;
+    width: 100%;
+  }
+  .usp-image-aca-audit{
+    margin: 0;
+    width: 100%;
+  }
+  .usp-image-multi-dimen{
+    margin: 0;
+    width: 100%;
+  }
+  .usp-image-academic-co-scho{
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.desktop-view-co-video{
+  display: block;
+}
+.mobile-view-co-video{
+  display: none;
+}
+@media(max-width:767px){
+  .desktop-view-co-video{
+    display: none;
+  }
+  .mobile-view-co-video{
+    display: block;
+  }
+}
