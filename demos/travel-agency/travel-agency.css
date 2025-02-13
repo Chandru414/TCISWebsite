@@ -2220,11 +2220,6 @@ by default, overlay is visible…
 
 /*Home page USP section*/
 
-.USPChildCentric{
-  background-image: url('../../images/TCIS/home/childCentricUSP.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 @media(max-width:767px){
   .image-container{
