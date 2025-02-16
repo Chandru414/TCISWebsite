@@ -978,13 +978,13 @@ a .uil {
                             <a href="mailto:info@domain.com" class="btn btn-link-gradient expand btn-extra-large text-dark-gray text-dark-gray-hover ls-0px">tcis@domain.com<span class="bg-dark-gray"></span></a>
                         </div> -->
                     </div>
-                    <div class="col-lg-12 d-none" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 100, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <div class="col-lg-12" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 100, "staggervalue": 150, "easing": "easeOutQuad" }'>
                         <div class="row row-cols-1 row-cols-md-2 border-radius-6px overflow-hidden box-shadow-double-large m-0">
                             <div class="col cover-background sm-h-550px xs-h-450px" style="background-image: url('images/TCIS/career/a.jpeg')"></div>
                             <div class="col contact-form-style-03 bg-white p-70px lg-p-35px">
                                 <h3 class="fw-600 alt-font text-dark-gray ls-minus-1px mb-25px">Drop your CV</h3>
-                                <form action="email-templates/contact-form.php" method="post">
-                                    <div class="position-relative form-group mb-10px">
+                                <form action="email-templates/contact-form.php" method="post" id="myfrom">
+                                    <!-- <div class="position-relative form-group mb-10px">
                                         <span class="form-icon"><i class="bi bi-emoji-smile"></i></span>
                                         <input class="ps-0 border-radius-0px border-color-extra-medium-gray form-control required" type="text" name="name" placeholder="Name" />
                                     </div>
@@ -1009,7 +1009,6 @@ a .uil {
                                                 <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
                                             </div>
                                             <a href="#">Faculty <i class="uil uil-arrow-right"></i></a>
-                                            <!-- <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a> -->
                                         </div>
                                     </div>
                                     <div class="position-relative form-group mb-10px">
@@ -1022,9 +1021,83 @@ a .uil {
                                         <input type="hidden" name="redirect" value="">
                                         <button class="btn btn-medium btn-dark-gray btn-box-shadow btn-round-edge mt-30px submit" type="submit" aria-label="submit">Submit</button>
                                         <div class="form-results mt-20px d-none"></div>
-                                        <!-- <p class="fs-18 lh-22 mt-20px mb-0">We are committed to protecting your privacy. We will never collect information about you.</p>
-                                        <p class="fs-18 lh-22 mt-20px mb-0">We are committed to protecting your privacy. We will never collect information about you.</p>
-                                        <p class="fs-18 lh-22 mt-20px mb-0">We are committed to protecting your privacy. We will never collect information about you.</p> -->
+                                     </div> -->
+
+                                     <div class="form-group">
+                                        <label>Select Academic Year <span style="color:#ff0000;">*</span></label>
+                                        <select class="form-control acdyr" id="acdyr" name="acdyr">
+                                            <option value="0">-Select Academic Years--</option>
+                                        </select>
+            
+                                    </div>
+
+                                    <div class="input-field col-md-12">
+                                        <div class="form-group">
+                                            <label>Select Branch <span style="color:#ff0000;">*</span></label>
+                                            <select class="form-control" id="ddlBranch" name="ddlBranch" required="">
+                                                <option value="0">-Select Branch-</option>
+                                            </select>
+                
+                                        </div>
+                                    </div>
+                
+                                    <div class="input-field col-md-12">
+                                        <div class="form-group">
+                                            <label>
+                                                Choose Grade <span style="color:#ff0000;">*</span>
+                                            </label>
+                                            <select class="form-control" id="classlevel" name="classlevel" required="">
+                                                <option value="0">-Select Class-</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-field col-md-12">
+                                        <div class="form-group">
+                                            <label>Parent Name <span style="color:#ff0000;">*</span></label>
+                                            <input type="text" class="form-control validate" id="f_name" placeholder="Enter Parent Name">
+                                        </div>
+                                    </div>
+                
+                                    <div class="input-field col-md-12">
+                                        <div class="form-group">
+                                            <label>Child Name <span style="color:#ff0000;">*</span></label>
+                                            <input type="text" class="form-control validate" id="s_name" placeholder="Enter Name of the Child" required="">
+                                        </div>
+                                    </div>
+
+                                    <div class="input-field col-md-12">
+                                        <div class="form-group">
+                                            <label>Mobile Number <span style="color:#ff0000;">*</span></label>
+                                            <input type="text" class="form-control validate" id="f_number" name="mobile" pattern="[0-9]{10}" maxlength="10" placeholder="Enter Parent Mobile Number" required="">
+                
+                                        </div>
+                                    </div>
+                
+                                    <div class="input-field col-md-12">
+                                        <div class="form-group">
+                                            <label>
+                                                Email ID <span style="color:#ff0000;">*</span>
+                                            </label>
+                                            <input type="text" class="form-control validate" id="email" placeholder="Enter Parent Email ID" required="">
+                
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="input-field col-md-12">
+                                            <div class="form-group">
+                                                <p><button id="submitform" type="button" class="waves-effect waves-light btn-large" style="width:100%; color:#fff; font-size:14px;">Submit</button></p>
+                                            </div>
+                                        </div>
+                    
+                    
+                                    </div>
+                    
+                                    <div class="col-md-12">
+                                        <div class="input-field col-md-12">
+                                            <p><span style="color:#ff0000;">*</span> Mandatory fields</p>
+                                        </div>
                                     </div>
                                     
                                 </form>
@@ -1034,7 +1107,7 @@ a .uil {
 
 
                     <!--enquire code from mcb-->
-                    <div class="well ad_home_form col-md-3">
+                    <div class="well ad_home_form col-md-3 d-none">
                         <img id="images" style="display:none;" />
                         <h5 id="organisationname" style="display:none;"> </h5>
                     
