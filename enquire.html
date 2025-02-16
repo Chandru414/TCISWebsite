@@ -15,12 +15,6 @@
         <!-- google fonts preconnect -->
         <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- style sheets and font icons  -->
-        <link rel="stylesheet" href="css/vendors.min.css"/>
-        <link rel="stylesheet" href="css/icon.min.css"/>
-        <link rel="stylesheet" href="css/style.css"/>
-        <link rel="stylesheet" href="css/responsive.css"/>
-        <link rel="stylesheet" href="demos/travel-agency/travel-agency.css" />
 
         <!--enquire code from mcb-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -33,6 +27,16 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
         <!--/enquire code from mcb-->
+
+        
+        <!-- style sheets and font icons  -->
+        <link rel="stylesheet" href="css/vendors.min.css"/>
+        <link rel="stylesheet" href="css/icon.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/responsive.css"/>
+        <link rel="stylesheet" href="demos/travel-agency/travel-agency.css" />
+
+        
 
 
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
@@ -252,7 +256,7 @@
   border-bottom: 8px solid #fff;
 }
 
-a {
+.anchor-class {
   position: relative;
   color: #fff;
   transition: all 200ms linear;
@@ -965,9 +969,9 @@ a .uil {
                         </div>
                     </div> -->
                     <div class="col-xl-12 col-lg-12 text-center text-lg-start">
-                        <h1 class="alt-font fw-600 text-dark-gray ls-minus-2px" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay":0, "staggervalue": 100, "easing": "easeOutQuad" }'>Think you’re a Visionary Teacher?</h1>
-                        <p class="w-85 md-w-100" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay":100, "staggervalue": 100, "easing": "easeOutQuad" }' style="font-weight: bold;font-size: 24px;">It's time to discover a school that’s just as forward-thinking!</p>
-                        <p class="w-85 md-w-100" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay":100, "staggervalue": 100, "easing": "easeOutQuad" }'>TCIS is a vibrant K-12 school group having over 40 years of pedigree, affiliated with CBSE & IB, with an innovative mindset and contemporary pedagogy. It is celebrated for its academic brilliance and co-scholastic excellence. We are home for passionate educators and proactive support  staffs with the right skills, knowledge and attitude.</p>
+                        <h1 class="alt-font fw-600 text-dark-gray ls-minus-2px" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay":0, "staggervalue": 100, "easing": "easeOutQuad" }'>Enrol Now for AY 2025-26</h1>
+                        <p class="w-85 md-w-100" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay":100, "staggervalue": 100, "easing": "easeOutQuad" }' style="font-weight: bold;font-size: 24px;">Equipping students with 21st-century skills in a safe, diverse environment. It’s our commitment to inspire lifelong learning and global citizenship.</p>
+                        <p class="w-85 md-w-100" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay":100, "staggervalue": 100, "easing": "easeOutQuad" }'>At TCIS, we prioritize practical learning that encourages children to explore and interact with the world consciously.</p>
                         <!-- <div class="d-inline-block mt-10px" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'> 
                             <a href="demo-travel-agency-destinations.html" class="btn btn-large btn-dark-gray btn-round-edge btn-hover-animation btn-box-shadow me-25px xs-me-15px">
                                 <span> 
@@ -1087,7 +1091,10 @@ a .uil {
                                     <div class="col-md-12">
                                         <div class="input-field col-md-12">
                                             <div class="form-group">
-                                                <p><button id="submitform" type="button" class="waves-effect waves-light btn-large" style="width:100%; color:#fff; font-size:14px;">Submit</button></p>
+                                                <p>
+                                                    <button id="submitform" type="button" class="btn btn-medium btn-dark-gray btn-box-shadow btn-round-edge mt-30px submit"
+                                                    >Sumbit</button>
+                                                </p>
                                             </div>
                                         </div>
                     
@@ -1239,7 +1246,7 @@ a .uil {
         <!-- end section -->
 
         <!-- start section -->
-        <section class="half-section"> 
+        <section class="half-section d-none"> 
             <div class="container">
                 <div class="row justify-content-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
                     <h1 class="alt-font fw-600 text-dark-gray ls-minus-2px text-center" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay":0, "staggervalue": 175, "easing": "easeOutQuad" }'>Join Us</h1>
@@ -1323,7 +1330,7 @@ a .uil {
                                 <!-- <input class="input-large bg-white border-color-transparent w-100 border-radius-100px box-shadow-extra-large form-control required" type="email" name="email" placeholder="" /> -->
                                 <!-- <input type="hidden" name="redirect" value=""> -->
                                 <!-- <button  class="btn btn-large text-white ls-0px left-icon submit fw-600" style="padding: 0rem 35%;" aria-label="submit"><span>Enroll Now</span></button> -->
-                                 <a class="enroll-btn" href="https://admissions.tcis.in/?utm_source=organic&utm_medium=homepage"  style="    
+                                 <a class="enroll-btn" href="https://admissions.tcis.in/?utm_source=organic&utm_medium=homepage"  style="
     font-weight: bold;">ENROLL NOW</a>
                                 <!-- <span> 
                                     <span class="btn-text">Know more</span> 
