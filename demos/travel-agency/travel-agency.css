@@ -2292,7 +2292,8 @@ by default, overlay is visible…
 
 .overlay-content {
   position: relative;
-  top: 25%;
+  /* top: 25%; */
+  top: 10%;
   width: 100%;
   text-align: left;
   margin-top: 30px;
@@ -2301,7 +2302,8 @@ by default, overlay is visible…
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 36px;
+  /* font-size: 36px; */
+  font-size: 24px;
   color: #000000;
   display: block;
   transition: 0.3s;
@@ -2410,4 +2412,45 @@ by default, overlay is visible…
   .hide-in-mobile-view{
     display: none;
   }
+}
+
+
+
+
+/*academics uma aswani */
+.academics-learners-parent{
+  position: absolute;
+    top: 144rem;
+    left: 18rem;
+    color: #000000;
+    background-color: #ffffffbf;
+    padding: 5px 18px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.academics-learners-para{
+  font-size: 18px;
+  letter-spacing: 0.04em;
+  line-height: 10px;
+  text-align: left;
+  margin-bottom: 05px;
+  color: #000000;
+}
+
+@media(max-width:767px){
+  .academics-learners-parent{
+    display: none;
+  }
+  .academics-learners-para{
+    display: none;
+  }
+}
+
+@media(max-width: 767px) {
+  .aca-container { display: flex; flex-flow: column; }
+  .one { order: 2; }
+  .two { order: 1; margin-bottom: 20px; }
 }
