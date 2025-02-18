@@ -1,392 +1,435 @@
 <!doctype html>
 <html class="no-js" lang="en">
-    <head>
-        <title>TCIS - Career</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="author" content="ThemeZaa">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta name="description" content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 48+ ready demos.">
-        <!-- favicon icon -->
-        <link rel="shortcut icon" href="images/TCIS/home/favicon.ico">
-        <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-        <!-- google fonts preconnect -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- style sheets and font icons  -->
-        <link rel="stylesheet" href="css/vendors.min.css"/>
-        <link rel="stylesheet" href="css/icon.min.css"/>
-        <link rel="stylesheet" href="css/style.css"/>
-        <link rel="stylesheet" href="css/responsive.css"/>
-        <link rel="stylesheet" href="demos/travel-agency/travel-agency.css" />
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    .sec-center {
-  position: relative;
-  max-width: 100%;
-  text-align: center;
-  z-index: 200;
-}
-[type="checkbox"]:checked,
-[type="checkbox"]:not(:checked){
-  position: absolute;
-  left: -9999px;
-  opacity: 0;
-  pointer-events: none;
-}
-.dark-light:checked + label,
-.dark-light:not(:checked) + label{
-  position: fixed;
-  top: 40px;
-  right: 40px;
-  z-index: 20000;
-  display: block;
-  border-radius: 50%;
-  width: 46px;
-  height: 46px;
-  cursor: pointer;
-  transition: all 200ms linear;
-  box-shadow: 0 0 25px rgba(255,235,167,.45);
-}
-.dark-light:checked + label{
-  transform: rotate(360deg);
-}
-.dark-light:checked + label:after,
-.dark-light:not(:checked) + label:after{
-  position: absolute;
-  content: '';
-  top: 1px;
-  left: 1px;
-  overflow: hidden;
-  z-index: 2;
-  display: block;
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  background-color: #102770;
-  background-image: url('https://assets.codepen.io/1462889/moon.svg');
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: all 200ms linear;
-  opacity: 0;
-}
-.dark-light:checked + label:after {
-  opacity: 1;
-}
-.dark-light:checked + label:before,
-.dark-light:not(:checked) + label:before{
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  z-index: 1;
-  display: block;
-  border-radius: 50%;
-  width: 46px;
-  height: 46px;
-  background-color: #48dbfb;
-  background-image: url('https://assets.codepen.io/1462889/sun.svg');
-  background-size: 25px 25px;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: all 200ms linear;
-}
-.dark-light:checked + label:before{
-  background-color: #000;
-}
-.light-back{
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background-color: #fff;
-  overflow: hidden;
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
-  background-position: center;
-  background-repeat: repeat;
-  background-size: 4%;
-  height: 100%;
-  width: 100%;
-  transition: all 200ms linear;
-  opacity: 0;
-}
-.dark-light:checked ~ .light-back{
-  opacity: 1;
-}
-.dropdown:checked + label,
-.dropdown:not(:checked) + label{
-  position: relative;
-  /* font-family: 'Roboto', sans-serif; */
-  /* font-weight: 500;
+
+<head>
+    <title>TCIS - Career</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="ThemeZaa">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="description"
+        content="Elevate your online presence with Crafto - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 48+ ready demos.">
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="images/TCIS/home/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    <!-- google fonts preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- style sheets and font icons  -->
+    <link rel="stylesheet" href="css/vendors.min.css" />
+    <link rel="stylesheet" href="css/icon.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="demos/travel-agency/travel-agency.css" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .sec-center {
+            position: relative;
+            max-width: 100%;
+            text-align: center;
+            z-index: 200;
+        }
+
+        [type="checkbox"]:checked,
+        [type="checkbox"]:not(:checked) {
+            position: absolute;
+            left: -9999px;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .dark-light:checked+label,
+        .dark-light:not(:checked)+label {
+            position: fixed;
+            top: 40px;
+            right: 40px;
+            z-index: 20000;
+            display: block;
+            border-radius: 50%;
+            width: 46px;
+            height: 46px;
+            cursor: pointer;
+            transition: all 200ms linear;
+            box-shadow: 0 0 25px rgba(255, 235, 167, .45);
+        }
+
+        .dark-light:checked+label {
+            transform: rotate(360deg);
+        }
+
+        .dark-light:checked+label:after,
+        .dark-light:not(:checked)+label:after {
+            position: absolute;
+            content: '';
+            top: 1px;
+            left: 1px;
+            overflow: hidden;
+            z-index: 2;
+            display: block;
+            border-radius: 50%;
+            width: 44px;
+            height: 44px;
+            background-color: #102770;
+            background-image: url('https://assets.codepen.io/1462889/moon.svg');
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: all 200ms linear;
+            opacity: 0;
+        }
+
+        .dark-light:checked+label:after {
+            opacity: 1;
+        }
+
+        .dark-light:checked+label:before,
+        .dark-light:not(:checked)+label:before {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: 1;
+            display: block;
+            border-radius: 50%;
+            width: 46px;
+            height: 46px;
+            background-color: #48dbfb;
+            background-image: url('https://assets.codepen.io/1462889/sun.svg');
+            background-size: 25px 25px;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: all 200ms linear;
+        }
+
+        .dark-light:checked+label:before {
+            background-color: #000;
+        }
+
+        .light-back {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background-color: #fff;
+            overflow: hidden;
+            background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+            background-position: center;
+            background-repeat: repeat;
+            background-size: 4%;
+            height: 100%;
+            width: 100%;
+            transition: all 200ms linear;
+            opacity: 0;
+        }
+
+        .dark-light:checked~.light-back {
+            opacity: 1;
+        }
+
+        .dropdown:checked+label,
+        .dropdown:not(:checked)+label {
+            position: relative;
+            /* font-family: 'Roboto', sans-serif; */
+            /* font-weight: 500;
   font-size: 15px; */
-  line-height: 2;
-  height: 50px;
-  transition: all 200ms linear;
-  width: 220px;
-  /* letter-spacing: 1px; */
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: start;
-  -ms-flex-pack: center;
-  text-align: center;
-  border: none;
-  background-color: #e4e4e4;
-  cursor: pointer;
-  color: #707580;
-  box-shadow: 0 12px 35px 0 rgba(255,235,167,.15);
+            line-height: 2;
+            height: 50px;
+            transition: all 200ms linear;
+            width: 220px;
+            /* letter-spacing: 1px; */
+            display: -webkit-inline-flex;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            -ms-justify-content: center;
+            justify-content: start;
+            -ms-flex-pack: center;
+            text-align: center;
+            border: none;
+            background-color: #e4e4e4;
+            cursor: pointer;
+            color: #707580;
+            box-shadow: 0 12px 35px 0 rgba(255, 235, 167, .15);
 
-  width: 100%;
-    border-bottom: 1px solid #e4e4e4;
-    background-color: transparent;
-    text-align: left;
-}
-.dark-light:checked ~ .sec-center .for-dropdown{
-  background-color: #102770;
-  color: #ffeba7;
-  box-shadow: 0 12px 35px 0 rgba(16,39,112,.25);
-}
-.dropdown:checked + label:before,
-.dropdown:not(:checked) + label:before{
-  position: fixed;
-  top: 0;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  cursor: auto;
-  pointer-events: none;
-}
-.dropdown:checked + label:before{
-  pointer-events: auto;
-}
-.dropdown:not(:checked) + label .uil {
-  font-size: 24px;
-  margin-left: 10px;
-  transition: transform 200ms linear;
-}
-.dropdown:checked + label .uil {
-  transform: rotate(180deg);
-  font-size: 24px;
-  margin-left: 10px;
-  transition: transform 200ms linear;
-}
-.section-dropdown {
-  position: absolute;
-  padding: 5px;
-  background-color: #111;
-  top: 70px;
-  left: 0;
-  width: 100%;
-  border-radius: 4px;
-  display: block;
-  box-shadow: 0 14px 35px 0 rgba(9,9,12,0.4);
-  z-index: 2;
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(20px);
-  transition: all 200ms linear;
-}
-.dark-light:checked ~ .sec-center .section-dropdown {
-  background-color: #fff;
-  box-shadow: 0 14px 35px 0 rgba(9,9,12,0.15);
-}
-.dropdown:checked ~ .section-dropdown{
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-.section-dropdown:before {
-  position: absolute;
-  top: -20px;
-  left: 0;
-  width: 100%;
-  height: 20px;
-  content: '';
-  display: block;
-  z-index: 1;
-}
-.section-dropdown:after {
-  position: absolute;
-  top: -7px;
-  left: 30px;
-  width: 0; 
-  height: 0; 
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent; 
-  border-bottom: 8px solid #111;
-  content: '';
-  display: block;
-  z-index: 2;
-  transition: all 200ms linear;
-}
-.dark-light:checked ~ .sec-center .section-dropdown:after {
-  border-bottom: 8px solid #fff;
-}
+            width: 100%;
+            border-bottom: 1px solid #e4e4e4;
+            background-color: transparent;
+            text-align: left;
+        }
 
-a {
-  position: relative;
-  color: #fff;
-  transition: all 200ms linear;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  border-radius: 2px;
-  padding: 5px 0;
-  padding-left: 20px;
-  padding-right: 15px;
-  margin: 2px 0;
-  text-align: left;
-  text-decoration: none;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  justify-content: space-between;
-    -ms-flex-pack: distribute;
-}
-.dark-light:checked ~ .sec-center .section-dropdown a {
-  color: #102770;
-}
-a:hover {
-  color: #102770;
-  background-color: #ffeba7;
-}
-.dark-light:checked ~ .sec-center .section-dropdown a:hover {
-  color: #ffeba7;
-  background-color: #102770;
-}
-a .uil {
-  font-size: 22px;
-}
-.dropdown-sub:checked + label,
-.dropdown-sub:not(:checked) + label{
-  position: relative;
-  color: #fff;
-  transition: all 200ms linear;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  border-radius: 2px;
-  padding: 5px 0;
-  padding-left: 20px;
-  padding-right: 15px;
-  text-align: left;
-  text-decoration: none;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  justify-content: space-between;
-    -ms-flex-pack: distribute;
-    cursor: pointer;
-}
-.dropdown-sub:checked + label .uil,
-.dropdown-sub:not(:checked) + label .uil{
-  font-size: 22px;
-}
-.dropdown-sub:not(:checked) + label .uil {
-  transition: transform 200ms linear;
-}
-.dropdown-sub:checked + label .uil {
-  transform: rotate(135deg);
-  transition: transform 200ms linear;
-}
-.dropdown-sub:checked + label:hover,
-.dropdown-sub:not(:checked) + label:hover{
-  color: #102770;
-  background-color: #ffeba7;
-}
-.dark-light:checked ~ .sec-center .section-dropdown .for-dropdown-sub{
-  color: #102770;
-}
-.dark-light:checked ~ .sec-center .section-dropdown .for-dropdown-sub:hover{
-  color: #ffeba7;
-  background-color: #102770;
-}
+        .dark-light:checked~.sec-center .for-dropdown {
+            background-color: #102770;
+            color: #ffeba7;
+            box-shadow: 0 12px 35px 0 rgba(16, 39, 112, .25);
+        }
 
-.section-dropdown-sub {
-  position: relative;
-  display: block;
-  width: 100%;
-  pointer-events: none;
-  opacity: 0;
-  max-height: 0;
-  padding-left: 10px;
-  padding-right: 3px;
-  overflow: hidden;
-  transition: all 200ms linear;
-}
-.dropdown-sub:checked ~ .section-dropdown-sub{
-  pointer-events: auto;
-  opacity: 1;
-  max-height: 999px;
-}
-.section-dropdown-sub a {
-  font-size: 14px;
-}
-.section-dropdown-sub a .uil {
-  font-size: 20px;
-}
-.logo {
-	position: fixed;
-	top: 50px;
-	left: 40px;
-	display: block;
-	z-index: 11000000;
-  background-color: transparent;
-  border-radius: 0;
-  padding: 0;
-	transition: all 250ms linear;
-}
-.logo:hover {
-  background-color: transparent;
-}
-.logo img {
-	height: 26px;
-	width: auto;
-	display: block;
-  transition: all 200ms linear;
-}
-.dark-light:checked ~ .logo img{
-  filter: brightness(10%);
-}
+        .dropdown:checked+label:before,
+        .dropdown:not(:checked)+label:before {
+            position: fixed;
+            top: 0;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            cursor: auto;
+            pointer-events: none;
+        }
 
-@media screen and (max-width: 991px) {
-.logo {
-	top: 30px;
-	left: 20px;
-}
-.dark-light:checked + label,
-.dark-light:not(:checked) + label{
-  top: 20px;
-  right: 20px;
-}
-}
-  </style>
-    </head>
-    <body data-mobile-nav-style="classic">  
-        <!-- start header -->
-        <header class="header-with-topbar desktop-menu-view">
-            <!-- <div class="header-top-bar top-bar-light bg-white md-border-bottom border-color-transparent-dark-very-light disable-fixed">
+        .dropdown:checked+label:before {
+            pointer-events: auto;
+        }
+
+        .dropdown:not(:checked)+label .uil {
+            font-size: 24px;
+            margin-left: 10px;
+            transition: transform 200ms linear;
+        }
+
+        .dropdown:checked+label .uil {
+            transform: rotate(180deg);
+            font-size: 24px;
+            margin-left: 10px;
+            transition: transform 200ms linear;
+        }
+
+        .section-dropdown {
+            position: absolute;
+            padding: 5px;
+            background-color: #111;
+            top: 70px;
+            left: 0;
+            width: 100%;
+            border-radius: 4px;
+            display: block;
+            box-shadow: 0 14px 35px 0 rgba(9, 9, 12, 0.4);
+            z-index: 2;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(20px);
+            transition: all 200ms linear;
+        }
+
+        .dark-light:checked~.sec-center .section-dropdown {
+            background-color: #fff;
+            box-shadow: 0 14px 35px 0 rgba(9, 9, 12, 0.15);
+        }
+
+        .dropdown:checked~.section-dropdown {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+
+        .section-dropdown:before {
+            position: absolute;
+            top: -20px;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            content: '';
+            display: block;
+            z-index: 1;
+        }
+
+        .section-dropdown:after {
+            position: absolute;
+            top: -7px;
+            left: 30px;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid #111;
+            content: '';
+            display: block;
+            z-index: 2;
+            transition: all 200ms linear;
+        }
+
+        .dark-light:checked~.sec-center .section-dropdown:after {
+            border-bottom: 8px solid #fff;
+        }
+
+        a {
+            position: relative;
+            color: #fff;
+            transition: all 200ms linear;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            border-radius: 2px;
+            padding: 5px 0;
+            padding-left: 20px;
+            padding-right: 15px;
+            margin: 2px 0;
+            text-align: left;
+            text-decoration: none;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+            justify-content: space-between;
+            -ms-flex-pack: distribute;
+        }
+
+        .dark-light:checked~.sec-center .section-dropdown a {
+            color: #102770;
+        }
+
+        a:hover {
+            color: #102770;
+            background-color: #ffeba7;
+        }
+
+        .dark-light:checked~.sec-center .section-dropdown a:hover {
+            color: #ffeba7;
+            background-color: #102770;
+        }
+
+        a .uil {
+            font-size: 22px;
+        }
+
+        .dropdown-sub:checked+label,
+        .dropdown-sub:not(:checked)+label {
+            position: relative;
+            color: #fff;
+            transition: all 200ms linear;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            border-radius: 2px;
+            padding: 5px 0;
+            padding-left: 20px;
+            padding-right: 15px;
+            text-align: left;
+            text-decoration: none;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+            justify-content: space-between;
+            -ms-flex-pack: distribute;
+            cursor: pointer;
+        }
+
+        .dropdown-sub:checked+label .uil,
+        .dropdown-sub:not(:checked)+label .uil {
+            font-size: 22px;
+        }
+
+        .dropdown-sub:not(:checked)+label .uil {
+            transition: transform 200ms linear;
+        }
+
+        .dropdown-sub:checked+label .uil {
+            transform: rotate(135deg);
+            transition: transform 200ms linear;
+        }
+
+        .dropdown-sub:checked+label:hover,
+        .dropdown-sub:not(:checked)+label:hover {
+            color: #102770;
+            background-color: #ffeba7;
+        }
+
+        .dark-light:checked~.sec-center .section-dropdown .for-dropdown-sub {
+            color: #102770;
+        }
+
+        .dark-light:checked~.sec-center .section-dropdown .for-dropdown-sub:hover {
+            color: #ffeba7;
+            background-color: #102770;
+        }
+
+        .section-dropdown-sub {
+            position: relative;
+            display: block;
+            width: 100%;
+            pointer-events: none;
+            opacity: 0;
+            max-height: 0;
+            padding-left: 10px;
+            padding-right: 3px;
+            overflow: hidden;
+            transition: all 200ms linear;
+        }
+
+        .dropdown-sub:checked~.section-dropdown-sub {
+            pointer-events: auto;
+            opacity: 1;
+            max-height: 999px;
+        }
+
+        .section-dropdown-sub a {
+            font-size: 14px;
+        }
+
+        .section-dropdown-sub a .uil {
+            font-size: 20px;
+        }
+
+        .logo {
+            position: fixed;
+            top: 50px;
+            left: 40px;
+            display: block;
+            z-index: 11000000;
+            background-color: transparent;
+            border-radius: 0;
+            padding: 0;
+            transition: all 250ms linear;
+        }
+
+        .logo:hover {
+            background-color: transparent;
+        }
+
+        .logo img {
+            height: 26px;
+            width: auto;
+            display: block;
+            transition: all 200ms linear;
+        }
+
+        .dark-light:checked~.logo img {
+            filter: brightness(10%);
+        }
+
+        @media screen and (max-width: 991px) {
+            .logo {
+                top: 30px;
+                left: 20px;
+            }
+
+            .dark-light:checked+label,
+            .dark-light:not(:checked)+label {
+                top: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body data-mobile-nav-style="classic">
+    <!-- start header -->
+    <header class="header-with-topbar desktop-menu-view">
+        <!-- <div class="header-top-bar top-bar-light bg-white md-border-bottom border-color-transparent-dark-very-light disable-fixed">
                 <div class="container-fluid">
                     <div class="row h-45px align-items-center m-0">
                         <div class="col-xl-6 col-lg-8 justify-content-center justify-content-lg-start">
@@ -399,33 +442,39 @@ a .uil {
                     </div>
                 </div>
             </div> -->
-            <!-- start navigation -->
-            <nav class="navbar navbar-expand-lg header-transparent bg-transparent  disable-fixed">
-                <div class="container-fluid">
-                    <div class="col-auto col-lg-2 me-auto">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="images/TCIS/TCISLogoLight.png" data-at2x="images/TCIS/TCISLogoLight.png" alt="" class="default-logo" style="    max-height: 75px;">
-                            <img src="images/TCIS/TCISLogoLight.png" data-at2x="images/TCIS/TCISLogoLight.png" alt="" class="alt-logo">
-                            <img src="images/TCIS/TCISLogoLight.png" data-at2x="images/TCIS/TCISLogoLight.png" alt="" class="mobile-logo"> 
-                        </a>
-                    </div>
-                    <div class="col-auto col-lg-8 menu-order position-static">
-                        <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
-                        </button>
-                        
-                    </div>
-                    <div class="col-auto col-lg-2 text-end">
-                        <div class="header-icon">
-                            <div class="header-search-icon icon" style="display: flex;flex-direction: column;align-items: end;">
-                                <div class="collapse navbar-collapse justify-content-center" id="navbarNav" style="flex-grow: 0.25;"> 
-                                    <ul class="navbar-nav alt-font text-uppercase"> 
-                                        <li class="nav-item"><a href="Career.html" class="nav-link">Career</a></li>
-                                        <!-- <li class="nav-item"><a href="alumni.html" class="nav-link">Alumini</a></li> -->
-                                        <!-- <li class="nav-item dropdown dropdown-with-icon">
+        <!-- start navigation -->
+        <nav class="navbar navbar-expand-lg header-transparent bg-transparent  disable-fixed">
+            <div class="container-fluid">
+                <div class="col-auto col-lg-2 me-auto">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/TCIS/TCISLogoLight.png" data-at2x="images/TCIS/TCISLogoLight.png" alt=""
+                            class="default-logo" style="    max-height: 75px;">
+                        <img src="images/TCIS/TCISLogoLight.png" data-at2x="images/TCIS/TCISLogoLight.png" alt=""
+                            class="alt-logo">
+                        <img src="images/TCIS/TCISLogoLight.png" data-at2x="images/TCIS/TCISLogoLight.png" alt=""
+                            class="mobile-logo">
+                    </a>
+                </div>
+                <div class="col-auto col-lg-8 menu-order position-static">
+                    <button class="navbar-toggler float-start" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                    </button>
+
+                </div>
+                <div class="col-auto col-lg-2 text-end">
+                    <div class="header-icon">
+                        <div class="header-search-icon icon"
+                            style="display: flex;flex-direction: column;align-items: end;">
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarNav"
+                                style="flex-grow: 0.25;">
+                                <ul class="navbar-nav alt-font text-uppercase">
+                                    <li class="nav-item"><a href="Career.html" class="nav-link">Career</a></li>
+                                    <!-- <li class="nav-item"><a href="alumni.html" class="nav-link">Alumini</a></li> -->
+                                    <!-- <li class="nav-item dropdown dropdown-with-icon">
                                             <a href="demo-travel-agency-destinations.html" class="nav-link">Destinations</a>
                                             <i class="fa-solid fa-angle-down dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
                                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -470,21 +519,20 @@ a .uil {
                                                 </li>
                                             </ul>
                                         </li> -->
-                                        <li class="nav-item"><a href="FAQ.html" class="nav-link">FAQs</a></li>
-                                        <!-- <li class="nav-item"><a href="demo-travel-agency-reviews.html" class="nav-link">Reviews</a></li>
+                                    <li class="nav-item"><a href="FAQ.html" class="nav-link">FAQs</a></li>
+                                    <!-- <li class="nav-item"><a href="demo-travel-agency-reviews.html" class="nav-link">Reviews</a></li>
                                         <li class="nav-item"><a href="demo-travel-agency-blog.html" class="nav-link">Blog</a></li>
                                         <li class="nav-item"><a href="demo-travel-agency-contact.html" class="nav-link">Contact</a></li> -->
-                                    </ul>
-                                </div>
-                                <a href="enquire.html" class=" header-search-form"
-                                style="    border: 1.5px solid #fff;
+                                </ul>
+                            </div>
+                            <a href="enquire.html" class=" header-search-form" style="    border: 1.5px solid #fff;
                                 padding: 12px 27px;
                                 border-radius: 15px;
                                 text-transform: uppercase;
                                 font-weight: 500;
                                 margin-right: 20px;min-width: 12rem;"><!--search-form-icon-->
-                                    <!-- <i class="feather icon-feather-search"></i> -->
-                                    <!-- <div class="custom-header-icon">
+                                <!-- <i class="feather icon-feather-search"></i> -->
+                                <!-- <div class="custom-header-icon">
                                         <div class="custom-push-btn">
                                             <span class="custom-menu-btn"></span>
                                             <span class="custom-menu-btn"></span>
@@ -492,16 +540,17 @@ a .uil {
                                             <span class="custom-menu-btn"></span> 
                                         </div>
                                     </div> -->
-                                    Admissions
-                                </a> 
-                                <div class="search-form-wrapper">
-                                    <button title="Close" type="button" class="search-close alt-font">×</button>
-                                    <form id="search-form" role="search" method="get" class="search-form text-left" action="search-result.html">
-                                        <!-- <div class="search-form-box">
+                                Admissions
+                            </a>
+                            <div class="search-form-wrapper">
+                                <button title="Close" type="button" class="search-close alt-font">×</button>
+                                <form id="search-form" role="search" method="get" class="search-form text-left"
+                                    action="search-result.html">
+                                    <!-- <div class="search-form-box">
                                             <h2 class="text-dark-gray text-center mb-5 ls-minus-2px fw-600">What are you looking for?</h2>
                                             
                                         </div> -->
-                                        <!-- <div class="row">
+                                    <!-- <div class="row">
                                             <div class="col">
                                                 <div class="fs-24"></div>
                                                 <ul class="menu-sec">
@@ -526,38 +575,46 @@ a .uil {
                                             </div>
                                             
                                         </div> -->
-                                        <div class="text-center push-menu-wrapper text-dark-gray"><!-- data-scroll-options='{ "theme": "dark" }'
+                                    <div class="text-center push-menu-wrapper text-dark-gray"><!-- data-scroll-options='{ "theme": "dark" }'
                                         style="height: 25rem;display: flex;"-->
                                         <div class="d-flex">
                                             <div class="" style="padding-top: 9rem;
                                             padding-right: 0rem;
                                             width: 30%;">
-                                                <img src="images/TCIS/home/logoDarkGIF.gif" style="height: auto;width:30rem;" data-at2x="images/TCIS/logo.png" class="mb-5" alt="" />
+                                                <img src="images/TCIS/home/logoDarkGIF.gif"
+                                                    style="height: auto;width:30rem;" data-at2x="images/TCIS/logo.png"
+                                                    class="mb-5" alt="" />
                                                 <!-- <div class="d-inline-block align-middle bg-very-light-gray fw-600 text-dark-gray text-uppercase border-radius-22px ps-25px pe-25px fs-13 mb-15px">Explore the world</div> -->
                                                 <!-- <h3 class="fw-600 mb-0 alt-font ls-minus-1px lh-38">Explore TCIS</h3> -->
                                             </div>
-                                            <div style="width: 70%;max-height: 26rem!important;" data-scroll-options='{ "theme": "dark" }'
-                                            style="">
+                                            <div style="width: 70%;max-height: 26rem!important;"
+                                                data-scroll-options='{ "theme": "dark" }' style="">
                                                 <div class="row align-items-start justify-content-center row-cols-3 row-cols-md-3 gutter-very-small row-cols-sm-3 instagram-follow-api position-relative"
-                                                style="height: 27rem;margin-top: 2rem;">
+                                                    style="height: 27rem;margin-top: 2rem;">
                                                     <div class="col main-menu-item">
-                                                        <div class="border-radius-0px main-menu-sub-item" style="line-height: 1.5;">
-                                                            <a class="main-menu-headers menu-headers" href="about.html">About Us</a>
+                                                        <div class="border-radius-0px main-menu-sub-item"
+                                                            style="line-height: 1.5;">
+                                                            <a class="main-menu-headers menu-headers"
+                                                                href="about.html">About Us</a>
                                                             <div class="d-flex flex-column menu-sub-item">
                                                                 <a href="about.html#story" class="menu-item">
-                                                                    <li href="about.html#story" class="menu-item-name">Our Story</li>
+                                                                    <li href="about.html#story" class="menu-item-name">
+                                                                        Our Story</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <a href="about.html#philosophy" class="menu-item">
-                                                                    <li href="about.html#philosophy" class="menu-item-name">Our Philosophy</li>
+                                                                    <li href="about.html#philosophy"
+                                                                        class="menu-item-name">Our Philosophy</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <a href="about.html#people" class="menu-item">
-                                                                    <li href="about.html#people" class="menu-item-name">Our People</li>
+                                                                    <li href="about.html#people" class="menu-item-name">
+                                                                        Our People</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <a href="about.html#media" class="menu-item">
-                                                                    <li href="about.html#media" class="menu-item-name">In Media</li>
+                                                                    <li href="about.html#media" class="menu-item-name">
+                                                                        In Media</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <!-- <a href="about.html" class="menu-item">
@@ -573,35 +630,53 @@ a .uil {
                                                         </div>
                                                     </div>
                                                     <div class="col main-menu-item">
-                                                        <div class="border-radius-0px main-menu-sub-item" style="line-height: 1.5;">
-                                                            <a class="main-menu-headers menu-headers" href="USP.html">TCIS Advantage</a>
+                                                        <div class="border-radius-0px main-menu-sub-item"
+                                                            style="line-height: 1.5;">
+                                                            <a class="main-menu-headers menu-headers"
+                                                                href="USP.html">TCIS Advantage</a>
                                                             <div class="d-flex flex-column menu-sub-item">
-                                                                <a href="USP.html#childCentricDifferentiatedLearning" class="menu-item">
-                                                                    <li href="USP.html#childCentricDifferentiatedLearning" class="menu-item-name">Child-centric Differentiated Learning</li>
+                                                                <a href="USP.html#childCentricDifferentiatedLearning"
+                                                                    class="menu-item">
+                                                                    <li href="USP.html#childCentricDifferentiatedLearning"
+                                                                        class="menu-item-name">Child-centric
+                                                                        Differentiated Learning</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
-                                                                <a href="USP.html#futureOrientedSkilling" class="menu-item">
-                                                                    <li href="USP.html#futureOrientedSkilling" class="menu-item-name">Future Oriented Skilling</li>
+                                                                <a href="USP.html#futureOrientedSkilling"
+                                                                    class="menu-item">
+                                                                    <li href="USP.html#futureOrientedSkilling"
+                                                                        class="menu-item-name">Future Oriented Skilling
+                                                                    </li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
-                                                                <a href="USP.html#strategicGlobalAlliances" class="menu-item">
-                                                                    <li href="USP.html" class="menu-item-name">Strategic Global Alliances & Cross-Cultural Diversity</li>
+                                                                <a href="USP.html#strategicGlobalAlliances"
+                                                                    class="menu-item">
+                                                                    <li href="USP.html" class="menu-item-name">Strategic
+                                                                        Global Alliances & Cross-Cultural Diversity</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
-                                                                <a href="USP.html#uniqueBlendedCurriculum" class="menu-item">
-                                                                    <li href="USP.html#uniqueBlendedCurriculum" class="menu-item-name">Unique Blended Curriculum & Academic Audit</li>
+                                                                <a href="USP.html#uniqueBlendedCurriculum"
+                                                                    class="menu-item">
+                                                                    <li href="USP.html#uniqueBlendedCurriculum"
+                                                                        class="menu-item-name">Unique Blended Curriculum
+                                                                        & Academic Audit</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
-                                                                <a href="USP.html#wholesomeChildDevelopment" class="menu-item">
-                                                                    <li href="USP.html" class="menu-item-name">Multidimensional Development</li>
+                                                                <a href="USP.html#wholesomeChildDevelopment"
+                                                                    class="menu-item">
+                                                                    <li href="USP.html" class="menu-item-name">
+                                                                        Multidimensional Development</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
-                                                                <a href="USP.html#academicAndCoScholastic" class="menu-item">
-                                                                    <li href="USP.html#academicAndCoScholastic" class="menu-item-name">Academics & Co-scholastic Accomplishments</li>
+                                                                <a href="USP.html#academicAndCoScholastic"
+                                                                    class="menu-item">
+                                                                    <li href="USP.html#academicAndCoScholastic"
+                                                                        class="menu-item-name">Academics & Co-scholastic
+                                                                        Accomplishments</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
-                                                                
-                                                                
+
+
                                                                 <!-- <a href="" class="menu-item-name">Unique Blended Curriculum</a>
                                                                 <a href="lifeAtTCIS.html" class="menu-item-name">Child-centric Differentiated Learning</a>
                                                                 <a href="USP.html" class="menu-item-name">Academic & Co-scholastic Accomplishments</a>
@@ -610,29 +685,46 @@ a .uil {
                                                                 <a href="USP.html" class="menu-item-name">Strategic Global Alliances & Cross-Cultural Diversity</a> -->
                                                             </div>
                                                         </div>
-                                                    </div> 
+                                                    </div>
                                                     <div class="col main-menu-item">
-                                                        <div class="border-radius-0px main-menu-sub-item" style="line-height: 1.5;">
-                                                            <a class="main-menu-headers menu-headers" href="academics.html">Academics</a>
+                                                        <div class="border-radius-0px main-menu-sub-item"
+                                                            style="line-height: 1.5;">
+                                                            <a class="main-menu-headers menu-headers"
+                                                                href="academics.html">Academics</a>
                                                             <div class="d-flex flex-column menu-sub-item">
-                                                                <a href="academics.html#foundationalYearsProgram" class="menu-item">
-                                                                    <li href="academics.html#foundationalYearsProgram" class="menu-item-name">Foundational Years Programme</li>
+                                                                <a href="academics.html#foundationalYearsProgram"
+                                                                    class="menu-item">
+                                                                    <li href="academics.html#foundationalYearsProgram"
+                                                                        class="menu-item-name">Foundational Years
+                                                                        Programme</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
-                                                                <a href="academics.html#primaryYearsProgram" class="menu-item">
-                                                                    <li href="academics.html#primaryYearsProgram" class="menu-item-name">Primary Years Programme</li>
+                                                                <a href="academics.html#primaryYearsProgram"
+                                                                    class="menu-item">
+                                                                    <li href="academics.html#primaryYearsProgram"
+                                                                        class="menu-item-name">Primary Years Programme
+                                                                    </li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
-                                                                <a href="academics.html#middleYearsProgram" class="menu-item">
-                                                                    <li href="academics.html#middleYearsProgram" class="menu-item-name">Middle Years Programme</li>
+                                                                <a href="academics.html#middleYearsProgram"
+                                                                    class="menu-item">
+                                                                    <li href="academics.html#middleYearsProgram"
+                                                                        class="menu-item-name">Middle Years Programme
+                                                                    </li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
-                                                                <a href="academics.html#foundationalYearsProgram" class="menu-item">
-                                                                    <li href="academics.html#foundationalYearsProgram" class="menu-item-name">Senior Years Programme</li>
+                                                                <a href="academics.html#foundationalYearsProgram"
+                                                                    class="menu-item">
+                                                                    <li href="academics.html#foundationalYearsProgram"
+                                                                        class="menu-item-name">Senior Years Programme
+                                                                    </li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
-                                                                <a href="academics.html#learnerYearsProgram" class="menu-item">
-                                                                    <li href="academics.html#learnerYearsProgram" class="menu-item-name">Learner Support System</li>
+                                                                <a href="academics.html#learnerYearsProgram"
+                                                                    class="menu-item">
+                                                                    <li href="academics.html#learnerYearsProgram"
+                                                                        class="menu-item-name">Learner Support System
+                                                                    </li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <!-- <a href="academics.html" class="menu-item-name"> Foundational Years Programme
@@ -644,36 +736,46 @@ a .uil {
                                                             </div>
                                                         </div>
                                                     </div>
-                                                     
+
                                                 </div>
                                                 <div class="row align-items-center justify-content-center mb-5 row-cols-3 row-cols-md-3 gutter-very-small row-cols-sm-3 instagram-follow-api position-relative"
-                                                style="height: 17rem;">
+                                                    style="height: 17rem;">
                                                     <div class="col main-menu-item">
-                                                        <div class="border-radius-0px main-menu-sub-item" style="line-height: 1.5;">
-                                                            <a class="main-menu-headers menu-headers" href="co-scholastic.html">Co-Scholastics</a>
+                                                        <div class="border-radius-0px main-menu-sub-item"
+                                                            style="line-height: 1.5;">
+                                                            <a class="main-menu-headers menu-headers"
+                                                                href="co-scholastic.html">Co-Scholastics</a>
                                                             <div class="d-flex flex-column menu-sub-item">
                                                                 <!-- <a href="co-scholastic.html#coscholastic" class="menu-item">
                                                                     <li href="co-scholastic.html#coscholastic" class="menu-item-name">Co-Scholastic</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a> -->
                                                                 <a href="co-scholastic.html#STEM" class="menu-item">
-                                                                    <li href="co-scholastic.html#STEM" class="menu-item-name">STEM @ TCIS</li>
+                                                                    <li href="co-scholastic.html#STEM"
+                                                                        class="menu-item-name">STEM @ TCIS</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
-                                                                <a href="co-scholastic.html#fostering" class="menu-item">
-                                                                    <li href="co-scholastic.html#fostering" class="menu-item-name">Fostering Entrepreneurship</li>
+                                                                <a href="co-scholastic.html#fostering"
+                                                                    class="menu-item">
+                                                                    <li href="co-scholastic.html#fostering"
+                                                                        class="menu-item-name">Fostering
+                                                                        Entrepreneurship</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <a href="co-scholastic.html#sports" class="menu-item">
-                                                                    <li href="co-scholastic.html#sports" class="menu-item-name">Sports Program</li>
+                                                                    <li href="co-scholastic.html#sports"
+                                                                        class="menu-item-name">Sports Program</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <a href="co-scholastic.html#music" class="menu-item">
-                                                                    <li href="co-scholastic.html#music" class="menu-item-name">Love For Music</li>
+                                                                    <li href="co-scholastic.html#music"
+                                                                        class="menu-item-name">Love For Music</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <a href="co-scholastic.html#arts" class="menu-item">
-                                                                    <li href="co-scholastic.html#arts" class="menu-item-name">Visual & Performing Arts</li>
+                                                                    <li href="co-scholastic.html#arts"
+                                                                        class="menu-item-name">Visual & Performing Arts
+                                                                    </li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <!-- <a href="" class="menu-item-name">Co-Scholastic</a>
@@ -681,70 +783,89 @@ a .uil {
                                                                 <a href="USP.html" class="menu-item-name">TCIS Advantage</a> -->
                                                             </div>
                                                         </div>
-                                                    </div> 
+                                                    </div>
                                                     <div class="col main-menu-item">
-                                                        <div class="border-radius-0px main-menu-sub-item" style="line-height: 1.5;">
-                                                            <a class="main-menu-headers menu-headers" href="Infrastructure.html">Infrastructure</a>
+                                                        <div class="border-radius-0px main-menu-sub-item"
+                                                            style="line-height: 1.5;">
+                                                            <a class="main-menu-headers menu-headers"
+                                                                href="Infrastructure.html">Infrastructure</a>
                                                             <div class="d-flex flex-column menu-sub-item">
-                                                                <a href="Infrastructure.html#learning" class="menu-item">
-                                                                    <li href="Infrastructure.html#learning" class="menu-item-name">Academic Infra</li>
+                                                                <a href="Infrastructure.html#learning"
+                                                                    class="menu-item">
+                                                                    <li href="Infrastructure.html#learning"
+                                                                        class="menu-item-name">Academic Infra</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
-                                                                <a href="Infrastructure.html#research" class="menu-item">
-                                                                    <li href="Infrastructure.html#research" class="menu-item-name">Research & Exploration center</li>
+                                                                <a href="Infrastructure.html#research"
+                                                                    class="menu-item">
+                                                                    <li href="Infrastructure.html#research"
+                                                                        class="menu-item-name">Research & Exploration
+                                                                        center</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <a href="Infrastructure.html#sports" class="menu-item">
-                                                                    <li href="Infrastructure.html#sports" class="menu-item-name">Sports Infra</li>
+                                                                    <li href="Infrastructure.html#sports"
+                                                                        class="menu-item-name">Sports Infra</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <a href="Infrastructure.html#general" class="menu-item">
-                                                                    <li href="Infrastructure.html#general" class="menu-item-name">General Facilities</li>
+                                                                    <li href="Infrastructure.html#general"
+                                                                        class="menu-item-name">General Facilities</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <!-- <a  href="Career.html" class="menu-item-name">Infrastructure</a> -->
                                                             </div>
                                                         </div>
-                                                    </div> 
+                                                    </div>
                                                     <div class="col main-menu-item">
-                                                        <div class="border-radius-0px main-menu-sub-item" style="line-height: 1.5;">
-                                                            <a class="main-menu-headers menu-headers" href="lifeAtTCIS.html">Life @ TCIS</a>
+                                                        <div class="border-radius-0px main-menu-sub-item"
+                                                            style="line-height: 1.5;">
+                                                            <a class="main-menu-headers menu-headers"
+                                                                href="lifeAtTCIS.html">Life @ TCIS</a>
                                                             <div class="d-flex flex-column menu-sub-item">
                                                                 <a href="lifeAtTCIS.html#aurora" class="menu-item">
-                                                                    <li href="lifeAtTCIS.html#aurora" class="menu-item-name">Aurora</li>
+                                                                    <li href="lifeAtTCIS.html#aurora"
+                                                                        class="menu-item-name">Aurora</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <a href="lifeAtTCIS.html#technothon" class="menu-item">
-                                                                    <li href="lifeAtTCIS.html#technothon" class="menu-item-name">Technothon</li>
+                                                                    <li href="lifeAtTCIS.html#technothon"
+                                                                        class="menu-item-name">Technothon</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <a href="lifeAtTCIS.html#reflection" class="menu-item">
-                                                                    <li href="lifeAtTCIS.html#reflection" class="menu-item-name">Reflection</li>
+                                                                    <li href="lifeAtTCIS.html#reflection"
+                                                                        class="menu-item-name">Reflection</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <a href="lifeAtTCIS.html#udaan" class="menu-item">
-                                                                    <li href="lifeAtTCIS.html#udaan" class="menu-item-name">Udaan</li>
+                                                                    <li href="lifeAtTCIS.html#udaan"
+                                                                        class="menu-item-name">Udaan</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <a href="lifeAtTCIS.html#ziel" class="menu-item">
-                                                                    <li href="lifeAtTCIS.html#ziel" class="menu-item-name">Ziel</li>
+                                                                    <li href="lifeAtTCIS.html#ziel"
+                                                                        class="menu-item-name">Ziel</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
-                                                                
-                                                                
+
+
                                                                 <!-- <a  href="Career.html" class="menu-item-name">Life @ TCIS</a> -->
                                                             </div>
                                                         </div>
-                                                    </div> 
+                                                    </div>
                                                 </div>
                                                 <div class="row align-items-center justify-content-center mb-5 row-cols-3 row-cols-md-3 gutter-very-small row-cols-sm-3 instagram-follow-api position-relative"
-                                                style="height: 14rem;">
+                                                    style="height: 14rem;">
                                                     <div class="col main-menu-item">
-                                                        <div class="border-radius-0px main-menu-sub-item" style="line-height: 1.5;">
-                                                            <a class="main-menu-headers menu-headers" href="admissionsDetails.html">Admissions</a>
+                                                        <div class="border-radius-0px main-menu-sub-item"
+                                                            style="line-height: 1.5;">
+                                                            <a class="main-menu-headers menu-headers"
+                                                                href="admissionsDetails.html">Admissions</a>
                                                             <div class="d-flex flex-column menu-sub-item">
                                                                 <a href="admissionsDetails.html" class="menu-item">
-                                                                    <li href="admissionsDetails.html" class="menu-item-name">Admission Process</li>
+                                                                    <li href="admissionsDetails.html"
+                                                                        class="menu-item-name">Admission Process</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <!-- <a href="admissionsDetails.html" class="menu-item-name">Admission Process</a> -->
@@ -752,8 +873,10 @@ a .uil {
                                                         </div>
                                                     </div>
                                                     <div class="col main-menu-item">
-                                                        <div class="border-radius-0px main-menu-sub-item" style="line-height: 1.5;">
-                                                            <a class="main-menu-headers menu-headers" href="cbseInfo.html" >General Info</a>
+                                                        <div class="border-radius-0px main-menu-sub-item"
+                                                            style="line-height: 1.5;">
+                                                            <a class="main-menu-headers menu-headers"
+                                                                href="cbseInfo.html">General Info</a>
                                                             <div class="d-flex flex-column menu-sub-item">
                                                                 <a href="FAQ.html" class="menu-item">
                                                                     <li href="FAQ.html" class="menu-item-name">FAQs</li>
@@ -764,7 +887,8 @@ a .uil {
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a> -->
                                                                 <a href="cbseInfo.html" class="menu-item">
-                                                                    <li href="cbseInfo.html" class="menu-item-name">Overview</li>
+                                                                    <li href="cbseInfo.html" class="menu-item-name">
+                                                                        Overview</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <!-- <a  href="Career.html" class="menu-item-name">FAQs</a>
@@ -772,24 +896,28 @@ a .uil {
                                                                 <a  href="Career.html" class="menu-item-name">Cbse Info</a> -->
                                                             </div>
                                                         </div>
-                                                    </div> 
+                                                    </div>
                                                     <div class="col main-menu-item">
-                                                        <div class="border-radius-0px main-menu-sub-item" style="line-height: 1.5;">
-                                                            <a class="main-menu-headers menu-headers" href="contact.html" >Contact Us</a>
+                                                        <div class="border-radius-0px main-menu-sub-item"
+                                                            style="line-height: 1.5;">
+                                                            <a class="main-menu-headers menu-headers"
+                                                                href="contact.html">Contact Us</a>
                                                             <div class="d-flex flex-column menu-sub-item">
                                                                 <a href="enquire.html" class="menu-item">
-                                                                    <li href="enquire.html" class="menu-item-name">Enquire Now</li>
+                                                                    <li href="enquire.html" class="menu-item-name">
+                                                                        Enquire Now</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <a href="contact.html" class="menu-item">
-                                                                    <li href="contact.html" class="menu-item-name">Contact Us</li>
+                                                                    <li href="contact.html" class="menu-item-name">
+                                                                        Contact Us</li>
                                                                     <div><i class="fa fa-long-arrow-right"></i></div>
                                                                 </a>
                                                                 <!-- <a href="" class="menu-item-name">Enquire Now</a>
                                                                 <a href="" class="menu-item-name">Contact Us</a> -->
                                                             </div>
                                                         </div>
-                                                    </div>  
+                                                    </div>
                                                 </div>
                                                 <!-- <div class="col-12 text-center newsletter-style-02 position-relative mb-20"> 
                                                     <span class="fs-18 w-80 mx-auto text-extra-dark-gray lh-26 d-inline-block mb-25px">Get latest update for our trusted applications</span>
@@ -811,26 +939,26 @@ a .uil {
                                                 </div> -->
                                             </div>
                                         </div>
-                                            
-                                            
-                                        </div>
-                                    </form>
-                                    
-                                </div>
+
+
+                                    </div>
+                                </form>
+
                             </div>
-                            <div class="header-push-button icon">
-                                <div class="push-button search-form-icon header-search-form">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span> 
-                                </div>
+                        </div>
+                        <div class="header-push-button icon">
+                            <div class="push-button search-form-icon header-search-form">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </div>
-                        </div>  
+                        </div>
                     </div>
                 </div>
-            </nav>
-            <!-- <div class="push-menu push-menu-style-1 p-35px bg-white">
+            </div>
+        </nav>
+        <!-- <div class="push-menu push-menu-style-1 p-35px bg-white">
                 <span class="close-menu text-white bg-dark-gray"><i class="fa-solid fa-xmark"></i></span>
                 <div class="text-center push-menu-wrapper text-dark-gray" data-scroll-options='{ "theme": "dark" }'>
                     <div class="w-100">
@@ -876,60 +1004,67 @@ a .uil {
                     </div>
                 </div>
             </div> -->
-            <!-- <header> -->
-                
-              <!-- </header> -->
-        </header>
-    
-        <header class="mobile-menu-view">
-            <div class=" menu-parent ">
-                <div>
-                    <a class="navbar-brand" href="index.html">
-                        <img src="images/TCIS/TCISLogoLight.png" data-at2x="images/TCIS/TCISLogoLight.png" alt="" class="default-logo" style="    max-height: 75px;">
-                        <img src="images/TCIS/TCISLogoLight.png" data-at2x="images/TCIS/TCISLogoLight.png" alt="" class="alt-logo">
-                        <img src="images/TCIS/TCISLogoLight.png" data-at2x="images/TCIS/TCISLogoLight.png" alt="" class="mobile-logo"> 
-                    </a>
-                </div>
-                <div>
-                    <span style="font-size:30px;cursor:pointer;margin-right: 5rem;" onclick="openNav()">&#9776;</span>
+        <!-- <header> -->
+
+        <!-- </header> -->
+    </header>
+
+    <header class="mobile-menu-view">
+        <div class=" menu-parent ">
+            <div>
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/TCIS/TCISLogoLight.png" data-at2x="images/TCIS/TCISLogoLight.png" alt=""
+                        class="default-logo" style="    max-height: 75px;">
+                    <img src="images/TCIS/TCISLogoLight.png" data-at2x="images/TCIS/TCISLogoLight.png" alt=""
+                        class="alt-logo">
+                    <img src="images/TCIS/TCISLogoLight.png" data-at2x="images/TCIS/TCISLogoLight.png" alt=""
+                        class="mobile-logo">
+                </a>
+            </div>
+            <div>
+                <span style="font-size:30px;cursor:pointer;margin-right: 5rem;" onclick="openNav()">&#9776;</span>
+            </div>
+        </div>
+    </header>
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="about.html" style="margin: 10px 20px;">About</a>
+            <a href="USP.html" style="margin: 10px 20px;">TCIS Advantage</a>
+            <a href="academics.html" style="margin: 10px 20px;">Academics</a>
+            <a href="co-scholastic.html" style="margin: 10px 20px;">Co-Scholastic</a>
+            <a href="Infrastructure.html" style="margin: 10px 20px;">Infrastructure</a>
+            <a href="lifeAtTCIS.html" style="margin: 10px 20px;">Life @ TCIS</a>
+            <a href="admissionsDetails.html" style="margin: 10px 20px;">Admissions</a>
+            <a href="cbseInfo.html" style="margin: 10px 20px;">General info</a>
+            <a href="enquire.html" style="margin: 10px 20px;">Contact Us</a>
+        </div>
+    </div>
+    <!-- end header -->
+    <!-- start page title -->
+    <section
+        class="page-title-button-style cover-background position-relative ipad-top-space-margin top-space-padding md-pt-20px"
+        style="background-image: url('images/TCIS/career/career.jpg')">
+        <!-- <div class="opacity-light bg-bay-of-many-blue"></div> -->
+        <div class="container">
+            <div class="row align-items-center justify-content-center extra-small-screen">
+                <div class="col-lg-6 col-md-8 position-relative text-center page-title-extra-large"
+                    data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                    <!-- <h2 class="text-uppercase mb-10px alt-font text-white fw-500 bg-dark-gray border-radius-4px">TCIS</h2> -->
+                    <h1 class="mb-0 text-white alt-font ls-minus-2px text-uppercase fw-600 text-shadow-double-large"
+                        style="margin-top: 12rem;">Careers</h1>
                 </div>
             </div>
-        </header>
-        
-        <div id="myNav" class="overlay">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content">
-              <a href="about.html" style="margin: 10px 20px;">About</a>
-              <a href="USP.html" style="margin: 10px 20px;">TCIS Advantage</a>
-              <a href="academics.html" style="margin: 10px 20px;">Academics</a>
-              <a href="co-scholastic.html" style="margin: 10px 20px;">Co-Scholastic</a>
-              <a href="Infrastructure.html" style="margin: 10px 20px;">Infrastructure</a>
-              <a href="lifeAtTCIS.html" style="margin: 10px 20px;">Life @ TCIS</a>
-              <a href="admissionsDetails.html" style="margin: 10px 20px;">Admissions</a>
-              <a href="cbseInfo.html" style="margin: 10px 20px;">General info</a>
-              <a href="enquire.html" style="margin: 10px 20px;">Contact Us</a>
-            </div>
-          </div>
-        <!-- end header -->
-        <!-- start page title -->
-        <section class="page-title-button-style cover-background position-relative ipad-top-space-margin top-space-padding md-pt-20px" style="background-image: url('images/TCIS/career/career.jpg')">
-            <!-- <div class="opacity-light bg-bay-of-many-blue"></div> -->
-            <div class="container">
-                <div class="row align-items-center justify-content-center extra-small-screen">
-                    <div class="col-lg-6 col-md-8 position-relative text-center page-title-extra-large" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <!-- <h2 class="text-uppercase mb-10px alt-font text-white fw-500 bg-dark-gray border-radius-4px">TCIS</h2> -->
-                        <h1 class="mb-0 text-white alt-font ls-minus-2px text-uppercase fw-600 text-shadow-double-large" style="margin-top: 12rem;">Careers</h1>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end page title -->
-        <!-- start section -->
-        <section class="bg-very-light-gray position-relative">
-            <!-- <div class="h-110px position-absolute w-100 h-100 left-0px right-0px top-minus-70px" style="background-image:url('images/demo-travel-agency-home-bg-02.png')"></div> -->
-            <div class="container">
-                <div class="row align-items-center mt-2">
-                    <!-- <div class="col-lg-3 d-md-flex d-lg-inline-block md-mb-50px" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+        </div>
+    </section>
+    <!-- end page title -->
+    <!-- start section -->
+    <section class="bg-very-light-gray position-relative">
+        <!-- <div class="h-110px position-absolute w-100 h-100 left-0px right-0px top-minus-70px" style="background-image:url('images/demo-travel-agency-home-bg-02.png')"></div> -->
+        <div class="container">
+            <div class="row align-items-center mt-2">
+                <!-- <div class="col-lg-3 d-md-flex d-lg-inline-block md-mb-50px" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
                         <div class="mb-60px w-100 md-w-30 sm-w-50 xs-w-100 md-mb-30px sm-mb-40px float-start text-center text-sm-start">
                             <span class="d-block alt-font fs-22 fw-500 text-dark-gray ls-minus-05px mb-5px">Event Details</span>
                             <div class="w-100 d-block mb-10px">
@@ -950,11 +1085,21 @@ a .uil {
                             <a href="mailto:info@yourdomain.com" class="btn btn-link-gradient expand btn-extra-large text-base-color text-base-color-hover ls-0px">Practical Activity<span class="bg-base-color"></span></a>
                         </div>
                     </div> -->
-                    <div class="col-xl-12 col-lg-12 text-center text-lg-start">
-                        <h1 class="alt-font fw-600 text-dark-gray ls-minus-2px" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay":0, "staggervalue": 100, "easing": "easeOutQuad" }'>Think you’re a Visionary Teacher?</h1>
-                        <p class="w-85 md-w-100" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay":100, "staggervalue": 100, "easing": "easeOutQuad" }' style="font-weight: bold;font-size: 24px;">It's time to discover a school that’s just as forward-thinking!</p>
-                        <p class="w-85 md-w-100" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay":100, "staggervalue": 100, "easing": "easeOutQuad" }'>TCIS is a vibrant K-12 school group having over 40 years of pedigree, affiliated with CBSE & IB, with an innovative mindset and contemporary pedagogy. It is celebrated for its academic brilliance and co-scholastic excellence. We are home for passionate educators and proactive support  staffs with the right skills, knowledge and attitude.</p>
-                        <!-- <div class="d-inline-block mt-10px" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'> 
+                <div class="col-xl-12 col-lg-12 text-center text-lg-start">
+                    <h1 class="alt-font fw-600 text-dark-gray ls-minus-2px"
+                        data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay":0, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                        Think you’re a Visionary Teacher?</h1>
+                    <p class="w-85 md-w-100"
+                        data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay":100, "staggervalue": 100, "easing": "easeOutQuad" }'
+                        style="font-weight: bold;font-size: 24px;">It's time to discover a school that’s just as
+                        forward-thinking!</p>
+                    <p class="w-85 md-w-100"
+                        data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay":100, "staggervalue": 100, "easing": "easeOutQuad" }'>
+                        TCIS is a vibrant K-12 school group having over 40 years of pedigree, affiliated with CBSE & IB,
+                        with an innovative mindset and contemporary pedagogy. It is celebrated for its academic
+                        brilliance and co-scholastic excellence. We are home for passionate educators and proactive
+                        support staffs with the right skills, knowledge and attitude.</p>
+                    <!-- <div class="d-inline-block mt-10px" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'> 
                             <a href="demo-travel-agency-destinations.html" class="btn btn-large btn-dark-gray btn-round-edge btn-hover-animation btn-box-shadow me-25px xs-me-15px">
                                 <span> 
                                     <span class="btn-text">Know more</span> 
@@ -963,72 +1108,93 @@ a .uil {
                             </a>
                             <a href="mailto:info@domain.com" class="btn btn-link-gradient expand btn-extra-large text-dark-gray text-dark-gray-hover ls-0px">tcis@domain.com<span class="bg-dark-gray"></span></a>
                         </div> -->
-                    </div>
-                    <div class="col-lg-12" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 100, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                        <div class="row row-cols-1 row-cols-md-2 border-radius-6px overflow-hidden box-shadow-double-large m-0">
-                            <div class="col cover-background sm-h-550px xs-h-450px" style="background-image: url('images/TCIS/career/a.jpeg')"></div>
-                            <div class="col contact-form-style-03 bg-white p-70px lg-p-35px">
-                                <h3 class="fw-600 alt-font text-dark-gray ls-minus-1px mb-25px">Drop your CV</h3>
-                                <form action="email-templates/contact-form.php" method="post">
-                                    <div class="position-relative form-group mb-10px">
-                                        <span class="form-icon"><i class="bi bi-emoji-smile"></i></span>
-                                        <input class="ps-0 border-radius-0px border-color-extra-medium-gray form-control required" type="text" name="name" placeholder="Name" />
-                                    </div>
-                                    <div class="position-relative form-group mb-10px">
-                                        <span class="form-icon"><i class="bi bi-envelope"></i></span>
-                                        <input class="ps-0 border-radius-0px border-bottom border-color-extra-medium-gray form-control required" type="email" name="email" placeholder="Email" />
-                                    </div>
-                                    <div class="position-relative form-group mb-10px">
-                                        <span class="form-icon"><i class="bi bi-telephone"></i></span>
-                                        <input class="ps-0 border-radius-0px border-bottom border-color-extra-medium-gray form-control" type="tel" name="phone" placeholder="Phone" />
-                                    </div>
-                                    
-                                    <div class="sec-center mb-10px"> 	
-                                        <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
-                                        <label class="for-dropdown" for="dropdown">Position looking for <i class="uil uil-arrow-down"></i></label>
-                                        <div class="section-dropdown"> 
-                                            <a href="#">Teacher <i class="uil uil-arrow-right"></i></a>
-                                            <input class="dropdown-sub" type="checkbox" id="dropdown-sub" name="dropdown-sub"/>
-                                            <label class="for-dropdown-sub" for="dropdown-sub">Trainer <i class="uil uil-plus"></i></label>
-                                            <div class="section-dropdown-sub"> 
-                                                <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
-                                                <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
-                                            </div>
-                                            <a href="#">Faculty <i class="uil uil-arrow-right"></i></a>
-                                            <!-- <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a> -->
+                </div>
+                <div class="col-lg-12"
+                    data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 100, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                    <div
+                        class="row row-cols-1 row-cols-md-2 border-radius-6px overflow-hidden box-shadow-double-large m-0">
+                        <div class="col cover-background sm-h-550px xs-h-450px"
+                            style="background-image: url('images/TCIS/career/a.jpeg')"></div>
+                        <div class="col contact-form-style-03 bg-white p-70px lg-p-35px">
+                            <h3 class="fw-600 alt-font text-dark-gray ls-minus-1px mb-25px">Drop your CV</h3>
+                            <form action="email-templates/contact-form.php" method="post">
+                                <div class="position-relative form-group mb-10px">
+                                    <span class="form-icon"><i class="bi bi-emoji-smile"></i></span>
+                                    <input
+                                        class="ps-0 border-radius-0px border-color-extra-medium-gray form-control required"
+                                        type="text" name="name" placeholder="Name" />
+                                </div>
+                                <div class="position-relative form-group mb-10px">
+                                    <span class="form-icon"><i class="bi bi-envelope"></i></span>
+                                    <input
+                                        class="ps-0 border-radius-0px border-bottom border-color-extra-medium-gray form-control required"
+                                        type="email" name="email" placeholder="Email" />
+                                </div>
+                                <div class="position-relative form-group mb-10px">
+                                    <span class="form-icon"><i class="bi bi-telephone"></i></span>
+                                    <input
+                                        class="ps-0 border-radius-0px border-bottom border-color-extra-medium-gray form-control"
+                                        type="tel" name="phone" placeholder="Phone" />
+                                </div>
+
+                                <div class="sec-center mb-10px">
+                                    <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
+                                    <label class="for-dropdown" for="dropdown">Position looking for <i
+                                            class="uil uil-arrow-down"></i></label>
+                                    <div class="section-dropdown">
+                                        <a href="#">Teacher <i class="uil uil-arrow-right"></i></a>
+                                        <input class="dropdown-sub" type="checkbox" id="dropdown-sub"
+                                            name="dropdown-sub" />
+                                        <label class="for-dropdown-sub" for="dropdown-sub">Trainer <i
+                                                class="uil uil-plus"></i></label>
+                                        <div class="section-dropdown-sub">
+                                            <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
+                                            <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a>
                                         </div>
+                                        <a href="#">Faculty <i class="uil uil-arrow-right"></i></a>
+                                        <!-- <a href="#">Dropdown Link <i class="uil uil-arrow-right"></i></a> -->
                                     </div>
-                                    <div class="position-relative form-group mb-10px">
-                                        <span class="form-icon"><i class="bi bi-file-earmark-pdf"></i></span>
-                                        <input class="ps-0 border-radius-0px border-bottom border-color-extra-medium-gray form-control" type="file" name="phone" placeholder="Position looking for" />
-                                    </div>
-                                    <div class="position-relative form-group form-textarea mt-15px mb-10px xs-mb-0"> 
-                                        <textarea class="ps-0 border-radius-0px border-bottom border-color-extra-medium-gray form-control" name="comment" placeholder="Write here" rows="3"></textarea>
-                                        <span class="form-icon"><i class="bi bi-person-square"></i></span>
-                                        <input type="hidden" name="redirect" value="">
-                                        <button class="btn btn-medium btn-dark-gray btn-box-shadow btn-round-edge mt-30px submit" type="submit" aria-label="submit">Submit</button>
-                                        <div class="form-results mt-20px d-none"></div>
-                                        <!-- <p class="fs-18 lh-22 mt-20px mb-0">We are committed to protecting your privacy. We will never collect information about you.</p>
+                                </div>
+                                <div class="position-relative form-group mb-10px">
+                                    <span class="form-icon"><i class="bi bi-file-earmark-pdf"></i></span>
+                                    <input
+                                        class="ps-0 border-radius-0px border-bottom border-color-extra-medium-gray form-control"
+                                        type="file" name="phone" placeholder="Position looking for" />
+                                </div>
+                                <div class="position-relative form-group form-textarea mt-15px mb-10px xs-mb-0">
+                                    <textarea
+                                        class="ps-0 border-radius-0px border-bottom border-color-extra-medium-gray form-control"
+                                        name="comment" placeholder="Write here" rows="3"></textarea>
+                                    <span class="form-icon"><i class="bi bi-person-square"></i></span>
+                                    <input type="hidden" name="redirect" value="">
+                                    <button
+                                        class="btn btn-medium btn-dark-gray btn-box-shadow btn-round-edge mt-30px submit"
+                                        type="submit" aria-label="submit">Submit</button>
+                                    <div class="form-results mt-20px d-none"></div>
+                                    <!-- <p class="fs-18 lh-22 mt-20px mb-0">We are committed to protecting your privacy. We will never collect information about you.</p>
                                         <p class="fs-18 lh-22 mt-20px mb-0">We are committed to protecting your privacy. We will never collect information about you.</p>
                                         <p class="fs-18 lh-22 mt-20px mb-0">We are committed to protecting your privacy. We will never collect information about you.</p> -->
-                                    </div>
-                                    
-                                </form>
-                            </div>
+                                </div>
+
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- end section -->
+        </div>
+    </section>
+    <!-- end section -->
 
-        <!-- start section -->
-        <section class="half-section"> 
-            <div class="container">
-                <div class="row justify-content-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                    <h1 class="alt-font fw-600 text-dark-gray ls-minus-2px text-center" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay":0, "staggervalue": 175, "easing": "easeOutQuad" }'>Join Us</h1>
-                    <div class="col-lg-12">
-                        <!-- <div class="row mb-30px">
+    <!-- start section -->
+    <section class="half-section">
+        <div class="container">
+            <div class="row justify-content-center"
+                data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                <h1 class="alt-font fw-600 text-dark-gray ls-minus-2px text-center"
+                    data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "delay":0, "staggervalue": 175, "easing": "easeOutQuad" }'>
+                    Join Us</h1>
+                <div class="col-lg-12">
+                    <!-- <div class="row mb-30px">
                             <div class="tag-cloud col-md-9 text-center text-md-start sm-mb-15px">
                                 <a href="demo-travel-agency-blog.html">Development</a> 
                                 <a href="demo-travel-agency-blog.html">Event</a>
@@ -1039,41 +1205,100 @@ a .uil {
                                 <a class="likes-count fw-500 mx-0" href="#"><i class="fa-regular fa-heart text-red me-10px"></i><span class="text-dark-gray text-dark-gray-hover">05 Upvotes</span></a>
                             </div>
                         </div> -->
-                        <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center align-items-center mb-5 sm-mb-40px" data-anime='{ "el": "childs", "translateY": [50, 0],"perspective": [1200,1200], "scale": [0.9,1], "rotateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                            <div class="col-lg-6 md-mb-30px" style="min-height: 18rem;">
-                                <div class="border border-color-extra-medium-gray border-radius-6px text-center box-shadow-quadruple-large"  style="min-height: 18rem;">
-                                    <div style="padding:15px;">
-                                        <!-- <img src="images/demo-hotel-and-resort-client-01.svg" class="h-60px" alt="" /> -->
-                                         <div class="cbseSubHeader">TCIS - Sarjapur Road</div>
-                                         <p class="mb-0 fs-14">(Job Posting Updated as on Tuesday, 21st August 2024)</p>
-                                    </div>
-                                    <div class="border-top border-1 border-color-extra-medium-gray last-paragraph-no-margin" style="    text-align: left;
-    padding: 15px 80px;">
-                                        <p class="text-dark-gray fw-500 mb-0">1. Trained Graduate Teacher </p>
-                                        <p class="text-dark-gray fw-500 mb-0">2. Primary Computer Educator</p>
-                                        <p class="text-dark-gray fw-500 mb-0">3. Career Counsellor </p>
-                                    </div>
-                                    
+                    <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center align-items-center mb-5 sm-mb-40px"
+                        data-anime='{ "el": "childs", "translateY": [50, 0],"perspective": [1200,1200], "scale": [0.9,1], "rotateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                        <div class="col-lg-6 md-mb-30px" style="min-height: 18rem;">
+                            <div class="border border-color-extra-medium-gray border-radius-6px text-center box-shadow-quadruple-large"
+                                style="min-height: 18rem;">
+                                <div style="padding:15px;">
+                                    <!-- <img src="images/demo-hotel-and-resort-client-01.svg" class="h-60px" alt="" /> -->
+                                    <div class="cbseSubHeader">TCIS - Sarjapur Road</div>
+                                    <p class="mb-0 fs-14">(Job Posting Updated as on February 18, 2025)</p>
                                 </div>
-                            </div>
-                            <div class="col-lg-6 md-mb-30px"  style="min-height: 18rem;">
-                                <div class="border border-color-extra-medium-gray border-radius-6px text-center box-shadow-quadruple-large"  style="min-height: 18rem;">
-                                    <div style="padding:15px;">
-                                        <!-- <img src="images/demo-hotel-and-resort-client-01.svg" class="h-60px" alt="" /> -->
-                                        <div class="cbseSubHeader">TCIS - Harlur</div>
-                                        <p class="mb-0 fs-14">(Job Posting Updated as on Tuesday, 21st August 2024)</p>
+                                <div class="border-top border-1 border-color-extra-medium-gray last-paragraph-no-margin"
+                                    style="    text-align: left;
+    padding: 15px 75px;">
+                                    <div class="mb-10">
+                                        <h6  class="text-dark-gray fw-400 mb-10px">Academicians: Curricular
+                                        </h6>
+                                        <p class="text-dark-gray fw-400 mb-0 fs-12 lh-18">Well-qualified subject experts with a hands-on, experiential teaching approach and exposure with CBSE, IB or CIE Boards. All subjects across Pre-primary, Primary, Middle and Senior Years. (IB-PYP: Homeroom facilitators | Foreign languages: German, French | Senior Years elective subjects: AI, CS, Design, PE)  </p>
                                     </div>
-                                    <div class="border-top border-1 border-color-extra-medium-gray last-paragraph-no-margin" style="    text-align: left;
-    padding: 15px 80px;">
-                                        <p class="text-dark-gray fw-500 mb-0">1. Senior Secondary English & Mathematics – PGT Educator</p>
-                                        <p class="text-dark-gray fw-500 mb-0">2. Physical Education (Female Applicant Only)</p>
-                                        <p class="text-dark-gray fw-500 mb-0">3. Career Counsellor </p>
+                                    <div class="mb-10">
+                                        <h6  class="text-dark-gray fw-400 mb-10px">Academicians: Co-curricular
+                                        </h6>
+                                        <p class="text-dark-gray fw-400 mb-0 fs-12 lh-18">Visual & Performing Arts, Sports, Counselling, Special Educational Needs, Life Skill  </p>
                                     </div>
-                                    
+                                    <div class="mb-10">
+                                        <h6 class="text-dark-gray fw-400 mb-10px">Academic: Co-ordinator 
+                                        </h6>
+                                        <p class="text-dark-gray fw-400 mb-0 fs-12 lh-18">The ideal candidate is an adaptable & collaborative visionary with strong people management & leadership skills, who can embrace and drive change. Commitment towards academic quality and innovative learning environment is a must. Well-qualified with experience in CBSE, IB or CIE Boards, the candidate should have expertise in academic systems & processes, curriculum implementation, faculty development and educational audit.  </p>
+                                    </div>
+                                    <div class="mb-10">
+                                        <h6  class="text-dark-gray fw-400 mb-10px">Growth & Development Head 
+                                        </h6>
+                                        <p class="text-dark-gray fw-400 mb-0 fs-12 lh-18">Drive admissions, visibility and partnerships to support growth. Candidate with corporate experience and understanding of business operations is preferred.  </p>
+                                    </div>
+                                    <div class="mb-10">
+                                        <h6  class="text-dark-gray fw-400 mb-10px">Administrative Positions 
+                                        </h6>
+                                        <p class="text-dark-gray fw-400 mb-0 fs-12 lh-18">Parent Relations, Admission Counsellors, Legal and Marketing. Corporate experience preferred.   </p>
+                                    </div>
+
+                                    <!-- <p class="text-dark-gray fw-500 mb-0">2. Primary Computer Educator</p>
+                                    <p class="text-dark-gray fw-500 mb-0">3. Career Counsellor </p> -->
                                 </div>
+
                             </div>
                         </div>
-                        <!-- <div class="row justify-content-center">
+                        <div class="col-lg-6 md-mb-30px" style="min-height: 18rem;">
+                            <div class="border border-color-extra-medium-gray border-radius-6px text-center box-shadow-quadruple-large"
+                                style="min-height: 18rem;">
+                                <div style="padding:15px;">
+                                    <!-- <img src="images/demo-hotel-and-resort-client-01.svg" class="h-60px" alt="" /> -->
+                                    <div class="cbseSubHeader">TCIS - Harlur</div>
+                                    <p class="mb-0 fs-14">(Job Posting Updated as on February 18, 2025)</p>
+                                </div>
+                                <div class="border-top border-1 border-color-extra-medium-gray last-paragraph-no-margin"
+                                    style="    text-align: left;
+    padding: 15px 75px;">
+    <div class="mb-10">
+        <h6  class="text-dark-gray fw-400 mb-10px">Academicians: Curricular
+        </h6>
+        <p class="text-dark-gray fw-400 mb-0 fs-12 lh-18">Well-qualified subject experts with a hands-on, experiential teaching approach and exposure with CBSE, IB or CIE Boards. All subjects across Pre-primary, Primary, Middle and Senior Years. (IB-PYP: Homeroom facilitators | Foreign languages: French | Senior Years elective subjects: AI, CS, Design, PE) 
+        </p>
+    </div>
+    <div class="mb-10">
+        <h6  class="text-dark-gray fw-400 mb-10px">Academicians: Co-curricular
+        </h6>
+        <p class="text-dark-gray fw-400 mb-0 fs-12 lh-18">Visual & Performing Arts, Sports, Counselling, Special Educational Needs, Life Skill   </p>
+    </div>
+    <div class="mb-10">
+        <h6  class="text-dark-gray fw-400 mb-10px">Academic: Coordinator 
+        </h6>
+        <p class="text-dark-gray fw-400 mb-0 fs-12 lh-18">The ideal candidate is an adaptable & collaborative visionary with strong people management & leadership skills, who can embrace and drive change. Commitment towards academic quality and innovative learning environment is a must. Well-qualified with experience in CBSE, IB or CIE Boards, the candidate should have expertise in academic systems & processes, curriculum implementation, faculty development and educational audit.   </p>
+    </div>
+    <div class="mb-10">
+        <h6  class="text-dark-gray fw-400 mb-10px">Growth & Development Head 
+        </h6>
+        <p class="text-dark-gray fw-400 mb-0 fs-12 lh-18">Drive admissions, visibility and partnerships to support growth. Candidate with corporate experience and understanding of business operations is preferred.   </p>
+    </div>
+    <div class="mb-10">
+        <h6  class="text-dark-gray fw-400 mb-10px">Administrative Positions 
+        </h6>
+        <p class="text-dark-gray fw-400 mb-0 fs-12 lh-18">Parent Relations, Admission Counsellors, Legal and Marketing. Corporate experience preferred.
+        </p>
+    </div>
+                                    <!-- <p class="text-dark-gray fw-500 mb-0">1. Senior Secondary English & Mathematics –
+                                        PGT Educator</p>
+                                    <p class="text-dark-gray fw-500 mb-0">2. Physical Education (Female Applicant Only)
+                                    </p>
+                                    <p class="text-dark-gray fw-500 mb-0">3. Career Counsellor </p> -->
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="row justify-content-center">
                             <div class="col-12 text-center elements-social social-icon-style-04">
                                 <ul class="medium-icon dark">
                                     <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i><span></span></a></li>
@@ -1084,62 +1309,73 @@ a .uil {
                                 </ul>
                             </div>
                         </div> -->
-                    </div>
                 </div>
             </div>
-        </section>
-        <!-- end section -->
-        
-         <!-- start footer -->
-         <div class="bg-light-gray pb-10px pt-40px"  style="background-image: url('images/TCIS/home/footer (2).jpg');">
-            <div class="container">
-                <!-- <div class="row mb-2 md-mb-4 overlap-section" data-anime='{ "el": "childs", "translateY": [-15, 0], "scale": [0.5, 1], "opacity": [0,1], "duration": 800, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
+        </div>
+    </section>
+    <!-- end section -->
+
+    <!-- start footer -->
+    <div class="bg-light-gray pb-10px pt-40px" style="background-image: url('images/TCIS/home/footer (2).jpg');">
+        <div class="container">
+            <!-- <div class="row mb-2 md-mb-4 overlap-section" data-anime='{ "el": "childs", "translateY": [-15, 0], "scale": [0.5, 1], "opacity": [0,1], "duration": 800, "delay": 300, "staggervalue": 300, "easing": "easeOutQuad" }'>
                     <div class="col-12 text-center">
                         <img class="rounded-circle" src="images/TCIS/home/footer.jpg" alt="" />
                     </div>
                 </div>  -->
-                <!-- start subscribe item -->
-                <div class="row justify-content-center mt-6 mb-6 md-mb-8 xs-mb-40px">
-                    <div class="col-xl-6 col-lg-8 col-md-10 text-center last-paragraph-no-margin">
-                        <h2 class="text-white alt-font fw-600 mt-40px mb-40px mx-auto w-90 ls-minus-2px">Shape Your Future With TCIS</h2>
-                        <div class="d-inline-block w-100 newsletter-style-03 position-relative mb-30px">
-                            <form action="email-templates/subscribe-newsletter.php" method="post" class="position-relative w-100">
-                                <!-- <input class="input-large bg-white border-color-transparent w-100 border-radius-100px box-shadow-extra-large form-control required" type="email" name="email" placeholder="" /> -->
-                                <!-- <input type="hidden" name="redirect" value=""> -->
-                                <!-- <button  class="btn btn-large text-white ls-0px left-icon submit fw-600" style="padding: 0rem 35%;" aria-label="submit"><span>Enroll Now</span></button> -->
-                                 <a class="enroll-btn" href="enquire.html"  style="    
+            <!-- start subscribe item -->
+            <div class="row justify-content-center mt-6 mb-6 md-mb-8 xs-mb-40px">
+                <div class="col-xl-6 col-lg-8 col-md-10 text-center last-paragraph-no-margin">
+                    <h2 class="text-white alt-font fw-600 mt-40px mb-40px mx-auto w-90 ls-minus-2px">Shape Your Future
+                        With TCIS</h2>
+                    <div class="d-inline-block w-100 newsletter-style-03 position-relative mb-30px">
+                        <form action="email-templates/subscribe-newsletter.php" method="post"
+                            class="position-relative w-100">
+                            <!-- <input class="input-large bg-white border-color-transparent w-100 border-radius-100px box-shadow-extra-large form-control required" type="email" name="email" placeholder="" /> -->
+                            <!-- <input type="hidden" name="redirect" value=""> -->
+                            <!-- <button  class="btn btn-large text-white ls-0px left-icon submit fw-600" style="padding: 0rem 35%;" aria-label="submit"><span>Enroll Now</span></button> -->
+                            <a class="enroll-btn" href="enquire.html" style="    
     font-weight: bold;">ENROLL NOW</a>
-                                <!-- <span> 
+                            <!-- <span> 
                                     <span class="btn-text">Know more</span> 
                                     <span class="btn-icon"><i class="feather icon-feather-map-pin"></i></span> 
                                 </span> -->
-                                <div class="form-results border-radius-100px pt-10px pb-10px ps-15px pe-15px fs-16 mt-10px w-100 z-index-1 text-center position-absolute d-none"></div>
-                            </form>
-                        </div>
+                            <div
+                                class="form-results border-radius-100px pt-10px pb-10px ps-15px pe-15px fs-16 mt-10px w-100 z-index-1 text-center position-absolute d-none">
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <!-- end subscribe item -->
-                <!-- start instagram -->
-                <div class="row align-items-center justify-content-center mb-40px g-0 row-cols-3 row-cols-md-6 row-cols-sm-3 instagram-follow-api position-relative d-none">
-                    <div class="col instafeed-grid">
-                        <figure class="border-radius-0px" style="background-color: black;
+            </div>
+            <!-- end subscribe item -->
+            <!-- start instagram -->
+            <div
+                class="row align-items-center justify-content-center mb-40px g-0 row-cols-3 row-cols-md-6 row-cols-sm-3 instagram-follow-api position-relative d-none">
+                <div class="col instafeed-grid">
+                    <figure class="border-radius-0px" style="background-color: black;
                         opacity: 0.7;
                         border-radius: 10px !important;
-                        color: #fff !important;height: 185px;width:185px;"><a href="https://www.instagram.com" target="_blank"><span class="insta-icon"><i class="fa-brands fa-instagram"></i></span></a></figure>
-                    </div>  
-                    <div class="col instafeed-grid">
-                        <figure class="border-radius-0px"  style="background-color: black;
+                        color: #fff !important;height: 185px;width:185px;"><a href="https://www.instagram.com"
+                            target="_blank"><span class="insta-icon"><i class="fa-brands fa-instagram"></i></span></a>
+                    </figure>
+                </div>
+                <div class="col instafeed-grid">
+                    <figure class="border-radius-0px" style="background-color: black;
                         opacity: 0.7;
                         border-radius: 10px !important;
-                        color: #fff !important;height: 185px;width:185px;"><a href="https://www.instagram.com" target="_blank"><span class="insta-icon"><i class="fa-brands fa-facebook"></i></span></a></figure>
-                    </div>
-                    <div class="col instafeed-grid">
-                        <figure class="border-radius-0px"  style="background-color: black;
+                        color: #fff !important;height: 185px;width:185px;"><a href="https://www.instagram.com"
+                            target="_blank"><span class="insta-icon"><i class="fa-brands fa-facebook"></i></span></a>
+                    </figure>
+                </div>
+                <div class="col instafeed-grid">
+                    <figure class="border-radius-0px" style="background-color: black;
                         opacity: 0.7;
                         border-radius: 10px !important;
-                        color: #fff !important;height: 185px;width:185px;"><a href="https://www.instagram.com" target="_blank"><span class="insta-icon"><i class="fa-brands fa-instagram"></i></span></a></figure>
-                    </div>
-                    <!-- <div class="col instafeed-grid">
+                        color: #fff !important;height: 185px;width:185px;"><a href="https://www.instagram.com"
+                            target="_blank"><span class="insta-icon"><i class="fa-brands fa-instagram"></i></span></a>
+                    </figure>
+                </div>
+                <!-- <div class="col instafeed-grid">
                         <figure class="border-radius-0px"><a href="https://www.instagram.com" target="_blank"><img src="images/TCIS/usp4.jpeg" class="insta-image" alt=""><span class="insta-icon"><i class="fa-brands fa-instagram"></i></span></a></figure>
                     </div>
                     <div class="col instafeed-grid">
@@ -1148,7 +1384,7 @@ a .uil {
                     <div class="col instafeed-grid">
                         <figure class="border-radius-0px"><a href="https://www.instagram.com" target="_blank"><img src="images/TCIS/usp2.jpeg" class="insta-image" alt=""><span class="insta-icon"><i class="fa-brands fa-instagram"></i></span></a></figure>
                     </div>  -->
-                    <!-- <div class="absolute-middle-center z-index-1 w-auto">
+                <!-- <div class="absolute-middle-center z-index-1 w-auto">
                         <a href="https://www.instagram.com" target="_blank" class="btn btn-medium btn-switch-text btn-white btn-round-edge fw-600 ls-0px left-icon btn-box-shadow instagram-button">
                             <span>
                                 <span><i class="fa-brands fa-instagram text-base-color fs-20"></i></span>
@@ -1156,171 +1392,180 @@ a .uil {
                             </span>
                         </a>
                     </div> -->
-                </div>
-                <!-- end instagram -->
             </div>
+            <!-- end instagram -->
         </div>
-        <!-- end footer -->
-        <!-- start footer -->
-        <footer class=" pb-40px pt-40px" style="background-color: #000;">
-            <div class="container footer-container">
-                <div id="footer" style="background-image: linear-gradient(105deg, #000000, #000000);
+    </div>
+    <!-- end footer -->
+    <!-- start footer -->
+    <footer class=" pb-40px pt-40px" style="background-color: #000;">
+        <div class="container footer-container">
+            <div id="footer" style="background-image: linear-gradient(105deg, #000000, #000000);
                 opacity: 1;
                 border-radius: 10px;
                 color: #fff !important;
                 padding: 30px 0px;" class="footer">
-                    <div class="container footer-container">     
-                        <div class="row">                       
-                            <div class="col-lg-4 col-sm-4 col-xs-12">
-                                <div class="single_footer">
-                                    <h4>TCIS - Sarjapur Road</h4>
-                                    <ul>
-                                        <li>
-                                            <div class="d-flex align-items-start">
-                                                <div><i class="fa-solid fa-location-dot me-10px"></i></div>
-                                                <div><a href="#">Silver Country Rd, Harlur,<br> Off Sarjapur Rd, Bengaluru - 560068</a></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex align-items-start">
-                                                <div><i class="fa-solid fa-phone me-10px"></i></div>
-                                                <div><a href="#">+91 7760844377</a></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex align-items-start">
-                                                <div><i class="fa-solid fa-envelope me-10px"></i></div>
-                                                <div><a href="#" style="text-transform: none;">admin@tcis.in</a></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex align-items-start">
-                                                <div><i class="fa-solid fa-location-dot me-10px" style="color: transparent!important;"></i></div>
-                                                <div><a href="#">CBSE Affliation - 830916</a></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex align-items-start">
-                                                <div><i class="fa-solid fa-location-dot me-10px" style="color: transparent!important;"></i></div>
-                                                <div><a href="#">IB Affliation - 061622</a></div>
-                                            </div>
-                                        </li>
-                                        <!-- <li><i class="fa-solid fa-phone me-10px"></i><a href="#">+91 9972757859</a></li>
+                <div class="container footer-container">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-4 col-xs-12">
+                            <div class="single_footer">
+                                <h4>TCIS - Sarjapur Road</h4>
+                                <ul>
+                                    <li>
+                                        <div class="d-flex align-items-start">
+                                            <div><i class="fa-solid fa-location-dot me-10px"></i></div>
+                                            <div><a href="#">Silver Country Rd, Harlur,<br> Off Sarjapur Rd, Bengaluru -
+                                                    560068</a></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex align-items-start">
+                                            <div><i class="fa-solid fa-phone me-10px"></i></div>
+                                            <div><a href="#">+91 7760844377</a></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex align-items-start">
+                                            <div><i class="fa-solid fa-envelope me-10px"></i></div>
+                                            <div><a href="#" style="text-transform: none;">admin@tcis.in</a></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex align-items-start">
+                                            <div><i class="fa-solid fa-location-dot me-10px"
+                                                    style="color: transparent!important;"></i></div>
+                                            <div><a href="#">CBSE Affliation - 830916</a></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex align-items-start">
+                                            <div><i class="fa-solid fa-location-dot me-10px"
+                                                    style="color: transparent!important;"></i></div>
+                                            <div><a href="#">IB Affliation - 061622</a></div>
+                                        </div>
+                                    </li>
+                                    <!-- <li><i class="fa-solid fa-phone me-10px"></i><a href="#">+91 9972757859</a></li>
                                         <li><i class="fa-solid fa-envelope me-10px"></i><a href="#">admin@tcis.in</a></li>
                                         <li><a href="#">CBSE Affliation - 831233 </a></li>
                                         <li><a href="#">IB Affliation - 061622</a></li> -->
-                                        
-                                    </ul>
-                                </div>
-                            </div><!--- END COL --> 
-                            <div class="col-md-5 col-sm-5 col-xs-12">
-                                <div class="single_footer single_footer_address">
-                                    <h4>TCIS - Whitefield</h4>
-                                    <ul>
-                                        <li>
-                                            <div class="d-flex align-items-start">
-                                                <div><i class="fa-solid fa-location-dot me-10px"></i></div>
-                                                <div><a href="#">Opp Prestige Lakeside Habitat,<br> Whitefield - Sarjapur Rd, Bengaluru - 560087</a></div>
+
+                                </ul>
+                            </div>
+                        </div><!--- END COL -->
+                        <div class="col-md-5 col-sm-5 col-xs-12">
+                            <div class="single_footer single_footer_address">
+                                <h4>TCIS - Whitefield</h4>
+                                <ul>
+                                    <li>
+                                        <div class="d-flex align-items-start">
+                                            <div><i class="fa-solid fa-location-dot me-10px"></i></div>
+                                            <div><a href="#">Opp Prestige Lakeside Habitat,<br> Whitefield - Sarjapur
+                                                    Rd, Bengaluru - 560087</a></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex align-items-start">
+                                            <div><i class="fa-solid fa-phone me-10px"></i></div>
+                                            <div><a href="#">+91 9972757859</a></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex align-items-start">
+                                            <div><i class="fa-solid fa-envelope me-10px"></i></div>
+                                            <div><a href="#" style="text-transform: none;">admin@tciswhitefield.in</a>
                                             </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex align-items-start">
-                                                <div><i class="fa-solid fa-phone me-10px"></i></div>
-                                                <div><a href="#">+91 9972757859</a></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex align-items-start">
-                                                <div><i class="fa-solid fa-envelope me-10px"></i></div>
-                                                <div><a href="#" style="text-transform: none;">admin@tciswhitefield.in</a></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex align-items-start">
-                                                <div><i class="fa-solid fa-location-dot me-10px" style="color: transparent!important;"></i></div>
-                                                <div><a href="#" >CBSE Affliation - 831233</a></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="d-flex align-items-start">
-                                                <div><i class="fa-solid fa-location-dot me-10px" style="color: transparent!important;"></i></div>
-                                                <div><a href="#">IB Affliation - 061622</a></div>
-                                            </div>
-                                        </li>
-                                        <!-- <li><i class="fa-solid fa-location-dot me-10px"></i><a href="#">Opp Prestige Lakeside Habitat,<br> Whitefield - Sarjapur Rd, Bengaluru - 560087</a></li>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex align-items-start">
+                                            <div><i class="fa-solid fa-location-dot me-10px"
+                                                    style="color: transparent!important;"></i></div>
+                                            <div><a href="#">CBSE Affliation - 831233</a></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-flex align-items-start">
+                                            <div><i class="fa-solid fa-location-dot me-10px"
+                                                    style="color: transparent!important;"></i></div>
+                                            <div><a href="#">IB Affliation - 061622</a></div>
+                                        </div>
+                                    </li>
+                                    <!-- <li><i class="fa-solid fa-location-dot me-10px"></i><a href="#">Opp Prestige Lakeside Habitat,<br> Whitefield - Sarjapur Rd, Bengaluru - 560087</a></li>
                                         <li><i class="fa-solid fa-phone me-10px"></i><a href="#">+91 9972757859</a></li>
                                         <li><i class="fa-solid fa-envelope me-10px"></i><a href="#">admin@tciswhitefield.in</a></li>
                                         <li><a href="#">CBSE Affliation - 830916 </a></li>
                                         <li><a href="#">IB Affliation - 061622</a></li> -->
-                                        
-                                    </ul>
-                                </div>
-                            </div><!--- END COL -->
-                            <div class="col-md-3 col-sm-3 col-xs-12" style="padding-left: 0px!important;">
-                                <div class="single_footer single_footer_address">
-                                    <h4>Enquire now!</h4>
-                                    <!-- <div class="signup_form">                           
+
+                                </ul>
+                            </div>
+                        </div><!--- END COL -->
+                        <div class="col-md-3 col-sm-3 col-xs-12" style="padding-left: 0px!important;">
+                            <div class="single_footer single_footer_address">
+                                <h4>Enquire now!</h4>
+                                <!-- <div class="signup_form">                           
                                         <form action="#" class="subscribe">
                                             <input type="text" class="subscribe__input" placeholder="Enter Email Address">
                                             <button type="button" class="subscribe__btn"><i class="fas fa-paper-plane"></i></button>
                                         </form>
                                     </div> -->
-                                </div>
-                                <div class="social_profile">
-                                    <ul>
-                                        <li><a href="#" class="fb"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#" class="insta">
+                            </div>
+                            <div class="social_profile">
+                                <ul>
+                                    <li><a href="#" class="fb"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#" class="insta">
                                             <i class="fab fa-instagram"></i>
-                                             <!-- <img src="images/TCIS/home/instagram.jpg"> -->
+                                            <!-- <img src="images/TCIS/home/instagram.jpg"> -->
                                         </a></li>
-                                        <li><a href="#"  class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#" class="google"><i class="fab fa-google-plus-g"></i></a></li>
-                                        
-                                    </ul>
-                                </div>  <br>  
-                                <div class="social_profile">
-                                    <ul>
-                                        <li style="margin:0 10px;"><img class="" height="100" width="100" src="images/TCIS/home/f1.jpeg" alt="" /></li>
-                                        <li style="margin:0 10px;"><img class="" height="100" width="100" style="    height: 120px;
+                                    <li><a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="#" class="google"><i class="fab fa-google-plus-g"></i></a></li>
+
+                                </ul>
+                            </div> <br>
+                            <div class="social_profile">
+                                <ul>
+                                    <li style="margin:0 10px;"><img class="" height="100" width="100"
+                                            src="images/TCIS/home/f1.jpeg" alt="" /></li>
+                                    <li style="margin:0 10px;"><img class="" height="100" width="100" style="    height: 120px;
                                             width: 120px;
-                                            margin-top: -13px;"  src="images/TCIS/home/ib.png" alt="" /></li>
-                                        
-                                        <!-- <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                            margin-top: -13px;" src="images/TCIS/home/ib.png" alt="" /></li>
+
+                                    <!-- <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
                                         <li><a href="#"><i class="fab fa-instagram"></i></a></li> -->
-                                    </ul>
-                                </div>                       
-                            </div><!--- END COL -->         
-                        </div><!--- END ROW --> 
-                        <!-- <div class="row">
+                                </ul>
+                            </div>
+                        </div><!--- END COL -->
+                    </div><!--- END ROW -->
+                    <!-- <div class="row">
                             <div class="col-lg-12 col-sm-12 col-xs-12">
                                 <p class="copyright">Learners today,<a href="index.html">Leaders tomorrow</a></p>
                             </div>                 
                         </div>                  -->
-                    </div><!--- END CONTAINER -->
-                </div>
+                </div><!--- END CONTAINER -->
             </div>
-        </footer>
-        <!-- end footer -->
-        <!-- start scroll progress -->
-        <div class="scroll-progress d-none d-xxl-block">
-            <a href="#" class="scroll-top" aria-label="scroll">
-                <span class="scroll-text">Scroll</span><span class="scroll-line"><span class="scroll-point"></span></span>
-            </a>
         </div>
-        <!-- end scroll progress -->
-        <!-- javascript libraries -->
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/vendors.min.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
-        <script>
-            function openNav() {
-              document.getElementById("myNav").style.height = "100%";
-            }
-            
-            function closeNav() {
-              document.getElementById("myNav").style.height = "0%";
-              console.log("close");
-            }
-            </script>
-    </body>
+    </footer>
+    <!-- end footer -->
+    <!-- start scroll progress -->
+    <div class="scroll-progress d-none d-xxl-block">
+        <a href="#" class="scroll-top" aria-label="scroll">
+            <span class="scroll-text">Scroll</span><span class="scroll-line"><span class="scroll-point"></span></span>
+        </a>
+    </div>
+    <!-- end scroll progress -->
+    <!-- javascript libraries -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/vendors.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+            console.log("close");
+        }
+    </script>
+</body>
+
 </html>
