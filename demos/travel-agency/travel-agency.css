@@ -2387,6 +2387,9 @@ by default, overlay is visible…
   .usp-image-academic-co-scho{
     margin: 0;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -2491,3 +2494,90 @@ line-height: 1.5 !important;
    }
 }
 
+
+
+
+
+
+/* infra */
+.lab1{
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: bold;
+  text-transform: none;height: 8.5rem;
+  font-weight: 300;
+}
+
+.chemLab{
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: bold;
+  text-transform: none;height: 9.5rem;
+  font-weight: 300;
+}
+
+.activityLab{
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: bold;
+  text-transform: none;height: 8.5rem;
+  font-weight: 300;
+}
+
+.odeum{
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: bold;
+  text-transform: none;height: 9.5rem;
+  font-weight: 300;
+}
+
+.boardRoom{
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: bold;
+  text-transform: none;height:9.5rem;
+  font-weight: 300;
+}
+
+@media(max-width: 767px) {
+  .chemLab{
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-transform: none;height:12rem;
+    font-weight: 300;
+  }
+  .activityLab{
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-transform: none;height: 11rem;
+    font-weight: 300;
+  }
+  .odeum{
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-transform: none;height:12rem;
+    font-weight: 300;
+  }
+  .boardRoom{
+    font-size: 13px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-transform: none;height:12rem;
+    font-weight: 300;
+  }
+}
+
+@media(max-width: 767px) {
+  .underline h3::after {
+    content: "";
+        display: block;
+      height: 2px;
+      width: 22px;
+      background: var(--base-color);
+      margin-bottom: 10px;
+  }
+}
