@@ -2199,7 +2199,7 @@ by default, overlay is visible…
   }
   .main-hero-text-parent{
     font-size: 8px;
-    margin: 0 5px 5px 5px;
+    margin: 0 8px 5px 10px;
     padding: 5px;
   }
   .mobile-compatible-video-header{
@@ -2415,6 +2415,15 @@ by default, overlay is visible…
   }
 }
 
+.show-in-mobile-view{
+  display: none;
+}
+@media(max-width:767px){
+  .show-in-mobile-view{
+    display: block;
+  }
+}
+
 
 
 
@@ -2455,3 +2464,30 @@ by default, overlay is visible…
   .one { order: 2; }
   .two { order: 1; margin-bottom: 20px; }
 }
+
+
+
+.mobile-view-address{
+  padding: 0;
+}
+
+@media(max-width: 767px) {
+  .mobile-view-address { 
+    width: 15rem;
+    display: block;
+    line-height: 1.5 !important;
+   }
+}
+
+.mobile-view-address1{
+  padding: 0;
+}
+
+@media(max-width: 767px) {
+  .mobile-view-address1 { 
+    width: 20rem;
+display: block;
+line-height: 1.5 !important;
+   }
+}
+
