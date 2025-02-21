@@ -1571,7 +1571,7 @@
                                 <div class="swiper-slide">
                                     <div class="overflow-hidden border-radius-6px box-shadow-large">
                                         <div class="image">
-                                            <video width="350" height="285" id="myvideo1" poster="images/TCIS/home/testimonial1.jpg" >
+                                            <video width="350" height="285" id="myvideo1" preload="none" poster="images/TCIS/home/testimonial1.jpg" >
                                                 <source src="images/TCIS/home/4.mp4" type="video/mp4">
                                                 <source src="images/TCIS/home/4.mp4" type="video/ogg">
                                                 <source src="images/TCIS/home/4.mp4" type="video/webm">
@@ -1598,7 +1598,7 @@
                                 <div class="swiper-slide">
                                     <div class="overflow-hidden border-radius-6px box-shadow-large">
                                         <div class="image">
-                                            <video width="350" height="285" id="myvideo6" poster="images/TCIS/home/testimonial4.jpg" >
+                                            <video width="350" height="285" id="myvideo6" preload="none" poster="images/TCIS/home/testimonial4.jpg" >
                                                 <source src="images/TCIS/home/2.mp4" type="video/mp4">
                                                 <source src="images/TCIS/home/2.mp4" type="video/ogg">
                                                 <source src="images/TCIS/home/2.mp4" type="video/webm">
@@ -1625,7 +1625,7 @@
                                 <div class="swiper-slide">
                                     <div class="overflow-hidden border-radius-6px box-shadow-large">
                                         <div class="image">
-                                            <video width="350" height="285" id="myvideo3" poster="images/TCIS/home/testimonial3.jpg" >
+                                            <video width="350" height="285" id="myvideo3" preload="none" poster="images/TCIS/home/testimonial3.jpg" >
                                                 <source src="images/TCIS/home/5.mp4" type="video/mp4">
                                                 <source src="images/TCIS/home/5.mp4" type="video/ogg">
                                                 <source src="images/TCIS/home/5.mp4" type="video/webm">
@@ -2249,7 +2249,7 @@ inputcolor.addEventListener("input",(e) => {
         </script>
 
         <script>
-            $('#myvideo1').hover(function toggleControls() {
+     $('#myvideo1').hover(function toggleControls() {
     if (this.hasAttribute("controls")) {
         this.removeAttribute("controls")
     } else {
