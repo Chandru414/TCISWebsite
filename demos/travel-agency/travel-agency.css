@@ -1546,7 +1546,11 @@ footer .elements-social ul li {
     left: -100%;
   }
 }
-
+@media(max-width:767px) {
+  .marquee-wrapper{
+    display: none;
+  }
+}
 
 
 
@@ -2296,7 +2300,8 @@ by default, overlay is visible…
   top: 10%;
   width: 100%;
   text-align: left;
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  margin-top: 5px;
 }
 
 .overlay a {
@@ -2317,7 +2322,8 @@ by default, overlay is visible…
 .overlay .closebtn {
   position: absolute;
   top: 20px;
-  right: 45px;
+  /* right: 45px; */
+  right: 15px;
   font-size: 60px;
 }
 
@@ -2579,5 +2585,36 @@ line-height: 1.5 !important;
       width: 22px;
       background: var(--base-color);
       margin-bottom: 10px;
+  }
+}
+
+
+
+
+
+
+/* footer address */
+.mobile-view-address1{
+  width: 23vw !important;
+  line-height: 1.7!important;
+  overflow-wrap: break-word!important;
+  display: block!important; 
+}
+
+@media(max-width: 767px) {
+  .mobile-view-address1{
+    width: 80vw !important;
+  }
+}
+.mobile-view-address{
+  width: 23vw !important;
+  line-height: 1.7!important;
+  overflow-wrap: break-word!important;
+  display: block!important; 
+}
+
+@media(max-width: 767px) {
+  .mobile-view-address{
+    width: 80vw !important;
   }
 }
