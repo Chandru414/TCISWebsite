@@ -1565,7 +1565,7 @@
                 <div class="row row-cols-1 justify-content-center md-mb-5 xs-mb-10">
                     <!-- start content carousal item -->
                     <div class="col position-relative" data-anime='{ "opacity": [0,1], "duration": 800, "delay": 50, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <div class="swiper slider-four-slide  swiper-number-navigation-style" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "autoplay": { "delay": 4000, "disableOnInteraction": false }, "navigation": { "nextEl": ".slider-four-slide-next", "prevEl": ".slider-four-slide-prev" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1400": { "slidesPerView": 3 }, "1200": { "slidesPerView": 3 }, "992": { "slidesPerView": 3 }, "576": { "slidesPerView": 2 } }, "effect": "slide" }' data-swiper-number-navigation="true" data-swiper-show-progress="true">
+                        <div class="swiper slider-four-slide  swiper-number-navigation-style" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "autoplay": { "delay": 4000, "disableOnInteraction": false, "pauseOnMouseEnter": true }, "navigation": { "nextEl": ".slider-four-slide-next", "prevEl": ".slider-four-slide-prev" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1400": { "slidesPerView": 3 }, "1200": { "slidesPerView": 3 }, "992": { "slidesPerView": 3 }, "576": { "slidesPerView": 2 } }, "effect": "slide" }' data-swiper-number-navigation="true" data-swiper-show-progress="true">
                             <div class="swiper-wrapper pb-5 md-pb-6">
                                 <!-- start content carousal item pankaj -->
                                 <div class="swiper-slide">
@@ -1655,7 +1655,7 @@ Parent of TCIS
                                 <div class="swiper-slide">
                                     <div class="overflow-hidden border-radius-6px box-shadow-large">
                                         <div class="image">
-                                            <video width="350" height="285" id="myvideo5" poster="images/TCIS/home/testimonial6.jpeg" >
+                                            <video width="350" height="285" id="myvideo5" preload="none" poster="images/TCIS/home/testimonial6.jpeg" >
                                                 <source src="images/TCIS/home/3.mp4" type="video/mp4">
                                                 <source src="images/TCIS/home/3.mp4" type="video/ogg">
                                                 <source src="images/TCIS/home/3.mp4" type="video/webm">
@@ -1663,6 +1663,12 @@ Parent of TCIS
                                                 <embed src="images/TCIS/home/3.mp4" width="470" height="255">
                                                 </object>
                                             </video>
+
+                                            <!-- <video width="350" height="285" id="myvideo5" preload="none" src="images/TCIS/home/3.mp4" 
+                                            autoplay="false" poster="images/TCIS/home/testimonial6.jpeg"
+                                            muted="true" loop="false">
+                                            <source src="images/TCIS/home/3.mp4" type="video/mp4">
+                                            </video> -->
                                         </div> 
                                         <div class="bg-white p-10px position-relative"  style="background-color: #1f2257!important;">
                                             <!-- <div class="bg-base-color ps-15px pe-15px fs-14 text-uppercase fw-500 d-inline-block text-white position-absolute right-0px top-0px">05 days</div> -->
