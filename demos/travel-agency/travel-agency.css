@@ -2317,6 +2317,7 @@ by default, overlay is visible…
 .overlay a:hover, .overlay a:focus {
   /* color: #000000; */
   color: var(--base-color);
+  font-weight: 400;
 }
 
 .overlay .closebtn {
@@ -2595,26 +2596,29 @@ line-height: 1.5 !important;
 
 /* footer address */
 .mobile-view-address1{
-  width: 23vw !important;
-  line-height: 1.7!important;
+  width: 15rem !important;
+  line-height: 1.5!important;
   overflow-wrap: break-word!important;
   display: block!important; 
 }
 
 @media(max-width: 767px) {
   .mobile-view-address1{
-    width: 80vw !important;
+    width: 20rem !important;
+    line-height: 1.5!important;
   }
 }
 .mobile-view-address{
-  width: 23vw !important;
-  line-height: 1.7!important;
+  width: 12rem !important;
+  line-height: 1.5!important;
   overflow-wrap: break-word!important;
   display: block!important; 
 }
 
 @media(max-width: 767px) {
   .mobile-view-address{
-    width: 80vw !important;
+    width: 15rem!important;
+    display: block;
+    line-height: 1.5 !important;
   }
 }
