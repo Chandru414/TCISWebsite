@@ -2181,6 +2181,9 @@ by default, overlay is visible…
 
 .enroll-btn{
   color:var(--base-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .enroll-btn:hover{
   color:#ffffff!important;
