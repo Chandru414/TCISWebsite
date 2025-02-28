@@ -2465,7 +2465,17 @@ by default, overlay is visible…
 
 @media(max-width:767px){
   .academics-learners-parent{
-    display: none;
+    display: block;
+    position: absolute;
+    top: 260.2rem;
+    left: 1.8rem;
+    color: #000000;
+    background-color: #ffffffbf;
+    padding: 0px 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
   }
   .academics-learners-para{
     display: none;
@@ -2474,11 +2484,9 @@ by default, overlay is visible…
 
 @media(max-width: 767px) {
   .aca-container { display: flex; flex-flow: column; }
-  .one { order: 2; }
-  .two { order: 1; margin-bottom: 20px; }
+  .aca-container-one { order: 2; }
+  .aca-container-two { order: 1; margin-bottom: 20px; }
 }
-
-
 
 .mobile-view-address{
   padding: 0;
@@ -2639,5 +2647,80 @@ line-height: 1.5 !important;
   }
   .mobile-image{
     display: block;
+  }
+}
+
+
+
+
+@media(max-width: 767px) {
+  .life-container { display: flex; flex-flow: column; }
+  .one { order: 1; }
+  .two { order: 2; }
+  .three { order: 3; }
+}
+
+@media(max-width: 767px) {
+  .co-scho-container { display: flex; flex-flow: column; }
+  .one { order: 1 !important;}
+  .two { order: 2 !important;margin-top: 4rem;  }
+  .three { order: 3 !important; }
+}
+
+@media(max-width: 767px) {
+  .text-center-mobile{
+    text-align: center;
+  }
+}
+
+@media(max-width: 767px) {
+  .co-scho-custom-container { display: flex; flex-flow: column; }
+  .one { order: 1 !important;}
+  .two { order: 2 !important;  }
+  .three { order: 3 !important; }
+
+}
+
+.co-scho-pic-mobile-view{
+  display: none;
+}
+@media(max-width: 767px) {
+  .co-scho-pic-desktop-view{
+    display: none;
+  }
+  .co-scho-pic-mobile-view{
+    display: block;
+  }
+}
+
+@media(max-width: 767px) {
+  .usp-custom-container { display: flex; flex-flow: column; }
+  .one { order: 1 !important;}
+  .two { order: 2 !important;  }
+  .three { order: 3 !important; }
+
+}
+
+.usp-pic-mobile-view{
+  display: none;
+}
+@media(max-width: 767px) {
+  .usp-pic-desktop-view{
+    display: none;
+  }
+  .usp-pic-mobile-view{
+    display: block;
+  }
+}
+
+.gowtham-title-mobile-view{
+  display: none !important;
+}
+@media(max-width: 767px) {
+  .gowtham-title-desktop-view{
+    display: none !important;
+  }
+  .gowtham-title-mobile-view{
+    display: block !important;
   }
 }
