@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="css/icon.min.css"/>
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/responsive.css"/>
-        <link rel="stylesheet" href="demos/travel-agency/travel-agency.css" />
+        <!-- <link rel="stylesheet" href="demos/travel-agency/travel-agency.min.css" /> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
-<script src='https://mcbchatbot.myclassboard.com/js/mcbchatbotloader.js' type='text/javascript' mcbbotid='7FEA8FD4-F590-4015-A30F-F252DB83B976'></script>
+<!-- <script src='https://mcbchatbot.myclassboard.com/js/mcbchatbotloader.js' type='text/javascript' mcbbotid='7FEA8FD4-F590-4015-A30F-F252DB83B976'></script> -->
 
 
 <style>
@@ -69,6 +69,9 @@
 }
 }
 </style>    
+
+<link rel="preload" href="demos/travel-agency/travel-agency.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="demos/travel-agency/travel-agency.min.css"></noscript>
 </head>
     <body data-mobile-nav-style="classic">  
         <!--color picker-->
@@ -1218,7 +1221,7 @@
                 <div class="row row-cols-1 justify-content-center md-mb-5 xs-mb-10">
                     <!-- start content carousal item -->
                     <div class="col position-relative" data-anime='{ "opacity": [0,1], "duration": 800, "delay": 50, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                        <div class="swiper slider-four-slide swiper-number-navigation-style" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "autoplay": { "delay": 4000, "disableOnInteraction": false, "pauseOnMouseEnter": true }, "navigation": { "nextEl": ".slider-four-slide-next", "prevEl": ".slider-four-slide-prev" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1400": { "slidesPerView": 3 }, "1200": { "slidesPerView": 3 }, "992": { "slidesPerView": 3 }, "576": { "slidesPerView": 2 } }, "effect": "slide" }' data-swiper-number-navigation="true" data-swiper-show-progress="true">
+                        <div class="swiper slider-four-slide swiper-number-navigation-style" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "loop": true, "pagination": { "el": ".swiper-pagination", "clickable": true }, "autoplay": { "delay": 4000, "disableOnInteraction": true, "pauseOnMouseEnter": true }, "navigation": { "nextEl": ".slider-four-slide-next", "prevEl": ".slider-four-slide-prev" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1400": { "slidesPerView": 3 }, "1200": { "slidesPerView": 3 }, "992": { "slidesPerView": 3 }, "576": { "slidesPerView": 2 } }, "effect": "slide" }' data-swiper-number-navigation="true" data-swiper-show-progress="true">
                             <div class="swiper-wrapper pb-5 md-pb-6">
                                 
                                  <!-- start content carousal item -->
@@ -1370,188 +1373,6 @@
             </div>
         </section>
         <!-- end testimonials section-->
-
-        <!-- start section -->
-        <section id="explore" class="cover-background overflow-visible  section-bg-custom-color pt-0 d-none"><!-- style="background-image: url('https://via.placeholder.com/1920x780');"-->
-            <!-- <div class="container overlap-section">
-                <div class="row row-cols-1 row-cols-xl-5 row-cols-md-5 row-cols-sm-3 bg-white border-radius-6px mx-0 ps-8 pe-8 lg-ps-3 lg-pe-3 pt-4 pb-4 sm-pt-8 sm-pb-8 xs-pt-15 xs-pb-40px align-items-center mb-7 xs-mb-50px justify-content-center" data-anime='{ "el": "childs", "translateX": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-                    <div class="col text-center border-end border-color-extra-medium-gray sm-mb-40px xs-border-end-0">
-                        <img  src="images/TCIS/awards.webp" class="mb-10px w-70px d-block mx-auto" alt="" />
-                        <span class="alt-font fs-19 fw-600 text-dark-gray text-uppercase ls-minus-05px">NSDC</span>
-                    </div>
-                    <div class="col text-center border-end border-color-extra-medium-gray sm-mb-40px xs-border-end-0">
-                        <img  src="images/TCIS/awards.webp" class="mb-10px w-70px d-block mx-auto" alt="" />
-                        <span class="alt-font fs-19 fw-600 text-dark-gray text-uppercase ls-minus-05px">NTSE</span>
-                    </div>
-                    <div class="col text-center border-end sm-border-end-0 border-color-extra-medium-gray sm-mb-40px">
-                        <img  src="images/TCIS/awards.webp" class="mb-10px w-70px d-block mx-auto" alt="" />
-                        <span class="alt-font fs-19 fw-600 text-dark-gray text-uppercase ls-minus-05px">NAS</span>
-                    </div>
-                    <div class="col text-center border-end border-color-extra-medium-gray xs-border-end-0 xs-mb-40px">
-                        <img  src="images/TCIS/awards.webp" class="mb-10px w-70px d-block mx-auto" alt="" />
-                        <span class="alt-font fs-19 fw-600 text-dark-gray text-uppercase ls-minus-05px">NTSE</span>
-                    </div>
-                    <div class="col text-center">
-                        <img  src="images/TCIS/awards.webp" class="mb-10px w-70px d-block mx-auto" alt="" />
-                        <span class="alt-font fs-19 fw-600 text-dark-gray text-uppercase ls-minus-05px">NSDC</span>
-                    </div>
-                </div>
-            </div> -->
-            <div class="container">
-                <div class="row align-items-center justify-content-center" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                    <div class="col-lg-4 md-mb-20px text-center text-lg-start">
-                        <span class="fw-500 text-base-color text-uppercase">Our</span>
-                        <h2 class="alt-font fw-600 text-dark-gray ls-minus-2px">Parent<br> Experiences</h2>
-                        <div class="d-flex justify-content-center justify-content-lg-start">
-                            <!-- start slider navigation -->
-                            <div class="slider-one-slide-prev-1 bg-white box-shadow-double-large swiper-button-prev slider-navigation-style-04"><i class="bi bi-arrow-left-short icon-very-medium"></i></div>
-                            <div class="slider-one-slide-next-1 bg-white box-shadow-double-large swiper-button-next slider-navigation-style-04"><i class="bi bi-arrow-right-short icon-very-medium"></i></div>
-                            <!-- end slider navigation -->
-                        </div>
-                    </div>
-                    <div class="col-xl-8 col-lg-9">
-                        <div class="swiper position-relative" data-slider-options='{ "autoHeight": true, "loop": true, "allowTouchMove": true, "autoplay": { "delay": 3000, "disableOnInteraction": false, "pauseOnMouseEnter": true }, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" }, "effect": "slide" }'>
-                            <div class="swiper-wrapper">
-                                <!-- start text slider item -->
-                                <div class="swiper-slide review-style-11">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-2 text-center text-md-start sm-mb-15px">
-                                            <img  src="images/TCIS/home/parent1.jpeg" alt="" style="border-radius: 50%;height: 100px;width: 100px;">
-                                            <div class="left-0px top-0px h-100 w-90px sm-w-100 sm-position-relative sm-mt-10px sm-border-end-0">
-                                                <div class=" align-items-center justify-content-center sm-vertical-title-inherit">
-                                                    <div class="title fs-14 alt-font text-base-color fw-600 text-uppercase text-center">Smitha CP</div>
-                                                    
-                                                </div>
-                                            </div>
-                                        </div> 
-                                        <div class="col-md-10 position-relative ps-8 sm-ps-8px text-center text-md-start">
-                                            <p class="fs-30 text-dark-gray fw-400">"Shifting my son and daughter to TCIS is one of the best decisions I have taken"
-                                                <br><a href="ourStories.html" class="fs-14 text-base-color"> ..&nbsp;Read whole story</a>
-                                            </p>
-                                            <p></p>
-                                            <!-- <p class="fs-14 lh-28 text-dark-gray mb-20px">"They were earlier studying at New *** School, where I noticed serious lack of personalised attention. With 35-40 students in a class, it is hard to blame the teachers for that. At home also, since both my husband and I work on tight schedules, we could also not give enough attention to support our kids’ learning. With no one to hold them tight at school or at home, their academic results were average. In fact, even in co-curriculars also they remained average with no one at school to identify their talents or to push them into meaningful activities. They were literally lost in the crowd."</p> -->
-                                            <!-- <div class="text-center bg-base-color text-white fs-15 border-radius-22px d-inline-block ps-20px pe-20px lh-36 ls-minus-1px">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                            </div>  -->
-                                            
-                                        </div>
-                                    </div> 
-                                </div>
-                                <!-- start text slider item -->
-                                <div class="swiper-slide review-style-11 d-none">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-2 text-center text-md-start sm-mb-15px">
-                                            <img  src="images/TCIS/usp/small.jpg" alt="" style="border-radius: 50%;">
-                                            <div class="left-0px top-0px h-100 w-90px sm-w-100 sm-position-relative sm-mt-10px sm-border-end-0">
-                                                <div class=" align-items-center justify-content-center sm-vertical-title-inherit">
-                                                    <div class="title fs-14 alt-font text-base-color fw-600 text-uppercase text-center">Shanti</div>
-                                                    
-                                                </div>
-                                            </div>
-                                        </div> 
-                                        <div class="col-md-10 position-relative ps-8 sm-ps-8px text-center text-md-start">
-                                            <p class="fs-30 text-dark-gray fw-400">"Shifting my son and daughter to TCIS is one of the best decisions I've taken
-                                                <br><a href="index.html" class="fs-14 text-base-color"> ..&nbsp;Read more</a></p>
-                                            <p></p>
-                                            <!-- <p class="fs-14 lh-28 text-dark-gray mb-20px">"They were earlier studying at New *** School, where I noticed serious lack of personalised attention. With 35-40 students in a class, it is hard to blame the teachers for that. At home also, since both my husband and I work on tight schedules, we could also not give enough attention to support our kids’ learning. With no one to hold them tight at school or at home, their academic results were average. In fact, even in co-curriculars also they remained average with no one at school to identify their talents or to push them into meaningful activities. They were literally lost in the crowd."</p> -->
-                                            <!-- <div class="text-center bg-base-color text-white fs-15 border-radius-22px d-inline-block ps-20px pe-20px lh-36 ls-minus-1px">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                            </div>  -->
-                                            
-                                        </div>
-                                    </div> 
-                                </div>
-                                <!-- start text slider item -->
-                                <div class="swiper-slide review-style-11 d-none">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-2 text-center text-md-start sm-mb-15px">
-                                            <img  src="images/TCIS/usp/small.jpg" alt="" style="border-radius: 50%;">
-                                            <div class="left-0px top-0px h-100 w-90px sm-w-100 sm-position-relative sm-mt-10px sm-border-end-0">
-                                                <div class=" align-items-center justify-content-center sm-vertical-title-inherit">
-                                                    <div class="title fs-14 alt-font text-base-color fw-600 text-uppercase text-center">Shanti</div>
-                                                    
-                                                </div>
-                                            </div>
-                                        </div> 
-                                        <div class="col-md-10 position-relative ps-8 sm-ps-8px text-center text-md-start">
-                                            <p class="fs-30 text-dark-gray fw-400">"Shifting my son and daughter to TCIS is one of the best decisions I've taken
-                                                <br><a href="index.html" class="fs-14 text-base-color"> ..&nbsp;Read more</a></p>
-                                            <p></p>
-                                            <!-- <p class="fs-14 lh-28 text-dark-gray mb-20px">"They were earlier studying at New *** School, where I noticed serious lack of personalised attention. With 35-40 students in a class, it is hard to blame the teachers for that. At home also, since both my husband and I work on tight schedules, we could also not give enough attention to support our kids’ learning. With no one to hold them tight at school or at home, their academic results were average. In fact, even in co-curriculars also they remained average with no one at school to identify their talents or to push them into meaningful activities. They were literally lost in the crowd."</p> -->
-                                            <!-- <div class="text-center bg-base-color text-white fs-15 border-radius-22px d-inline-block ps-20px pe-20px lh-36 ls-minus-1px">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                            </div>  -->
-                                            
-                                        </div>
-                                    </div> 
-                                </div>
-                                <!-- start text slider item swiper-slide review-style-11-->
-                                <div class="d-none ">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-5 text-center text-md-start sm-mb-15px">
-                                            <img  src="https://via.placeholder.com/350x335" alt="">
-                                        </div> 
-                                        <div class="col-md-7 position-relative ps-16 sm-ps-15px text-center text-md-start">
-                                            <p class="fs-20 lh-28 text-dark-gray mb-20px">Excellent travel company. We have already <span class="text-decoration-line-bottom fw-600">recommended</span> it to our family and friends. We are looking forward to our <span class="text-decoration-line-bottom fw-600">next trip.</span> Everything was very well organized.</p>
-                                            <!-- <div class="text-center bg-base-color text-white fs-15 border-radius-22px d-inline-block ps-20px pe-20px lh-36 ls-minus-1px">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                            </div>  -->
-                                            <div class="position-absolute left-0px top-0px h-100 w-90px sm-w-100 border-end border-color-transparent-dark-very-light sm-position-relative sm-mt-10px sm-border-end-0">
-                                                <div class="vertical-title-center align-items-center justify-content-center sm-vertical-title-inherit">
-                                                    <div class="title fs-20 alt-font text-base-color fw-600 text-uppercase">Matthew taylor</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end text slider item -->
-                                <!-- start text slider item swiper-slide review-style-11-->
-                                <div class="d-none">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-5 text-center text-md-start sm-mb-15px">
-                                            <img  src="https://via.placeholder.com/350x335" alt="">
-                                        </div> 
-                                        <div class="col-md-7 position-relative ps-16 sm-ps-15px text-center text-md-start">
-                                            <p class="fs-20 lh-28 text-dark-gray mb-20px">This itinerary was a perfect <span class="text-decoration-line-bottom fw-500">combination</span> of city sights, history and culture together with the peace of the <span class="text-decoration-line-bottom fw-500">amazon rainforest</span> and the adventure.</p>
-                                            <!-- <div class="text-center bg-base-color text-white fs-15 border-radius-22px d-inline-block ps-20px pe-20px lh-36 ls-minus-1px">
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                                <i class="bi bi-star-fill"></i>
-                                            </div>  -->
-                                            <div class="position-absolute left-0px top-0px h-100 w-90px sm-w-100 border-end border-color-transparent-dark-very-light sm-position-relative sm-mt-10px sm-border-end-0">
-                                                <div class="vertical-title-center align-items-center justify-content-center sm-vertical-title-inherit">
-                                                    <div class="title fs-20 alt-font text-base-color fw-600 text-uppercase">Herman miller</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end text slider item -->
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end section -->
         <!--testimonials section-->
         <section class="bg-very-light-gray background-position-center-bottom background-size-contain background-no-repeat pt-2 pb-2
         section-bg-custom-color pt-0" style="background-image:url('images/demo-travel-agency-home-bg-05.png');">
@@ -1691,7 +1512,7 @@ Parent of TCIS
                             <div class="swiper-navigation-wrapper d-flex align-items-center justify-content-center">
                                 <div class="swiper-button-previous-nav swiper-button-prev slider-four-slide-prev"><i class="feather icon-feather-arrow-left icon-small text-dark-gray"></i></div>
                                 <div class="swiper-pagination-progress w-200px xs-w-150px bg-medium-gray-transparent"><span class="swiper-progress"></span></div>
-                                <div class="swiper-button-next-nav swiper-button-next slider-four-slide-next"></div><i class="feather icon-feather-arrow-right icon-small text-dark-gray"></i></div>
+                                <div class="swiper-button-next-nav swiper-button-next slider-four-slide-next"><i class="feather icon-feather-arrow-right icon-small text-dark-gray"></i></div>
                             </div>
                             <!-- end slider pagination -->
                         </div> 
